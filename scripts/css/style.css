@@ -75,3 +75,8 @@ button:focus {
         margin-top: 100px;
     }
 }
+@media (max-width:550px){
+    img{
+        max-width:100px;
+    }
+}
