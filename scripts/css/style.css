@@ -5,8 +5,10 @@ body{
 }
 
 .title{
+    display: flex;
+    justify-content: space-evenly;  
+    margin: auto;
     text-align: center;
-    color: #333333;
 }
 .Programming-languages-logos{
     display: flex;
