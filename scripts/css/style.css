@@ -20,7 +20,7 @@ body{
     justify-content: space-evenly;
 }
 .project{
-    border: 1px solid black ;
+    background: linear-gradient(180deg, #bed8ff 0%, #a6bcdd 100%);
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
@@ -60,5 +60,18 @@ button:focus {
     .project-container{
         width: 50%;
         margin: auto;
+    }
+}
+.middle-container{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+
+}
+@media (max-width:1200px){
+    .middle-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
     }
 }
