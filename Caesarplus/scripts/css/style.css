@@ -41,3 +41,10 @@ a{
     text-decoration: none;
     background-color: rgba(50, 68, 78, 0.801);
 }
+@media (max-width:1200px){
+    .middle-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
