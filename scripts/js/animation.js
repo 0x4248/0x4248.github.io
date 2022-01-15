@@ -6,7 +6,7 @@ async function opacity_to_100(id){
     for (let i = 0; i < 25; i++) {
         document.getElementById(id).style.opacity = opacity+"%"
         opacity = opacity + 4
-        await sleep(20)
+        await sleep(50)
     } 
 }
 async function opacity_to_0(id){
@@ -14,7 +14,7 @@ async function opacity_to_0(id){
     for (let i = 0; i < 25; i++) {
         document.getElementById(id).style.opacity = opacity+"%"
         opacity = opacity - 4
-        await sleep(20)
+        await sleep(50)
     }
 }
 
