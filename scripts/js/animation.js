@@ -20,11 +20,10 @@ async function opacity_to_0(id){
 
 async function onload(){
     opacity_to_100("main")
-    var width = 10
-    for (let i = 0; i < 20; i++) {
-        document.getElementById("logos").style.width = width+"%"
-        width = width + 4
-        await sleep(20)
-    }
 }
 onload()
+var image = document.getElementsByClassName('parallax');
+new simpleParallax(image);
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
