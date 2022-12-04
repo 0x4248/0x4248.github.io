@@ -1,0 +1,35 @@
+@font-face {
+    font-family:"vga";
+    src: url("vga.ttf") format("truetype");
+}
+body{
+    font-family: "vga";
+    color: white;
+    background-color: black;
+    font-size: larger;
+    margin: 0px;
+}
+p{
+    margin: 0px;
+    overflow-wrap: break-word;
+}
+div{
+    margin: 0px;
+    overflow-wrap: break-word;
+}
+#app{
+    display: none;
+}
+button{
+    border: 0px;
+    font-family:'vga';
+    background-color: white;
+    font-size: large;
+}
+button:hover{
+    border: 0px;
+    font-family:'vga';
+    background-color: black;
+    font-size: large;
+    color: white;
+}

@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    opacity: 0%;
+    background-color: #000000;
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: space-evenly;  
+    margin: auto;
+    text-align: center;
+}
+.Programming-languages-logos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project{
+    background: linear-gradient(180deg, #bed8ff 0%, #a6bcdd 100%);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    width: 1000px;
+}
+
+.tag{
+    display: inline;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 2px;
+    color:white;
+    font-size: small;
+}
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 5px;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #2b73fa 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+@media (min-width:1550px){
+    .project-container{
+        width: 50%;
+        margin: auto;
+    }
+}
+.middle-container{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #1d1d1d;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+@media (max-width:1200px){
+    .middle-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+@media (max-width:550px){
+    img{
+        max-width:100px;
+    }
+}
+
+.cookie-consent{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #333333de;
+    padding: 10px;
+    border-radius: 30px 0px 0px 0px;
+    backdrop-filter: blur(5px);
+}
