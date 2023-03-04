@@ -1,10 +1,16 @@
-# Awesomelewis2007
-Hi my name is Lewis, I am a developer who is interested in many different areas of technology. I also enjoy learning about cyber security and how to protect myself and others from cyber attacks.
+Hi my name is Lewis, I am a developer who is interested in many different areas of technology. I also enjoy learning about cyber security and how to protect myself and others from cyber attacks. Many of the projects here are personal projects and prjects for my systems.
 
 ## Contact
 You can contact me on discord at `awesomelewis#2007` or on twitter at [@awesomelewis2007](https://twitter.com/awesomelewis2007)
 
 If you want to email me you can do so at `07pennies.likes@icloud.com` **Note:** The email is a icloud hide my email address to prevent my email from being harvested by bots, and is subject to change if i receive too much spam from it.
+
+## Languages I know
+![Languages](https://skillicons.dev/icons?i=python,cpp,javascript,nodejs,cs,dotnet,bash,css,html,flask)
+## Development tools and software i use
+![Dev_tools](https://skillicons.dev/icons?i=git,docker,github,googlecloud,vscode,visualstudio,raspberrypi,linux,powershell,replit)
+## Other tools and software
+![Tools](https://skillicons.dev/icons?i=blender,ps,pr,ai,xd,figma)
 
 ## Github stats
 Here are my github stats. Updated every 24 hours from the repo [awesomelewis2007/awesomelewis2007](https://github.com/awesomelewis2007/awesomelewis2007)
