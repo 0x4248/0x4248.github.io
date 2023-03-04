@@ -1,4 +1,4 @@
-Hi my name is Lewis, I am a developer who is interested in many different areas of technology. I also enjoy learning about cyber security and how to protect myself and others from cyber attacks. Many of the projects here are personal projects and prjects for my systems.
+Hi my name is Lewis, I am a developer who is interested in many different areas of technology. I also enjoy learning about cyber security. Many of the projects here are personal projects and projects for my systems.
 
 ## Contact
 You can contact me on discord at `awesomelewis#2007` or on twitter at [@awesomelewis2007](https://twitter.com/awesomelewis2007)
