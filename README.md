@@ -39,6 +39,7 @@ Here are my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Cpp-Project-Maker)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=cpp_console_colour)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=fancy_uptime)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=emulator)
 
 ### Other
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Ldiag)
