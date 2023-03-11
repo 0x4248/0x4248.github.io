@@ -26,6 +26,7 @@ Here are my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=audio_dataset)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=image_dataset)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=opensky)
+
 ### Python
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Datashredder)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Discord_bot)
@@ -42,10 +43,12 @@ Here are my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=emulator)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CPPEMU)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CPPEMU-Compiler)
+
 ### Other
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Ldiag)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=cpp_template)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=cpp_make_configure)
+
 ### C#
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=InfoByte)
 
