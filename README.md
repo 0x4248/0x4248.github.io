@@ -20,7 +20,11 @@ Here are my github stats. Updated every 24 hours from the repo [awesomelewis2007
 ## Projects
 You can find all my projects on my github page [awesomelewis2007](https://github.com/awesomelewis2007?tab=repositories&q=&type=source&language=&sort=)
 
-Here are my top projects:
+Check out my project sites:
+- [Open Sky](https://awesomelewis2007.github.io/OpenSky)
+- [QuickC](https://awesomelewis2007.github.io/quickc)
+
+Here are some more of my top projects:
 
 ### Datasets
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=audio_dataset)
