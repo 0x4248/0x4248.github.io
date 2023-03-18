@@ -48,6 +48,8 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CPPEMU)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CPPEMU-Compiler)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=light_builtins)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=shell)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=lab_space)
 
 ### Other
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Ldiag)
