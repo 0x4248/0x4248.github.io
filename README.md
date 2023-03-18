@@ -6,7 +6,7 @@ You can contact me on discord at `awesomelewis#2007` or on twitter at [@awesomel
 If you want to email me you can do so at `07pennies.likes@icloud.com` **Note:** The email is a icloud hide my email address to prevent my email from being harvested by bots, and is subject to change if i receive too much spam from it.
 
 ## Languages I know
-![Languages](https://skillicons.dev/icons?i=python,cpp,javascript,nodejs,cs,dotnet,bash,css,html,flask)
+![Languages](https://skillicons.dev/icons?i=python,cpp,cs,c,javascript,nodejs,dotnet,bash,css,html,rust)
 ## Development tools and software i use
 ![Dev_tools](https://skillicons.dev/icons?i=git,docker,github,googlecloud,vscode,visualstudio,raspberrypi,linux,powershell,replit)
 ## Other tools and software
