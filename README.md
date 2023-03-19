@@ -3,7 +3,7 @@ Hi my name is Lewis, I am a developer who is interested in many different areas 
 ## Contact
 You can contact me on discord at `awesomelewis#2007` or on twitter at [@awesomelewis2007](https://twitter.com/awesomelewis2007)
 
-If you want to email me you can do so at `07pennies.likes@icloud.com` **Note:** The email is a icloud hide my email address to prevent my email from being harvested by bots, and is subject to change if i receive too much spam from it.
+If you want to email me you can do so at `Lewis_Evans207@icloud.com`
 
 ## Languages I know
 ![Languages](https://skillicons.dev/icons?i=python,cpp,cs,c,javascript,nodejs,dotnet,bash,css,html,rust)
