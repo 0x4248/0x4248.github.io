@@ -23,7 +23,7 @@ You can find all my projects on my github page [awesomelewis2007](https://github
 Check out my project sites:
 - [Open Sky](https://awesomelewis2007.github.io/OpenSky)
 - [QuickC](https://awesomelewis2007.github.io/quickc)
-- [Lab Space](https://awesomelewis2007.github.io/labspace)
+- [Lab Space](https://awesomelewis2007.github.io/lab_space)
 
 Here are some more of my top projects:
 
