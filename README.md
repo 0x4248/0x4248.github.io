@@ -23,6 +23,7 @@ You can find all my projects on my github page [awesomelewis2007](https://github
 Check out my project sites:
 - [Open Sky](https://awesomelewis2007.github.io/OpenSky)
 - [QuickC](https://awesomelewis2007.github.io/quickc)
+- [Lab Space](https://awesomelewis2007.github.io/labspace)
 
 Here are some more of my top projects:
 
@@ -49,12 +50,12 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CPPEMU-Compiler)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=light_builtins)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=shell)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=lab_space)
 
 ### Other
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Ldiag)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=cpp_template)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=cpp_make_configure)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=lab_space)
 
 ### C#
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=InfoByte)
