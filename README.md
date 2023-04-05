@@ -32,6 +32,7 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=image_dataset)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=opensky)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=GPT-dataset)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=GPT-code-dataset)
 
 ### Python
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Datashredder)
@@ -39,6 +40,7 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Downtime_Diary)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=github-bulk-clone)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=hexshift)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=docgen)
 
 ### C/C++
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=blk-rn)
@@ -52,7 +54,23 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=shell)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=key_detect)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_bench)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_asm_template)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_spinner)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CFSC)
+
+
+### Rust
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=rust_hexdump)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=find)
+
+### C#
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=InfoByte)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Simple_ping)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=QuickRun)
+
+### Javascript/HTML/CSS
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Animate)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Code_Crack)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Cookie_Manager) 
 
 ### Other
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Ldiag)
@@ -61,11 +79,4 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=lab_space)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=makefile_system)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=examples)
-
-### C#
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=InfoByte)
-
-### Javascript/HTML/CSS
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Animate)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Code_Crack)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Cookie_Manager) 
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_asm_template)
