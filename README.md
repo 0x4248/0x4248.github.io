@@ -57,7 +57,7 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_spinner)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CFSC)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=aarch64_os)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=wordlist_hashes)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=wordlists_hashes)
 
 
 ### Rust
