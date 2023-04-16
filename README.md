@@ -7,6 +7,7 @@ I have a few ways to contact me if you want to get in touch. You can email me at
 I know a few languages, the ones im most familiar with are `Python`, `C++`, `C`, `Rust`
 
 Here is a list of all the languages I know:
+
 ![Languages](https://skillicons.dev/icons?i=python,cpp,cs,c,javascript,nodejs,dotnet,bash,css,html,rust)
 
 I also know some `aarch64` assembly. I have some projects that use it, like [aarch64_os](https://www.github.com/aweosomelewis2007/aarch64_os) and
