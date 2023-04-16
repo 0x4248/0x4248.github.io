@@ -1,21 +1,39 @@
-Hi my name is Lewis, I am a developer who is interested in many different areas of technology. I also enjoy learning about cyber security. Many of the projects here are personal projects and projects for my systems.
+Hi, my name is Lewis and I am passionate about programming and cyber security. I love exploring the endless possibilities that coding has to offer and finding creative solutions to complex problems. On my page, you'll find some of my personal projects and contributions to open-source software. Most of my projects are just for fun and for my own systems.
 
 ## Contact
-You can contact me on discord at `awesomelewis#2007` or on twitter at [@awesomelewis2007](https://twitter.com/awesomelewis2007)
-
-If you want to email me you can do so at `Lewis_Evans207@icloud.com`
+I have a few ways to contact me if you want to get in touch. You can email me at [Lewis_Evans207@icloud.com](mailto://Lewis_Evans207@icloud.com). You can also contact me on discord at `awesomelewis#2007` or on twitter at [@awesomelewis2007](https://twitter.com/awesomelewis2007)
 
 ## Languages I know
+I know a few languages, the ones im most familiar with are `Python`, `C++`, `C`, `Rust`
+
+Here is a list of all the languages I know:
 ![Languages](https://skillicons.dev/icons?i=python,cpp,cs,c,javascript,nodejs,dotnet,bash,css,html,rust)
+
+I also know some `aarch64` assembly. I have some projects that use it, like [aarch64_os](https://www.github.com/aweosomelewis2007/aarch64_os) and
+[c_asm_template](https://www.github.com/awesomelewis2007/c_asm_template)
+
 ## Development tools and software I use
 ![Dev_tools](https://skillicons.dev/icons?i=git,docker,github,googlecloud,vscode,visualstudio,raspberrypi,linux,powershell,replit)
 ## Other tools and software
 ![Tools](https://skillicons.dev/icons?i=blender,ps,pr,ai,xd,figma)
 
 ## Github stats
-Here are my github stats. Updated every 24 hours from the repo [awesomelewis2007/awesomelewis2007](https://github.com/awesomelewis2007/awesomelewis2007)
 
-![Github stats](https://raw.githubusercontent.com/awesomelewis2007/awesomelewis2007/master/github-metrics.svg)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=awesomelewis2007&hide=html,css,jupyter%20notebook&langs_count=10&layout=compact&theme=transparent&exclude_repo=GPT-code-repository)](https://github.com/anuraghazra/github-readme-stats) [![GitHub stats](https://github-readme-stats.vercel.app/api?username=awesomelewis2007&show_icons=true&theme=transparent)](https://github.com/anuraghazra/github-readme-stats)
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=Awesomelewis2007&theme=transparent)](https://git.io/streak-stats)
+
+[![Github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=awesomelewis2007&theme=github-compact&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=awesomelewis2007&theme=darkhub)](https://github.com/ryo-ma/github-profile-trophy)
+
+<details close>
+<summary>Advanced github stats</summary>
+<br>
+  
+![Metrics](https://raw.githubusercontent.com/awesomelewis2007/awesomelewis2007/master/github-metrics.svg)
+
+</details>
 
 ## Projects
 You can find all my projects on my github page [awesomelewis2007](https://github.com/awesomelewis2007?tab=repositories&q=&type=source&language=&sort=)
