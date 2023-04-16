@@ -1,4 +1,4 @@
-Hi, my name is Lewis and I am passionate about programming and cyber security. I love exploring the endless possibilities that coding has to offer and finding creative solutions to complex problems. On my page, you'll find some of my personal projects and contributions to open-source software. Most of my projects are just for fun and for my own systems.
+Hi, my name is Lewis and I am passionate about programming and cyber security. I love exploring the endless possibilities that coding has to offer. On my page, you'll find some of my personal projects and contributions to open-source software. Most of my projects are just for fun and for my own systems.
 
 ## Contact
 I have a few ways to contact me if you want to get in touch. You can email me at [Lewis_Evans207@icloud.com](mailto://Lewis_Evans207@icloud.com). You can also contact me on discord at `awesomelewis#2007` or on twitter at [@awesomelewis2007](https://twitter.com/awesomelewis2007)
