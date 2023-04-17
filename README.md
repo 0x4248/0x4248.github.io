@@ -4,14 +4,14 @@ Hi, my name is Lewis and I am passionate about programming and cyber security. I
 I have a few ways to contact me if you want to get in touch. You can email me at [Lewis_Evans207@icloud.com](mailto://Lewis_Evans207@icloud.com). You can also contact me on discord at `awesomelewis#2007` or on twitter at [@awesomelewis2007](https://twitter.com/awesomelewis2007)
 
 ## Languages I know
-I know a few languages, the ones im most familiar with are `Python`, `C++`, `C`, `Rust`
+I know a few languages, the ones im most familiar with are `Python`, `C++`, `C` and `Rust`
 
 Here is a list of all the languages I know:
 
 ![Languages](https://skillicons.dev/icons?i=python,cpp,cs,c,javascript,nodejs,dotnet,bash,css,html,rust)
 
 I also know some `aarch64` assembly. I have some projects that use it, like [aarch64_os](https://www.github.com/aweosomelewis2007/aarch64_os) and
-[c_asm_template](https://www.github.com/awesomelewis2007/c_asm_template)
+[c_asm_template](https://www.github.com/awesomelewis2007/c_asm_template). And for detecting files that could be malicious, I use `YARA` and my own version of YARA called [YAMLscan](https://www.github.com/awesomelewis2007/YAMLscan)
 
 ## Development tools and software I use
 ![Dev_tools](https://skillicons.dev/icons?i=git,docker,github,googlecloud,vscode,visualstudio,raspberrypi,linux,powershell,replit)
@@ -60,6 +60,7 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=github-bulk-clone)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=hexshift)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=docgen)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=YAMLscan)
 
 ### C/C++
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=blk-rn)
@@ -77,6 +78,9 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=CFSC)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=aarch64_os)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=wordlists_hashes)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_strings)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_console_colour)
+
 
 
 ### Rust
@@ -103,3 +107,5 @@ Here are some more of my top projects:
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=makefile_system)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=examples)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=c_asm_template)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=YARA-Rules)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=dotfiles)
