@@ -97,7 +97,9 @@ Here are some more of my top projects:
 ### Javascript/HTML/CSS
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Animate)
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Code_Crack)
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Cookie_Manager) 
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Cookie_Manager)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=JSONdb)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=multihash)
 
 ### Other
 ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=awesomelewis2007&repo=Ldiag)
