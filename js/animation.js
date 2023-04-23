@@ -57,7 +57,7 @@ function growDiv() {
             
             var otherDivs = document.querySelectorAll(".repo_card:not(:hover)");
             for (var j = 0; j < otherDivs.length; j++) {
-                otherDivs[j].style.filter = "blur(5px)"; // Adjust the blur radius as needed
+                otherDivs[j].style.filter = "brightness(0.4)";
             }
         });
         divs[i].addEventListener("mouseout", function () {
