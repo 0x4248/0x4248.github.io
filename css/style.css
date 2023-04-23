@@ -4,11 +4,16 @@
 
 body {
     color: white;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+.main{
     margin-left: 10%;
     margin-right: 10%;
 }
+
 
 img {
     max-width: 100%;
@@ -48,19 +53,54 @@ a {
 .repo_card {
     width: 20%;
     margin-bottom: 2em;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(17, 17, 17);
     border-radius: 0.5em;
     padding: 1em;
     transition: 0.5s;
 }
 
-/* Make the scroll bar nice and smooth */
+.title_div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);
+}
+
+.title_div {
+    background: url("../background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.title_div h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+    margin: 0.67em 0;
+    /* remove the blur effect */
+    filter: blur(0px);
+}
+
+
 ::-webkit-scrollbar {
     width: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
