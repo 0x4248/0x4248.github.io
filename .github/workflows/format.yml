@@ -1,0 +1,29 @@
+# Js-beautify Workflow
+# Github: https://www.github.com/awesomelewis2007/workflows
+# By: Lewis Evans
+
+name: Js-beautify
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  python-black:
+    name: Format code using js-beautify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          npm install -g js-beautify
+      - name: Lint with js-beautify
+        run: find . -type f -name "*.js" -exec js-beautify {} -o {} \;
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Format javascript code with js-beautify"
+          file_pattern: "*.js"
