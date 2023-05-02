@@ -27,11 +27,12 @@ async function title_animation() {
 }
 
 title_animation();
+
 function fadeInElements() {
     const elements = document.querySelectorAll("#fade_in");
     let index = 0;
 
-    const fadeInNext = async function () {
+    const fadeInNext = async function() {
         if (index < elements.length) {
             elements[index].style.opacity = 0;
             elements[index].style.display = "block";
@@ -49,7 +50,7 @@ fadeInElements();
 function growDiv() {
     var divs = document.getElementsByClassName("repo_card");
     for (var i = 0; i < divs.length; i++) {
-        divs[i].addEventListener("mouseover", function () {
+        divs[i].addEventListener("mouseover", function() {
             this.style.zIndex = "1";
             this.style.transform = "scale(1.1)";
             this.style.boxShadow = "0 0 10px 1px rgba(255, 255, 255, 0.5)";
@@ -59,7 +60,7 @@ function growDiv() {
                 otherDivs[j].style.filter = "brightness(0.4)";
             }
         });
-        divs[i].addEventListener("mouseout", function () {
+        divs[i].addEventListener("mouseout", function() {
             this.style.zIndex = "0";
             this.style.transform = "scale(1)";
             this.style.boxShadow = "0 0 10px 1px rgba(0, 0, 0, 0.5)";
