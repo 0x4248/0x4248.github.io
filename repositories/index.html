@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <meta name="description" content="A list of all my repositories on GitHub">
+    <meta name="keywords" content="GitHub, Repositories, Lewis Evans, lewisevans2007">
+    <meta name="author" content="Lewis Evans">
+    <meta name="robots" content="index, follow">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f6f8fa;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 4px;
+            font-size: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+            cursor: pointer;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #131313;
+                color: #c9d1d9;
+            }
+
+            table {
+                border-color: #383838;
+            }
+
+            th {
+                background-color: #141414;
+                border: 1px solid #303030;
+            }
+
+            td {
+                border-color: #303030;
+            }
+
+            a {
+                color: #58a6ff;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center;">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+            alt="Git logo" width="50px" height="50px" style="margin-right: 10px;">
+        <h1>Lewisevans2007 repository's</h1>
+    </div>
+    <p><strong>Note:</strong> Not all repository's are on this page due to github's API and also may not be up to date. For all repository's please visit <a href="https://www.github.com/lewisevans2007?tab=repositories" target="_blank">my github profile</a>.
+    </p>
+    <table id="sourcesTable">
+        <tr>
+            <th>Repository</th>
+            <th>Description</th>
+            <th>Language</th>
+            <th>Last updated</th>
+        </tr>
+    </table>
+    <p>Archived</p>
+    <table id="archivedTable">
+        <tr>
+            <th>Repository</th>
+            <th>Description</th>
+            <th>Language</th>
+            <th>Last updated</th>
+        </tr>
+    </table>
+    <p>Forks</p>
+    <table id="forksTable">
+        <tr>
+            <th>Repository</th>
+            <th>Description</th>
+            <th>Language</th>
+            <th>Last updated</th>
+        </tr>
+    </table>
+    <p>This page is open source, you can view the source code <a href="https://www.github.com/lewisevans2007/lewisevans2007.github.io/tree/master/repositories" target="_blank">here</a>.</p>
+
+    <script>
+        const username = "lewisevans2007";
+        const sourcesTable = document.getElementById("sourcesTable");
+        const archivedTable = document.getElementById("archivedTable");
+        const forksTable = document.getElementById("forksTable");
+
+        function getRepos(username) {
+            fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=1000`)
+                .then(response => response.json())
+                .then(repos => categorizeAndDisplayRepos(repos))
+                .catch(error => console.error('Error fetching repositories:', error));
+        }
+
+
+        function categorizeAndDisplayRepos(repos) {
+            const sourcesBody = sourcesTable.appendChild(document.createElement('tbody'));
+            const archivedBody = archivedTable.appendChild(document.createElement('tbody'));
+            const forksBody = forksTable.appendChild(document.createElement('tbody'));
+
+            repos.forEach(repo => {
+                const row = document.createElement('tr');
+                const repoNameCell = document.createElement('td');
+                repoNameCell.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+                const descriptionCell = document.createElement('td');
+                descriptionCell.textContent = repo.description || "No description available";
+                const languageCell = document.createElement('td');
+                languageCell.textContent = repo.language || "Unknown";
+                const updatedCell = document.createElement('td');
+                if (timeSince(new Date(repo.updated_at)).includes("day")) {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                        updatedCell.style.color = "green";
+                    } else {
+                        updatedCell.style.color = "lightgreen";
+                    }
+                }
+                updatedCell.textContent = new Date(repo.updated_at).toLocaleDateString() + " (" + timeSince(new Date(repo.updated_at)) + " ago)";
+
+                row.appendChild(repoNameCell);
+                row.appendChild(descriptionCell);
+                row.appendChild(languageCell);
+                row.appendChild(updatedCell);
+
+
+                if (repo.archived) {
+                    archivedBody.appendChild(row);
+                } else if (repo.fork) {
+                    forksBody.appendChild(row);
+                } else {
+                    sourcesBody.appendChild(row);
+                }
+            });
+        }
+
+        function timeSince(date) {
+                    const rtf1 = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+                    const msPerMinute = 60 * 1000;
+                    const msPerHour = msPerMinute * 60;
+                    const msPerDay = msPerHour * 24;
+                    const msPerMonth = msPerDay * 30;
+                    const msPerYear = msPerDay * 365;
+                    const elapsed = Date.now() - date;
+
+                    if (elapsed < msPerMinute) {
+                        return rtf1.format(-Math.floor(elapsed / 1000), 'second');
+                    } else if (elapsed < msPerHour) {
+                        return rtf1.format(-Math.floor(elapsed / msPerMinute), 'minute');
+                    } else if (elapsed < msPerDay) {
+                        return rtf1.format(-Math.floor(elapsed / msPerHour), 'hour');
+                    } else if (elapsed < msPerMonth) {
+                        return rtf1.format(-Math.floor(elapsed / msPerDay), 'day');
+                    } else if (elapsed < msPerYear) {
+                        return rtf1.format(-Math.floor(elapsed / msPerMonth), 'month');
+                    } else {
+                        return rtf1.format(-Math.floor(elapsed / msPerYear), 'year');
+                    }
+
+                    // if yesterday ago replace to yesterday
+                    if (rtf1.format(-Math.floor(elapsed / msPerDay), 'day') == "yesterday") {
+                        return "yesterday";
+                    }
+                }
+        getRepos(username);
+    </script>
+
+</body>
+
+</html>
