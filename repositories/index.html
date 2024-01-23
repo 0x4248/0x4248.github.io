@@ -136,7 +136,7 @@
                 const languageCell = document.createElement('td');
                 languageCell.textContent = repo.language || "Unknown";
                 const updatedCell = document.createElement('td');
-                if (timeSince(new Date(repo.updated_at)).includes("day")) {
+                if (timeSince(new Date(repo.updated_at)).includes("day") || timeSince(new Date(repo.updated_at)).includes("hour") || timeSince(new Date(repo.updated_at)).includes("minute")) {
                     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
                         updatedCell.style.color = "green";
                     } else {
