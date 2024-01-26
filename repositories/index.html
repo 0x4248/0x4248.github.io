@@ -78,14 +78,13 @@
             alt="Git logo" width="50px" height="50px" style="margin-right: 10px;">
         <h1>Lewisevans2007 repository's</h1>
     </div>
-    <p><strong>Note:</strong> Not all repository's are on this page due to github's API and also may not be up to date. For all repository's please visit <a href="https://www.github.com/lewisevans2007?tab=repositories" target="_blank">my github profile</a>.
     </p>
     <table id="sourcesTable">
         <tr>
             <th>Repository</th>
             <th>Description</th>
             <th>Language</th>
-            <th>Last updated</th>
+            <th>Idle</th>
         </tr>
     </table>
     <p>Archived</p>
@@ -94,7 +93,7 @@
             <th>Repository</th>
             <th>Description</th>
             <th>Language</th>
-            <th>Last updated</th>
+            <th>Idle</th>
         </tr>
     </table>
     <p>Forks</p>
@@ -103,26 +102,47 @@
             <th>Repository</th>
             <th>Description</th>
             <th>Language</th>
-            <th>Last updated</th>
+            <th>Idle</th>
         </tr>
     </table>
     <p>This page is open source, you can view the source code <a href="https://www.github.com/lewisevans2007/lewisevans2007.github.io/tree/master/repositories" target="_blank">here</a>.</p>
 
-    <script>
+    <script defer>
         const username = "lewisevans2007";
         const sourcesTable = document.getElementById("sourcesTable");
         const archivedTable = document.getElementById("archivedTable");
         const forksTable = document.getElementById("forksTable");
+        var repos = [];
 
         function getRepos(username) {
-            fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=1000`)
-                .then(response => response.json())
-                .then(repos => categorizeAndDisplayRepos(repos))
-                .catch(error => console.error('Error fetching repositories:', error));
+            var url = `https://api.github.com/users/${username}/repos?page=`
+            var page = 1;
+            var request = new XMLHttpRequest();
+
+            while (true) {
+                request.open('GET', url + page, false);
+                request.send(null);
+                if (request.status === 200) {
+                    if (JSON.parse(request.responseText).length == 0) {
+                        break;
+                    } else {
+                        repos = repos.concat(JSON.parse(request.responseText));
+                        page++;
+                    }
+                } else {
+                    break;
+                }
+            }
+            categorizeAndDisplayRepos(repos);
         }
 
 
         function categorizeAndDisplayRepos(repos) {
+            console.log(repos);
+
+            repos.sort((a, b) => {
+                return new Date(b.updated_at) - new Date(a.updated_at);
+            });
             const sourcesBody = sourcesTable.appendChild(document.createElement('tbody'));
             const archivedBody = archivedTable.appendChild(document.createElement('tbody'));
             const forksBody = forksTable.appendChild(document.createElement('tbody'));
@@ -143,7 +163,7 @@
                         updatedCell.style.color = "lightgreen";
                     }
                 }
-                updatedCell.textContent = new Date(repo.updated_at).toLocaleDateString() + " (" + timeSince(new Date(repo.updated_at)) + ")";
+                updatedCell.textContent = timeSince(new Date(repo.updated_at));
 
                 row.appendChild(repoNameCell);
                 row.appendChild(descriptionCell);
@@ -171,22 +191,21 @@
                     const elapsed = Date.now() - date;
 
                     if (elapsed < msPerMinute) {
-                        return rtf1.format(-Math.floor(elapsed / 1000), 'second');
+                        return rtf1.format(-Math.floor(elapsed / 1000), 'second').replace("ago", "");
                     } else if (elapsed < msPerHour) {
-                        return rtf1.format(-Math.floor(elapsed / msPerMinute), 'minute');
+                        return rtf1.format(-Math.floor(elapsed / msPerMinute), 'minute').replace("ago", "");
                     } else if (elapsed < msPerDay) {
-                        return rtf1.format(-Math.floor(elapsed / msPerHour), 'hour');
+                        return rtf1.format(-Math.floor(elapsed / msPerHour), 'hour').replace("ago", "");
                     } else if (elapsed < msPerMonth) {
-                        return rtf1.format(-Math.floor(elapsed / msPerDay), 'day');
+                        return rtf1.format(-Math.floor(elapsed / msPerDay), 'day').replace("ago", "");
                     } else if (elapsed < msPerYear) {
-                        return rtf1.format(-Math.floor(elapsed / msPerMonth), 'month');
+                        return rtf1.format(-Math.floor(elapsed / msPerMonth), 'month').replace("ago", "");
                     } else {
-                        return rtf1.format(-Math.floor(elapsed / msPerYear), 'year');
+                        return rtf1.format(-Math.floor(elapsed / msPerYear), 'year').replace("ago", "");
                     }
 
-                    // if yesterday ago replace to yesterday
                     if (rtf1.format(-Math.floor(elapsed / msPerDay), 'day') == "yesterday") {
-                        return "yesterday";
+                        return "1 day   ";
                     }
                 }
         getRepos(username);
