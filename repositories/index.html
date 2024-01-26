@@ -44,6 +44,28 @@
             cursor: pointer;
         }
 
+        .minute {
+            color: rgb(0, 205, 0);
+        }
+
+        .hour {
+            color: rgb(0, 160, 0);
+        }
+
+        .day {
+            color: rgb(0, 107, 0);
+        }
+
+        .month {
+            color: rgb(0, 42, 0);
+        }
+
+        .year {
+            color: rgb(0, 0, 0);
+        }
+
+
+
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: #131313;
@@ -65,6 +87,26 @@
 
             a {
                 color: #58a6ff;
+            }
+
+            .minute {
+                color: rgb(0, 255, 0);
+            }
+
+            .hour {
+                color: rgb(58, 255, 58);
+            }
+
+            .day {
+                color: rgb(105, 255, 105);
+            }
+
+            .month {
+                color: rgb(170, 255, 170);
+            }
+            
+            .year {
+                color: rgb(255, 255, 255);
             }
 
         }
@@ -141,7 +183,7 @@
             console.log(repos);
 
             repos.sort((a, b) => {
-                return new Date(b.updated_at) - new Date(a.updated_at);
+                return new Date(b.pushed_at) - new Date(a.pushed_at);
             });
             const sourcesBody = sourcesTable.appendChild(document.createElement('tbody'));
             const archivedBody = archivedTable.appendChild(document.createElement('tbody'));
@@ -156,14 +198,18 @@
                 const languageCell = document.createElement('td');
                 languageCell.textContent = repo.language || "Unknown";
                 const updatedCell = document.createElement('td');
-                if (timeSince(new Date(repo.updated_at)).includes("day") || timeSince(new Date(repo.updated_at)).includes("hour") || timeSince(new Date(repo.updated_at)).includes("minute")) {
-                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                        updatedCell.style.color = "green";
-                    } else {
-                        updatedCell.style.color = "lightgreen";
-                    }
+                if (timeSince(new Date(repo.pushed_at)).includes("minute") || timeSince(new Date(repo.pushed_at)).includes("second")) {
+                    updatedCell.classList.add("minute");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("hour")) {
+                    updatedCell.classList.add("hour");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("day")) {
+                    updatedCell.classList.add("day");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("last month")) {
+                    updatedCell.classList.add("month");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("year")) {
+                    updatedCell.classList.add("year");
                 }
-                updatedCell.textContent = timeSince(new Date(repo.updated_at));
+                updatedCell.textContent = timeSince(new Date(repo.pushed_at));
 
                 row.appendChild(repoNameCell);
                 row.appendChild(descriptionCell);
