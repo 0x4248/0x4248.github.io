@@ -60,12 +60,20 @@
             color: rgb(0, 107, 0);
         }
 
-        .month {
+        .month-new {
             color: rgb(0, 84, 0);
         }
 
+        .month {
+            color: rgb(13, 13, 13);
+        }
+
+        .month-old {
+            color: rgb(124, 124, 124);
+        }
+
         .year {
-            color: rgb(0, 0, 0);
+            color: rgb(176, 176, 176);
         }
 
 
@@ -98,7 +106,7 @@
             }
 
             .minute {
-                color: rgb(0, 255, 0);
+                color: rgb(0, 223, 0);
             }
 
             .hour {
@@ -106,15 +114,22 @@
             }
 
             .day {
-                color: rgb(117, 254, 117);
+                color: rgb(105, 251, 105);
             }
 
-            .month {
-                color: rgb(170, 255, 170);
+            .month-new {
+                color: rgb(177, 255, 177);
             }
+            .month {
+                color: rgb(255, 255, 255);
+            }   
+
+            .month-old {
+                color: rgb(138, 138, 138);
+            }   
             
             .year {
-                color: rgb(255, 255, 255);
+                color: rgb(89, 89, 89);
             }
 
         }
@@ -137,7 +152,7 @@
             <th>Repository</th>
             <th>Description</th>
             <th>Language</th>
-            <th>Idle</th>
+            <th>Last Updated</th>
         </tr>
     </table>
     <p>Archived</p>
@@ -146,7 +161,7 @@
             <th>Repository</th>
             <th>Description</th>
             <th>Language</th>
-            <th>Idle</th>
+            <th>Last Updated</th>
         </tr>
     </table>
     <p>Forks</p>
@@ -155,7 +170,7 @@
             <th>Repository</th>
             <th>Description</th>
             <th>Language</th>
-            <th>Idle</th>
+            <th>Last Updated</th>
         </tr>
     </table>
     <p>This page is open source, you can view the source code <a href="https://www.github.com/lewisevans2007/lewisevans2007.github.io/tree/master/repositories" target="_blank">here</a>.</p>
@@ -216,7 +231,15 @@
                 } else if (timeSince(new Date(repo.pushed_at)).includes("day")) {
                     updatedCell.classList.add("day");
                 } else if (timeSince(new Date(repo.pushed_at)).includes("last month")) {
-                    updatedCell.classList.add("month");
+                    updatedCell.classList.add("month-new");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("2 months")) {
+                    updatedCell.classList.add("month");            
+                } else if (timeSince(new Date(repo.pushed_at)).includes("3 months")) {
+                    updatedCell.classList.add("month");        
+                } else if (timeSince(new Date(repo.pushed_at)).includes("4 months")) {
+                    updatedCell.classList.add("month");      
+                } else if (timeSince(new Date(repo.pushed_at)).includes("months")) {
+                    updatedCell.classList.add("month-old");      
                 } else if (timeSince(new Date(repo.pushed_at)).includes("year")) {
                     updatedCell.classList.add("year");
                 }
