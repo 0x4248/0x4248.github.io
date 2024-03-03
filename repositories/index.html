@@ -143,10 +143,12 @@
         <div style="width: 100%;">
             <h1>Lewisevans2007 repository's</h1>
             <hr>
-            <p style="font-size: 12px;">A full list of repositories I have on GitHub.</p>
+            <p style="font-size: 12px;">A full list of repositories I have on GitHub ordered by last updated. Click on the repository name to view the repository on GitHub, forks and archived repositories are also listed further down the page.</p> 
+            <p style="font-size: 12px;">Note: If this page does not load or does not show all of the repository then you could have hit your rate limit.</p>
         </div>
     </div>
-    </p>
+    <p id="status">Loading</p>
+    <p>Sources</p>
     <table id="sourcesTable">
         <tr>
             <th>Repository</th>
@@ -187,6 +189,7 @@
             var request = new XMLHttpRequest();
 
             while (true) {
+                document.getElementById("status").textContent = "Fetching repositories page: " + page;
                 request.open('GET', url + page, false);
                 request.send(null);
                 if (request.status === 200) {
@@ -196,10 +199,15 @@
                         repos = repos.concat(JSON.parse(request.responseText));
                         page++;
                     }
+                } else if (request.status === 403) {
+                    document.getElementById("status").textContent = "Rate limit hit detected, please wait and try again later.";
+                    return;
                 } else {
                     break;
                 }
             }
+            document.getElementById("status").textContent = "";
+            document.getElementById("status").style.display = "none";
             categorizeAndDisplayRepos(repos);
         }
 
