@@ -136,14 +136,14 @@
     </style>
 </head>
 
-<body>
+<body onload="getRepos('lewisevans2007')">
     <div style="display: flex; align-items: center;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
             alt="Git logo" width="50px" height="50px" style="margin-right: 10px;">
         <div style="width: 100%;">
             <h1>Lewisevans2007 repository's</h1>
             <hr>
-            <p style="font-size: 12px;">A full list of repositories I have on GitHub. Note: if this page doesn't load, it's because you are rate limited by GitHub.</p>
+            <p style="font-size: 12px;">A full list of repositories I have on GitHub.</p>
         </div>
     </div>
     </p>
@@ -176,13 +176,12 @@
     <p>This page is open source, you can view the source code <a href="https://www.github.com/lewisevans2007/lewisevans2007.github.io/tree/master/repositories" target="_blank">here</a>.</p>
 
     <script defer>
-        const username = "lewisevans2007";
         const sourcesTable = document.getElementById("sourcesTable");
         const archivedTable = document.getElementById("archivedTable");
         const forksTable = document.getElementById("forksTable");
         var repos = [];
 
-        function getRepos(username) {
+        async function getRepos(username) {
             var url = `https://api.github.com/users/${username}/repos?page=`
             var page = 1;
             var request = new XMLHttpRequest();
@@ -205,8 +204,7 @@
         }
 
 
-        function categorizeAndDisplayRepos(repos) {
-            console.log(repos);
+        async function categorizeAndDisplayRepos(repos) {
 
             repos.sort((a, b) => {
                 return new Date(b.pushed_at) - new Date(a.pushed_at);
@@ -288,7 +286,7 @@
                         return "1 day   ";
                     }
                 }
-        getRepos(username);
+            
     </script>
 
 </body>
