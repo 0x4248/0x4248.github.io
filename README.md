@@ -4,7 +4,7 @@ Welcome to my github page! On this page you will find a collection of projects t
 
 ## Repositories
 
-You can view all my repository's as a table [here](repositeories/index.html) or on github [here](https://www.github.com/0x4248?tab=repositories).
+You can view all my repository's as a table [here](https://0x4248.github.io/repositories_page/) or on github [here](https://www.github.com/0x4248?tab=repositories).
 
 ## Stats
 
