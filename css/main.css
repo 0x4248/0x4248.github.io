@@ -13,6 +13,8 @@ body {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.2s;
 }
 
 .title {
@@ -27,6 +29,8 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: #1d1d1d;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.4s;
 }
 
 a {
@@ -41,23 +45,13 @@ h2 {
     margin-top: 20px;
 }
 
-.header {
-    opacity: 0;
-    animation: fadeIn 1s forwards 0.2s;
-}
-
-.main {
-    opacity: 0;
-    animation: fadeIn 1s forwards 0.4s;
-}   
-
-img:hover {
-    transform: scale(1.1);
+img {
+    transform: scale(1);
     transition: transform 0.2s ease;
 }
 
-img {
-    transform: scale(1);
+img:hover {
+    transform: scale(1.1);
     transition: transform 0.2s ease;
 }
 
