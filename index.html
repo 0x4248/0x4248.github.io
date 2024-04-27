@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,27 +14,111 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            .pixelate {
+                image-rendering: pixelated;
+            }
+        </style>
     </head>
     <body>
         <div class="header">
-            <h1 class="title">Hi im 0x4248</h1>
+            <img src="icon_transparent.png" alt="0x4248" class="pixelate">
+            <h1 id="hello-im"><span class="blinking-cursor">_</span></h1>
+            <a href="#main" class="down-arrow">
+                <i class="bi bi-arrow-down"></i>
+            </a>
         </div>
-        <div class="main">
-            <p>Welcome to my github page, here you will see my projects that are for my personal use or for the public. Everything is free to use and modify</p>
-            <h2>My Projects</h2>
-            <p>All my repositories are hosted on github and are free to use and modify.</p>
-            <p>You can see all the repository's on github <a href="https://github.com/0x4248?tab=repositories">here</a>, or on my repository table list view <a href="https://0x4248.github.io/repositories_page/">here</a> or on AppCenter <a href="https://0x4248.github.io/appcenter/">here</a></p>
-            <h2>Languages</h2>
-            <p>I mainly use python, C++, C, javascript, java and shell scripts. I have used other languages but I mainly use these languages</p>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=0x4248&hide=html,css,jupyter%20notebook&langs_count=40&layout=donut&theme=dark">
-            <h2>Wakatime</h2>
-            <p>Here is my wakatime stats but note that the stats are not 100% accurate since i have used other editors and IDEs that didn't have wakatime installed</p>   
-            <img src="https://github-readme-stats.vercel.app/api/wakatime?username=0x4248&layout=compact&theme=dark">
+        <div class="top-bar">
+            <h1><a href="https://0x4248.github.io">0x4248</a></h1>
+            <a href="https://www.github.com/0x4248"><i class="bi bi-github" style="font-size: 20px;"></i></a>
+        </div>
+        <div class="main" id="main">
+            <div class="section">
+                <h2>Welcome to my github page</h2>
+                <p>Here you will find all my projects, experiments and contributions to the open source community. Almost of all my projects are open source and on github, so feel free to check them out.</p>
+
+                <p>Good job if you know what language and architecture this is written in (and it does work):</p>
+                <pre id="code"></pre>
+            </div>
+            <br>
+            <div class="section">
+                <h2>Projects</h2>
+                <p>You can view all my projects on my <a href="https://www.github.com/0x4248">github</a> page or on <a href="/appcenter">AppCenter</a> which is a site that shows all my projects in a more organized way.</p>
+            </div>
+            <br>
+            <div class="section">
+                <h2>Languages</h2>
+                <p>Here are some of the languages I know:</p>
+                <ul>
+                    <li><i class="bi bi-filetype-py"></i> Python</li>
+                    <li><i class="bi bi-file-earmark-code"></i> C</li>
+                    <li><i class="bi bi-file-earmark-code"></i> C++</li>
+                    <li><i class="bi bi-file-earmark-code"></i> C#</li>
+                    <li><i class="bi bi-filetype-java"></i> Java</li>
+                    <li><i class="bi bi-filetype-html"></i> HTML</li>
+                    <li><i class="bi bi-filetype-css"></i> CSS</li>
+                    <li><i class="bi bi-filetype-js"></i> JavaScript</li>
+                    <li><i class="bi bi-file-earmark-binary"></i> Assembly</li>
+                    <ul>
+                        <li><i class="bi bi-file-earmark-binary"></i> x86 (I only know a bit of x86)</li>
+                        <li><i class="bi bi-file-earmark-binary"></i> ARM (I know more about ARM than x86)</li>
+                    </ul>   
+                    <li><i class="bi bi-filetype-sh"></i> Shell</li>
+                    <ul>
+                        <li><i class="bi bi-filetype-sh"></i> Bash</li>
+                        <li><i class="bi bi-filetype-sh"></i> Fish</li>
+                    </ul>
+                    <li><i class="bi bi-file-earmark-code"></i> Makefile</li>
+                    <li><i class="bi bi-file-earmark-code"></i> CMake</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>Tools</h2>
+                <p>Here are some of the tools I use:</p>
+                <ul>
+                    <li><i class="bi bi-tools"></i> Git</li>
+                    <li><i class="bi bi-tools"></i> GitHub</li>
+                    <li><i class="bi bi-tools"></i> Docker</li>
+                </ul>
+                <h2>Editors</h2>
+                <p>Here are some of the editors I use:</p>
+                <ul>
+                    <li><i class="bi bi-pen-fill"></i> Visual Studio Code</li>
+                    <li><i class="bi bi-pen-fill"></i> NeoVim</li>
+                    <li><i class="bi bi-pen-fill"></i> IntelliJ IDEA</li>
+                    <li><i class="bi bi-pen-fill"></i> PyCharm</li>
+                    <li><i class="bi bi-pen-fill"></i> CLion</li>
+                    <li><i class="bi bi-pen-fill"></i> Nano (For like quick edits)</li>
+                </ul>
+                <h2>Operating Systems</h2>
+                <p>I primarily use macOS and Linux, I use to use Windows but I don't use it anyone due to privacy concerns</p>
+                <h3>Linux distros I use</h3>
+                <p>Im mainly a debian based guy but I also use alpine linux sometimes</p>
+                <ul>
+                    <li><i class="bi bi-terminal"></i> Ubuntu</li>
+                    <li><i class="bi bi-terminal"></i> Kubuntu</li>
+                    <li><i class="bi bi-terminal"></i> Debian</li>
+                    <li><i class="bi bi-terminal"></i> Raspbian</li>
+                    <li><i class="bi bi-terminal"></i> Alpine Linux</li>
+                </ul>   
+            </div>
         </div>
         <div class="footer">
-            <p>0x4248</p>
-            <a href="https://www.github.com/0x4248"><i class="bi bi-github"></i></a>
-            <a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i></a>
+            <div class="flex-left">
+                <img src="icon_transparent.png" alt="0x4248" class="pixelate">
+            </div>
+            <div class="flex-right">
+                <p>0x4248</p>
+                <p><a href="https://www.github.com/0x4248"><i class="bi bi-github"></i> GitHub</a></p>
+                <p><a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a></p>
+                <p><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a></p>
+                <p>Site links:</p>
+                <p><a href="https://0x4248.github.io/appcenter"><i class="bi bi-boxes"></i> AppCenter</a></p>
+            </div>
         </div>  
+        <script src="js/code.js" defer></script>
+        <script src="js/typewriter.js" defer></script>
+        <script src="js/topbar.js" defer></script>
     </body>
 </html>
