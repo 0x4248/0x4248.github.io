@@ -2,14 +2,13 @@ let main = `
 <div class="section">
     <h2>Welcome to my github page</h2>
     <p>Here you will find all my projects, experiments and contributions to the open source community. Almost of all my projects are open source and on github, so feel free to check them out.</p>
-
     <p>Good job if you know what language and architecture this is written in (and it does work):</p>
     <pre id="code"></pre>
 </div>
 <br>
 <div class="section">
     <h2>Projects</h2>
-    <p>You can view all my projects on my <a href="https://www.github.com/0x4248">github</a> page or on <a href="/appcenter">AppCenter</a> which is a site that shows all my projects in a more organized way.</p>
+    <p>You can view all my projects on my <a href="https://www.github.com/0x4248">github</a> page or on <a href="https://0x4248.github.io/appcenter">AppCenter</a> which is a site that shows all my projects in a more organized way.</p>
 </div>
 <br>
 <div class="section">
