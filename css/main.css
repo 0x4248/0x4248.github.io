@@ -15,6 +15,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-main);
     color: var(--color-primary);
@@ -23,8 +27,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
