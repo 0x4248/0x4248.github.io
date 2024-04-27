@@ -58,6 +58,7 @@ function animateTyping(code) {
     let codeHTML = '';
     let interval;
     let inString = false;
+
     function addColor() {
         if (index >= code.length) {
             clearInterval(interval);
@@ -72,11 +73,11 @@ function animateTyping(code) {
             }
 
             if (char === ':') {
-                coloredChar = '<span style="color: lightblue;">:</span>';    
+                coloredChar = '<span style="color: lightblue;">:</span>';
             }
 
             if (char === '.') {
-                coloredChar = '<span style="color: lightblue;">.</span>';    
+                coloredChar = '<span style="color: lightblue;">.</span>';
             }
 
             if (char === '"') {
