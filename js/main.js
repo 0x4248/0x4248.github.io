@@ -57,7 +57,7 @@ let main = `
         <li><i class="bi bi-pen-fill"></i> Nano (For like quick edits)</li>
     </ul>
     <h2>Operating Systems</h2>
-    <p>I primarily use macOS and Linux, I use to use Windows but I don't use it anyone due to privacy concerns</p>
+    <p>I primarily use macOS and Linux, I use to use Windows but I don't use it any more due to privacy concerns</p>
     <h3>Linux distros I use</h3>
     <p>Im mainly a debian based guy but I also use alpine linux sometimes</p>
     <ul>
