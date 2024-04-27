@@ -52,10 +52,13 @@ function checkCodeElementInView() {
 
 checkCodeElementInView();
 
+let already_shown = false;
+
 window.addEventListener('scroll', function() {
     checkCodeElementInView();
-    if (code_element_in_view) {
+    if (code_element_in_view && !already_shown) {
         code = colourCode(code);
         code_element.innerHTML = code + '<span class="blinking-cursor">_</span>';
+        already_shown = true;
     }
 });
