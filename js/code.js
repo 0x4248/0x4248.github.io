@@ -22,18 +22,9 @@ _start:
     svc 0
     mov x8, 93
     mov x0, 0
-    svc 0`
+    svc 0`;
 
 let code_element = document.getElementById('code');
-
-function colourCode(code) {
-    code = code.replace(/mov|ldr|svc|len/g, '<span style="color: lightcoral;">$&</span>');
-    code = code.replace(/\.\w+/g, '<span style="color: lightgreen;">$&</span>');
-    code = code.replace(/_start/g, '<span style="color: lightpink;">$&</span>');
-    code = code.replace(/x[0-9]/g, '<span style="color: lightblue;">$&</span>');
-    code = code.replace(/[0-9]/g, '<span style="color: lightblue;">$&</span>');
-    return code;
-}
 
 
 let code_element_in_view = false;
@@ -57,8 +48,49 @@ let already_shown = false;
 window.addEventListener('scroll', function() {
     checkCodeElementInView();
     if (code_element_in_view && !already_shown) {
-        code = colourCode(code);
-        code_element.innerHTML = code + '<span class="blinking-cursor">_</span>';
+        animateTyping(code);
         already_shown = true;
     }
 });
+
+function animateTyping(code) {
+    let index = 0;
+    let codeHTML = '';
+    let interval;
+    let inString = false;
+    function addColor() {
+        if (index >= code.length) {
+            clearInterval(interval);
+            code_element.innerHTML = codeHTML + '<span class="blinking-cursor">_</span>';
+        } else {
+            let char = code.charAt(index);
+            let coloredChar = char;
+
+            // if , colour code light blue
+            if (char === ',') {
+                coloredChar = '<span style="color: lightblue;">,</span>';
+            }
+
+            if (char === ':') {
+                coloredChar = '<span style="color: lightblue;">:</span>';    
+            }
+
+            if (char === '.') {
+                coloredChar = '<span style="color: lightblue;">.</span>';    
+            }
+
+            if (char === '"') {
+                inString = !inString;
+                coloredChar = '<span style="color: lightgreen;">"</span>';
+            }
+            if (inString) {
+                coloredChar = '<span style="color: lightgreen;">' + char + '</span>';
+            }
+            codeHTML += coloredChar;
+            code_element.innerHTML = codeHTML + '<span class="blinking-cursor">_</span>';
+            index++;
+        }
+    }
+
+    interval = setInterval(addColor, 20); // Adjust the interval duration for speed
+}
