@@ -10,7 +10,6 @@
     --color-secondary: #f7f7f7;
     --background-main: #222;
     --background-light: #2f2f2f;
-    --background-lighter: #3a3a3a;
     --background-dark: #111;
 }
 
@@ -44,7 +43,6 @@ a:hover {
 
 .header {
     background-color: var(--background-light);
-    color: var(--color-primary);
     text-align: center;
     height: 100vh;
     opacity: 0;
@@ -93,11 +91,9 @@ a:hover {
 }
 
 .down-arrow {
-    color: var(--color-primary);
     font-size: 2rem;
     opacity: 0;
     animation: fade 1s ease forwards 4s, move 1s ease infinite 2s;
-    /* put near bottom */
     position: absolute;
     bottom: 2rem;
     left: 50%;
@@ -137,8 +133,6 @@ a:hover {
     }
 }
 
-/* each section is like a card spacing arround it */
-
 .main {
     width: 90%;
     max-width: 800px;
@@ -146,8 +140,7 @@ a:hover {
 }
 
 .section {
-    background-color: var(--background-lighter);
-    color: var(--color-primary);
+    background-color: var(--background-light);
     padding: 2rem;
     margin-top: 10px;
     border-radius: 0.5rem;
@@ -157,7 +150,6 @@ a:hover {
 
 .footer {
     background-color: var(--background-light);
-    color: var(--color-primary);
     padding: 1rem;
     margin-top: 10px;
     display: flex;
@@ -184,7 +176,6 @@ a:hover {
 }
 
 .footer a {
-    color: var(--color-primary);
     text-decoration: none;
 }
 
@@ -196,21 +187,14 @@ a:hover {
     top: 0;
     width: 100%;
     background-color: #0000003b;
-    color: white;
-    text-align: center;
     padding: 10px;
-    z-index: 1000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     opacity: 0;
 }
 
-.top-bar h1 {
-    margin: 0;
-}
-
 .top-bar a {
-    color: white;
     text-decoration: none;
     margin-right: 40px;
 }
@@ -219,6 +203,6 @@ ul {
     list-style-type: none;
 }
 
-li {
-    margin-right: 1rem;
+.pixelate {
+    image-rendering: pixelated;
 }
