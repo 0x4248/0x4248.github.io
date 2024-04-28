@@ -20,7 +20,6 @@ let main = `
         <li><i class="bi bi-file-earmark-code"></i> C++</li>
         <li><i class="bi bi-file-earmark-code"></i> C#</li>
         <li><i class="bi bi-filetype-java"></i> Java</li>
-        <li><i class="bi bi-filetype-html"></i> HTML</li>
         <li><i class="bi bi-filetype-css"></i> CSS</li>
         <li><i class="bi bi-filetype-js"></i> JavaScript</li>
         <li><i class="bi bi-file-earmark-binary"></i> Assembly</li>
@@ -29,10 +28,6 @@ let main = `
             <li><i class="bi bi-file-earmark-binary"></i> ARM (I know more about ARM than x86)</li>
         </ul>   
         <li><i class="bi bi-filetype-sh"></i> Shell</li>
-        <ul>
-            <li><i class="bi bi-filetype-sh"></i> Bash</li>
-            <li><i class="bi bi-filetype-sh"></i> Fish</li>
-        </ul>
         <li><i class="bi bi-file-earmark-code"></i> Makefile</li>
         <li><i class="bi bi-file-earmark-code"></i> CMake</li>
     </ul>
