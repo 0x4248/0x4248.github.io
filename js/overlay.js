@@ -27,4 +27,3 @@ function hideOverlayWindow(id) {
     main.style.transition = "filter 0.5s";
     document.body.style.overflow = "auto";
 }
-
