@@ -40,7 +40,126 @@
             <h1><a href="https://0x4248.github.io">0x4248</a></h1>
             <a href="https://www.github.com/0x4248" aria-label="GitHub"><i class="bi bi-github"></i></a>
         </div>
+        <div id="code-arch" class="overlay-window">
+            <a href="javascript:void(0)" class="close-button" onclick="hideOverlayWindow('code-arch')"><i class="bi bi-arrow-left"></i> Close window</a>
+            <h2>What language is it?</h2>
+            <p>The code that you saw it written in <strong style="font-family: monospace;">Assembly for ARM64 linux</strong> and the code is a simple hello world like program printing my username.</p>
+            <h2>Explanation of the code</h2>
+            <pre>
+.section .data
+    msg:
+        .ascii \"0x4248\\n\" // The string to print
+        len = . - msg        // Len is the length of the string in bytes
+
+.section .text
+    .globl _start            // The entry point of the program
+
+_start:
+    mov x0, 1               // File descriptor 1 is stdout    
+    ldr x1, =msg            // Load the address of the string into x1
+    ldr x2, =len            // Load the length of the string into x2
+    mov x8, 64              // syscall number for write
+    svc 0                   // Make the syscall
+    mov x8, 93              // syscall number for exit 
+    mov x0, 0               // Exit status 0
+    svc 0                   // Make the syscall
+            </pre>
+            <h2>How to compile and run the code</h2>
+            <p>To compile the code you will need to have a cross compiler for ARM64 linux installed on your system. You can get one from <a href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a">here</a>. Once you have the compiler installed you can compile the code with the following command:</p>
+            <pre>aarch64-linux-gnu-as -o hello.o hello.s</pre>  
+            <pre>aarch64-linux-gnu-ld -o hello hello.o</pre>
+            <p>Once you have compiled the code you can run it with the following command:</p>
+            <pre>qemu-aarch64 hello</pre>
+            <p>And you should see the output:</p>
+            <pre>0x4248</pre>
+            <h2>More information</h2>
+            <ul>
+                <li><a href="https://developer.arm.com/documentation/102374/0102/Overview">Learn the arm64 assembly language</a></li>
+                <li><a href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a">ARM GNU Toolchain</a></li>
+                <li><a href="https://wiki.osdev.org/ARM64">OSDev Wiki ARM64</a></li>
+                <li><a href="https://wiki.osdev.org/ARM">OSDev Wiki ARM</a></li>
+            </ul>
+        </div>
         <div class="main" id="main">
+            <div class="section" style="min-height: 665px;">
+                <h2>Welcome to my github page</h2>
+                <p>Here you will find all my projects, experiments and contributions to the open source community. Almost of all my projects are open source and on github, so feel free to check them out.</p>
+                <p>Good job if you know what <a href="javascript:void(0)" c onclick="showOverlayWindow('code-arch')"> language and architecture (Click for more info)</a> this is written in (and it does work):</p>
+                <pre id="code"></pre>
+            </div>
+            <br>
+            <div class="section">
+                <h2>Projects</h2>
+                <p>You can view all my projects on my <a href="https://www.github.com/0x4248">github</a> page or on <a href="https://0x4248.github.io/appcenter">AppCenter</a> which is a site that shows all my projects in a more organized way.</p>
+            </div>
+            <br>
+            <div class="section">
+                <h2>Languages</h2>
+                <p>Here are some of the languages I know:</p>
+                <ul>
+                    <li><i class="bi bi-filetype-py"></i> Python</li>
+                    <li><i class="bi bi-file-earmark-code"></i> C</li>
+                    <li><i class="bi bi-file-earmark-code"></i> C++</li>
+                    <li><i class="bi bi-file-earmark-code"></i> C#</li>
+                    <li><i class="bi bi-filetype-java"></i> Java</li>
+                    <li><i class="bi bi-filetype-css"></i> CSS</li>
+                    <li><i class="bi bi-filetype-js"></i> JavaScript</li>
+                    <li><i class="bi bi-file-earmark-binary"></i> Assembly</li>
+                    <ul>
+                        <li><i class="bi bi-file-earmark-binary"></i> x86 (I only know a bit of x86)</li>
+                        <li><i class="bi bi-file-earmark-binary"></i> ARM (I know more about ARM than x86)</li>
+                    </ul>   
+                    <li><i class="bi bi-filetype-sh"></i> Shell</li>
+                    <li><i class="bi bi-file-earmark-code"></i> Makefile</li>
+                    <li><i class="bi bi-file-earmark-code"></i> CMake</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>Tools</h2>
+                <p>Here are some of the tools I use:</p>
+                <ul>
+                    <li><i class="bi bi-tools"></i> Git</li>
+                    <li><i class="bi bi-tools"></i> GitHub</li>
+                    <li><i class="bi bi-tools"></i> Docker</li>
+                </ul>
+                <h2>Editors</h2>
+                <p>Here are some of the editors I use:</p>
+                <ul>
+                    <li><i class="bi bi-pen-fill"></i> Visual Studio Code</li>
+                    <li><i class="bi bi-pen-fill"></i> NeoVim</li>
+                    <li><i class="bi bi-pen-fill"></i> IntelliJ IDEA</li>
+                    <li><i class="bi bi-pen-fill"></i> PyCharm</li>
+                    <li><i class="bi bi-pen-fill"></i> CLion</li>
+                    <li><i class="bi bi-pen-fill"></i> Nano (For like quick edits)</li>
+                </ul>
+                <h2>Operating Systems</h2>
+                <p>I primarily use macOS and Linux, I use to use Windows but I don't use it any more due to privacy concerns</p>
+                <h3>Linux distros I use</h3>
+                <p>Im mainly a debian based guy but I also use alpine linux sometimes</p>
+                <ul>
+                    <li><i class="bi bi-terminal"></i> Ubuntu</li>
+                    <li><i class="bi bi-terminal"></i> Kubuntu</li>
+                    <li><i class="bi bi-terminal"></i> Debian</li>
+                    <li><i class="bi bi-terminal"></i> Raspbian</li>
+                    <li><i class="bi bi-terminal"></i> Alpine Linux</li>
+                </ul>   
+            </div>
+            <br>
+            <div class="section">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="https://wiki.osdev.org/Main_Page">OSDev Wiki</a></li>
+                    <li><a href="https://wiki.osdev.org/Raspberry_Pi_Bare_Bones">OSDev Wiki Raspberry Pi Bare Bones</a></li>
+                    <li><a href="https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html">Linux Kernel Hacking guides and tutorials</a></li>
+                    <li><a href="https://www.kernel.org/doc/html/latest/index.html">Linux Kernel Documentation</a></li>
+                    <li><a href="https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html">Intel Software Developer Manuals</a></li>
+                    <li><a href="https://developer.arm.com/documentation/ddi0487/latest">ARM Architecture Reference Manual</a></li>
+                    <li><a href="https://developer.arm.com/documentation/102374/0102/Overview">ARM Assembly Language Programming</a></li>
+                    <li><a href="https://docs.python.org/3/">Python 3 Documentation</a></li>
+                    <li><a href="https://en.cppreference.com/w/">C++ Reference</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footer">
             <div class="flex-left">
@@ -53,11 +172,24 @@
                 <p><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a></p>
                 <p>Site links:</p>
                 <p><a href="https://0x4248.github.io/appcenter"><i class="bi bi-boxes"></i> AppCenter</a></p>
+                <br>
+                <p style="color: gray;" id="funny">Press crtl + b its funny</p>
             </div>
         </div>  
-        <script src="js/main.js" defer></script>
+        <script>
+            document.addEventListener('keydown', function(event) {
+                if (event.ctrlKey && event.key === 'b') {
+                    document.body.style.backgroundImage = 'url("meows.webp")';
+                    document.body.style.backgroundSize = 'cover';
+                    document.body.style.backgroundAttachment = 'fixed';
+                    document.body.style.backgroundRepeat = 'no-repeat';
+                    document.getElementById('funny').innerText = 'Refresh the page to go back';
+                }
+            });
+        </script>
         <script src="js/code.js" defer></script>
         <script src="js/typewriter.js" defer></script>
         <script src="js/topbar.js" defer></script>
+        <script src="js/overlay.js" defer></script>
     </body>
 </html>
