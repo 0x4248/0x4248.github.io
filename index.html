@@ -38,7 +38,7 @@
         </div>
         <div class="top-bar">
             <h1><a href="https://0x4248.github.io">0x4248</a></h1>
-            <a href="https://www.github.com/0x4248" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.github.com/0x4248" aria-label="GitHub" style="font-size: 25px;"><i class="bi bi-github"></i></a>
         </div>
         <div id="code-arch" class="overlay-window">
             <a href="javascript:void(0)" class="close-button" onclick="hideOverlayWindow('code-arch')"><i class="bi bi-arrow-left"></i> Close window</a>
@@ -80,6 +80,20 @@ _start:
                 <li><a href="https://wiki.osdev.org/ARM">OSDev Wiki ARM</a></li>
             </ul>
         </div>
+        <div class="overlay-window" id="code-stats">
+            <a href="javascript:void(0)" class="close-button" onclick="hideOverlayWindow('code-stats')"><i class="bi bi-arrow-left"></i> Close window</a>
+            <h2>Code stats</h2>
+            <p>Here are some stats from wakatime and github (Note that the stats are not 100% accurate):</p>
+            <img src="https://github-readme-stats.vercel.app/api/wakatime?username=0x4248&layout=compact&theme=dark" alt="Wakatime stats">
+            <img src="https://github-readme-stats.vercel.app/api?username=0x4248&show_icons=true&theme=dark" alt="GitHub stats">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://wakatime.com/@0x4248"><i class="bi bi-box-arrow-up-left"></i> Wakatime</a></li>
+                <li><a href="https://www.github.com/0x4248"><i class="bi bi-box-arrow-up-left"></i> GitHub</a></li>
+                <li><a href="https://wakatime.com"><i class="bi bi-box-arrow-up-left"></i> Wakatime</a></li>
+                <li><a href="https://github.com/anuraghazra/github-readme-stats"><i class="bi bi-box-arrow-up-left"></i> GitHub Readme Stats</a></li>
+            </ul>
+        </div>
         <div class="main" id="main">
             <div class="section" style="min-height: 665px;">
                 <h2>Welcome to my github page</h2>
@@ -90,12 +104,12 @@ _start:
             <br>
             <div class="section">
                 <h2>Projects</h2>
-                <p>You can view all my projects on my <a href="https://www.github.com/0x4248">github</a> page or on <a href="https://0x4248.github.io/appcenter">AppCenter</a> which is a site that shows all my projects in a more organized way.</p>
+                <p>You can view all my projects on my <a href="https://www.github.com/0x4248">github</a> page or on <a href="https://0x4248.github.io/appcenter"><i class="bi bi-boxes"></i> AppCenter</a> which is a site that shows all my projects in a more organized way.</p>
             </div>
             <br>
             <div class="section">
                 <h2>Languages</h2>
-                <p>Here are some of the languages I know:</p>
+                <p>Here are some of the languages I know <a href="javascript:void(0)" onclick="showOverlayWindow('code-stats')"> (Click for more info)</a>:</p>
                 <ul>
                     <li><i class="bi bi-filetype-py"></i> Python</li>
                     <li><i class="bi bi-file-earmark-code"></i> C</li>
@@ -147,20 +161,60 @@ _start:
             </div>
             <br>
             <div class="section">
-                <h2>Useful Links</h2>
+                <h2>Useful links</h2>
+                <p>Here are some useful links that I use:</p>
+                <h3>OS Development</h3>
                 <ul>
-                    <li><a href="https://wiki.osdev.org/Main_Page">OSDev Wiki</a></li>
-                    <li><a href="https://wiki.osdev.org/Raspberry_Pi_Bare_Bones">OSDev Wiki Raspberry Pi Bare Bones</a></li>
-                    <li><a href="https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html">Linux Kernel Hacking guides and tutorials</a></li>
-                    <li><a href="https://www.kernel.org/doc/html/latest/index.html">Linux Kernel Documentation</a></li>
-                    <li><a href="https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html">Intel Software Developer Manuals</a></li>
-                    <li><a href="https://developer.arm.com/documentation/ddi0487/latest">ARM Architecture Reference Manual</a></li>
-                    <li><a href="https://developer.arm.com/documentation/102374/0102/Overview">ARM Assembly Language Programming</a></li>
-                    <li><a href="https://docs.python.org/3/">Python 3 Documentation</a></li>
-                    <li><a href="https://en.cppreference.com/w/">C++ Reference</a></li>
+                    <li><a href="https://wiki.osdev.org/Main_Page"><i class="bi bi-box-arrow-up-left"></i> OSDev Wiki</a></li>
+                    <li><a href="https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/"><i class="bi bi-box-arrow-up-left"></i> Raspberry Pi Bare Bones</a></li>
+                    <li><a href="https://wiki.osdev.org/ARM"><i class="bi bi-box-arrow-up-left"></i> OSDev Wiki ARM</a></li>
+                    <li><a href="https://wiki.osdev.org/ARM64"><i class="bi bi-box-arrow-up-left"></i> OSDev Wiki ARM64</a></li>
+                </ul>
+                <h3>Linux Kernel</h3>
+                <ul>
+                    <li><a href="https://www.kernel.org/doc/html/latest/"><i class="bi bi-box-arrow-up-left"></i> Linux Kernel Documentation</a></li>
+                    <li><a href="https://www.kernel.org/doc/html/latest/kernel-hacking/index.html"><i class="bi bi-box-arrow-up-left"></i> Kernel Hacking Guide</a></li>
+                    <li><a href="https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html"><i class="bi bi-box-arrow-up-left"></i> Unreliable Guide To Hacking The Linux Kernel</a></li>
+                    <li><a href="https://www.github.com/0x4248/linux"><i class="bi bi-box-arrow-up-left"></i> My Linux Kernel fork</a></li>
+                </ul>
+                <h3>Python</h3>
+                <ul>
+                    <li><a href="https://docs.python.org/3/"><i class="bi bi-box-arrow-up-left"></i> Python Documentation</a></li>
+                    <li><a href="https://www.github.com/0x4248?tab=repositories&q=&type=&language=python&type=source"><i class="bi bi-box-arrow-up-left"></i> My Python projects</a></li>
+                    <li><a href="https://packaging.python.org/"><i class="bi bi-box-arrow-up-left"></i> Python Packaging Guide</a></li>
+                    <li><a href="https://www.python.org/dev/peps/pep-0008/"><i class="bi bi-box-arrow-up-left"></i> PEP 8</a></li>
+                </ul>   
+                <h3>Web Development</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><i class="bi bi-box-arrow-up-left"></i> MDN Web Docs</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><i class="bi bi-box-arrow-up-left"></i> MDN CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="bi bi-box-arrow-up-left"></i> MDN JavaScript</a></li>
+                    <li><a href="https://www.w3schools.com/"><i class="bi bi-box-arrow-up-left"></i> W3Schools</a></li>
+                    <li><a href="https://www.github.com/0x4248?tab=repositories&q=&type=&language=html&type=source"><i class="bi bi-box-arrow-up-left"></i> My Web projects</a></li>
+                </ul>
+                <h3>C</h3>
+                <ul>
+                    <li><a href="https://www.cprogramming.com/"><i class="bi bi-box-arrow-up-left"></i> C Programming</a></li>
+                    <li><a href="https://gcc.gnu.org/"><i class="bi bi-box-arrow-up-left"></i> GCC Compiler</a></li>
+                    <li><a href="https://gcc.gnu.org/onlinedocs/gcc/"><i class="bi bi-box-arrow-up-left"></i> GCC Documentation</a></li>
+                    <li><a href="https://www.github.com/0x4248?tab=repositories&q=&type=&language=c&type=source"><i class="bi bi-box-arrow-up-left"></i> My C projects</a></li>
+                </ul>
+                <h3>C++</h3>
+                <ul>
+                    <li><a href="https://www.learncpp.com/"><i class="bi bi-box-arrow-up-left"></i> Learn C++</a></li>
+                    <li><a href="https://www.github.com/0x4248?tab=repositories&q=&type=&language=c%2B%2B&type=source"><i class="bi bi-box-arrow-up-left"></i> My C++ projects</a></li>
+                </ul>
+                <h3>Java</h3>
+                <ul>
+                    <li><a href="https://www.oracle.com/java/"><i class="bi bi-box-arrow-up-left"></i> Java</a></li>
+                    <li><a href="https://www.jetbrains.com/idea/"><i class="bi bi-box-arrow-up-left"></i> IntelliJ IDEA</a></li>
+                    <li><a href="https://www.oracle.com/java/technologies/downloads/"><i class="bi bi-box-arrow-up-left"></i> Java downloads</a></li>
+                    <li><a href="https://docs.oracle.com/en/java/javase/22/"><i class="bi bi-box-arrow-up-left"></i> JDK Documentation</a></li>
+                    <li><a href="https://www.github.com/0x4248?tab=repositories&q=&type=&language=java&type=source"><i class="bi bi-box-arrow-up-left"></i> My Java projects</a></li>
                 </ul>
             </div>
         </div>
+        <br>
         <div class="footer">
             <div class="flex-left">
                 <img src="icon_transparent.png" alt="0x4248" class="pixelate">
@@ -182,7 +236,9 @@ _start:
                     document.body.style.backgroundImage = 'url("meows.webp")';
                     document.body.style.backgroundSize = 'cover';
                     document.body.style.backgroundAttachment = 'fixed';
-                    document.body.style.backgroundRepeat = 'no-repeat';
+                    document.body.style.backgroundRepeat = 'repeat';
+                    document.body.style.backgroundPosition = 'center';
+                    document.body.style.backgroundSize = '1000px';
                     document.getElementById('funny').innerText = 'Refresh the page to go back';
                 }
             });
