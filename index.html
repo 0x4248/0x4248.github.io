@@ -241,19 +241,7 @@ _start:
                 <p style="color: gray;" id="funny">Press ctrl + b its funny</p>
             </div>
         </div>  
-        <script>
-            document.addEventListener('keydown', function(event) {
-                if (event.ctrlKey && event.key === 'b') {
-                    document.body.style.backgroundImage = 'url("meows.webp")';
-                    document.body.style.backgroundSize = 'cover';
-                    document.body.style.backgroundAttachment = 'fixed';
-                    document.body.style.backgroundRepeat = 'repeat';
-                    document.body.style.backgroundPosition = 'center';
-                    document.body.style.backgroundSize = '1000px';
-                    document.getElementById('funny').innerText = 'Refresh the page to go back';
-                }
-            });
-        </script>
+        <script src="js/sauce.js" defer></script>
         <script src="js/code.js" defer></script>
         <script src="js/typewriter.js" defer></script>
         <script src="js/topbar.js" defer></script>

@@ -50,6 +50,7 @@ a:hover {
 
 .header {
     background-color: var(--background-light);
+    backdrop-filter: blur(5px);
     text-align: center;
     height: 100vh;
     opacity: 0;
@@ -148,6 +149,7 @@ a:hover {
 
 .section {
     background-color: var(--background-light);
+    backdrop-filter: blur(5px);
     padding: 2rem;
     margin-top: 10px;
     border-radius: 0.5rem;
@@ -157,6 +159,7 @@ a:hover {
 
 .footer {
     background-color: var(--background-light);
+    backdrop-filter: blur(5px);
     padding: 1rem;
     margin-top: 10px;
     display: flex;
@@ -199,6 +202,7 @@ a:hover {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     opacity: 0;
+    z-index: 1;
 }
 
 .top-bar a {
