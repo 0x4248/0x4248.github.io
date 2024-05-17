@@ -12,7 +12,7 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     var topBar = document.querySelector('.top-bar');
 
-    if (scrollPosition > vh * 100) {
+    if (scrollPosition > vh * 110) {
         if (!set) {
             fadeIn(topBar);
             set = true;

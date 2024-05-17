@@ -29,15 +29,18 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
+        <div class="cursor"></div>  
+        <div class="cursor-inner"></div>    
+        
         <div class="header">
             <img src="icon_transparent.png" alt="0x4248" class="pixelate">
             <h1 id="hello-im"><span class="blinking-cursor">_</span></h1>
-            <a href="#main" class="down-arrow" aria-label="Scroll down">
+            <a href="#main" class="down-arrow" aria-label="Scroll down" style="cursor: none;">
                 <i class="bi bi-arrow-down"></i>
             </a>
         </div>
         <div class="top-bar">
-            <h1><a href="https://0x4248.github.io">0x4248</a></h1>
+            <h1><a href="https://0x4248.github.io">0x4248</a></h1>  
             <a href="https://www.github.com/0x4248" aria-label="GitHub" style="font-size: 25px;"><i class="bi bi-github"></i></a>
         </div>
         <div id="code-arch" class="overlay-window">
@@ -247,5 +250,6 @@ _start:
         <script src="js/typewriter.js" defer></script>
         <script src="js/topbar.js" defer></script>
         <script src="js/overlay.js" defer></script>
+        <script src="js/cursor.js" defer></script>
     </body>
 </html>
