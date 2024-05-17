@@ -91,56 +91,6 @@ a:hover {
     animation: blink 1s infinite;
 }
 
-.cursor {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.239);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    position: fixed;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 100000;
-    transition: width 0.2s ease, height 0.2s ease, border-radius 0.2s ease;
-
-}
-
-.cursor-inner {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.447);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    position: fixed;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 100000;
-    transition: width 0.2s ease, height 0.2s ease, border-radius 0.2s ease;
-}
-
-.cursor.hover {
-    border-radius: 10px;
-}  
-
-.cursor-inner.hover {
-    width: 25px;
-    height: 25px;   
-    border-radius: 5px;
-}
-
-.cursor.scroll {
-    height: 40px;
-    width: 20px;
-    border-radius: 10px;    
-}
-
-.cursor-inner.scroll {
-    width: 10px;
-    height: 10px;
-}
-
 @keyframes blink {
     0%, 100% {
         opacity: 1;
