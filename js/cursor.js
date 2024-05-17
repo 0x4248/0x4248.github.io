@@ -5,8 +5,14 @@
  * By: 0x4248
  */
 
-let innerCursorPos = { x: 0, y: 0 };
-let targetPos = { x: 0, y: 0 };
+let innerCursorPos = {
+    x: 0,
+    y: 0
+};
+let targetPos = {
+    x: 0,
+    y: 0
+};
 let scrollTimer = null;
 
 document.addEventListener('mousemove', (e) => {
