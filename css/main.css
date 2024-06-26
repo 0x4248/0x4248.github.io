@@ -19,7 +19,6 @@ html {
     scrollbar-color: var(--color-primary) var(--background-light);
     --webkit-scrollbar-width: thin;
     --webkit-scrollbar-color: var(--color-primary) var(--background-light);
-
 }
 
 body {
