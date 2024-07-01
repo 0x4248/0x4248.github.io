@@ -119,3 +119,43 @@ a:hover {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .top-bar a {
+        font-size: 1rem;
+    }
+
+    .top-bar-left {
+        width: 80%;
+    }
+    
+    .top-bar-right {
+        width: 20%;
+    }
+}
+
+.main {
+    opacity: 0;
+}
+
+.section {
+    opacity: 0;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main {
+    animation: fadeIn 1s forwards 0.2s;
+}
+
+.section {
+    animation: fadeIn 1s forwards 0.4s;
+}
