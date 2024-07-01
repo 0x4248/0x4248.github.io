@@ -1,0 +1,19 @@
+/* 0x4248.github.io
+ * My github page
+ * GitHub: https:///www.github.com/0x4248
+ * Licence: GNU General Public License v3.0
+ * By: 0x4248
+ */
+
+:root {
+    --background-colour-dark: #0a0a0a;
+    --background-colour-light: #1b1b1b;
+    --light-gray: #aaaaaa;
+    --text-colour: #f2f2f2;
+    --text-alt-colour: #4a95ec;
+    --text-alt-colour-darker: #3976bc;
+    --dot-bg: var(--background-colour-dark);
+    --dot-color: #272727;
+    --dot-size: 2px;
+    --dot-space: 22px;
+}

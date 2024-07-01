@@ -1,0 +1,43 @@
+/* 0x4248.github.io
+ * My github page
+ * GitHub: https:///www.github.com/0x4248
+ * Licence: GNU General Public License v3.0
+ * By: 0x4248
+ */
+
+.footer {
+    background-color: var(--background-colour-light);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    margin-top: 10px;
+    display: flex;
+}
+
+.flex-left{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.flex-right{
+    margin-right: auto;
+}
+
+.flex-right p {
+    margin: 0;
+}
+
+.footer img {
+    width: 80px;
+    height: 80px;
+    margin: 0 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-colour);
+}
+
+.pixelate {
+    image-rendering: pixelated;
+}

@@ -1,0 +1,48 @@
+/* 0x4248.github.io
+ * My github page
+ * GitHub: https:///www.github.com/0x4248
+ * Licence: GNU General Public License v3.0
+ * By: 0x4248
+ */
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile h1 {
+    font-size: 2rem;
+}
+
+.profile p {
+    margin: 0;
+    color: var(--light-gray);
+}
+
+.profile-left {
+    width: 50%;
+}
+
+.profile-right {
+    width: 50%;
+    text-align: right;
+}
+
+.profile img {
+    border-radius: 10px;
+}
+
+.flag {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.flag.asexual {
+    background: linear-gradient(black 25%, darkgray 0 50%, white 0 75%, #a50089 0);
+}
+
+.flag.aromantic {
+    background: linear-gradient(#0a2 20%, #7d6 0 40%, white 0 60%, darkgray 0 80%, black 0)
+}
