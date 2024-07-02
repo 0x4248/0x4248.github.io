@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>0x4248 github page</title>
-        <meta name="description" content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
+        <meta name="description" content="Projects page for 0x4248's github page">
         <meta name="author" content="0x4248">
         <meta name="keywords" content="0x4248, github, page, projects, code, software, development, experiments">
-        <meta name="og:title" content="0x4248 github page">
-        <meta name="og:description" content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
+        <meta name="og:title" content="0x4248 github page - Projects">
+        <meta name="og:description" content="Projects page for 0x4248's github page">
         <meta name="og:image" content="icon_transparent.png">
         <meta name="og:url" content="https://0x4248.tech">
         <meta name="og:site_name" content="0x4248 github page">
@@ -48,54 +48,19 @@
             <div class="top-bar-right">
                 <a href="https://www.github.com/0x4248" style="margin-right: 30px;"><i class="bi bi-github"></i></a>
             </div>
-        </div>   
+        </div>    
         <div class="main">
             <div style="text-align:center;">
-                <h1 style="font-size: 5rem;color: var(--text-colour);margin-top:80px">0x4248</h1>
-                <h1 id="hello-im"><span class="blinking-cursor">_</span></h1>
+                <h1 style="font-size: 5rem;color: var(--text-colour);margin-top:80px">Page unavailable</h1>
             </div>
             <br style="margin-top:20px">
             <div class="section">
-                <h1>Welcome to my site</h1>
-                <p>Welcome to my website, here you will find all my projects and content I created. You can find out more about me on the <a href="https://0x4248.tech/AboutMe">about me</a> page. If you want to see my projects please see my <a href="https://www.github.com/0x4248">github</a> page.</p>
+                <h2>Under construction</h2>
+                <p>This page is currently under construction but should be soon available. Please check back later.</p>
+                <h3>For those who really want to see it?</h3>
+                <p>Navigate to the previous page and append <code>?Unstable=true</code> to the URL. Or click the button below that will redirect using javascript</p>
+                <button onclick="redirectBack()">Go back</button>
             </div>
-            <br>
-            <div class="section">
-                <h2>Quick links</h2>
-                <p>Here are some quick links to navigate easier around my site.</p>
-                <h3>Site links</h3>
-                <div class="halfsplit-gallery">
-                    <div class="section-border-compact">
-                        <h3><a href="https://0x4248.tech/Blog"><i class="bi bi-box-arrow-up-left"></i> Blog</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://0x4248.tech/pages/projects"><i class="bi bi-box-arrow-up-left"></i> Projects</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://0x4248.tech/AboutMe"><i class="bi bi-box-arrow-up-left"></i> About Me</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://0x4248.tech/blix"><i class="bi bi-box-arrow-up-left"></i> Blix ref sheet</a>
-                    </div>
-                </div>
-                <br>
-                <h3>External links</h3>
-                <div class="halfsplit-gallery">
-                    <div class="section-border-compact">
-                        <h3><a href="https://www.github.com/0x4248"><i class="bi bi-box-arrow-up-left"></i> Github</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-box-arrow-up-left"></i> OpenStreetMap</a></h3>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="section">
-                <h2>Recent news</h2>
-                <div id="news">
-                </div>
-            </div>
-        </div>
         <br style="margin-top:20px">
         <div class="footer">
             <div class="flex-left">
@@ -117,8 +82,17 @@
                 <p><a href="https://0x4248.tech/AboutMe"><i class="bi bi-person"></i> About Me</a></p>
                 <p><a href="https://0x4248.tech/blix"><i class="bi bi-file-earmark-image"></i> Blix ref sheet</a></p>
             </div>
-        </div>  
-        <script src="/js/news.js" defer></script>
-        <script src="/js/typewriter.js" defer></script>
+        </div>
+        <script>
+            function redirectBack() {
+                let url = window.location.href;
+                let from = url.split("?from=")[1];
+                if (from) {
+                    window.location.href = from + "?Unstable=true";
+                } else {
+                    window.location.href = "/";
+                }
+            }
+        </script>
     </body>
 </html>
