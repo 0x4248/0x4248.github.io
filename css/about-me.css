@@ -46,3 +46,19 @@
 .flag.aromantic {
     background: linear-gradient(#0a2 20%, #7d6 0 40%, white 0 60%, darkgray 0 80%, black 0)
 }
+
+.aboutme-image {
+    width: 400px; 
+    height: 500px; 
+    object-fit: cover; 
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutme-image {
+        width: 200px;
+        height: 250px;
+        margin-left: 5px;
+    }
+}
