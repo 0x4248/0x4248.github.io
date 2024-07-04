@@ -1,6 +1,12 @@
 {
     "News": [
         {
+            "Title": "About me updated",
+            "Description": "The 'About me' section has been updated. Check it out!",
+            "Date": "2024-07-04",
+            "Link": "/AboutMe"
+        },
+        {
             "Title": "Site revamp",
             "Description": "The site has undergone a major revamp. Check it out!",
             "Date": "2024-07-01"

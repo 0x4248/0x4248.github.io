@@ -30,7 +30,7 @@ function getNews() {
                 } else {
                     newsElement.innerHTML = `
                         <div class="section-border-compact">
-                            <h3><a href="${link}">${title}</a></h3>
+                            <h3><a href="${link}"><i class="bi bi-box-arrow-up-left"></i> ${title}</a></h3>
                             <p style="color: var(--light-gray);">${date}</p>
                             <p>${description}</p>
                         </div>
