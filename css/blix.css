@@ -1,0 +1,109 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-left{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.flex-right{
+    margin-right: auto;
+}
+
+.title {
+    opacity: 0;
+    animation: fade 1s ease forwards;
+}
+
+.main {
+    opacity: 0;
+    animation: fade 1s ease forwards 0.2s;
+}
+
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+    opacity: 0;
+    animation: fade 1s ease forwards 0.5s;
+}
+
+.main p, .main a, .main code {
+    opacity: 0;
+    animation: fade 1s ease forwards 0.8s;
+}
+
+.main img {
+    opacity: 0;
+    animation: fade 1s ease forwards 1s;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.pixelate {
+    image-rendering: pixelated;
+}
+
+.colour {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.colour:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.img-gallery img {
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+
+.img-gallery img:hover {
+    transform: scale(1.1);
+
+}
+
+.colour-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid var(--background-dark);
+    display: inline-block;
+    margin-right: 5px;  
+    color: #00000000;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.colour-circle:hover {
+    background-color: black !important;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    border: 0px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+.section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
