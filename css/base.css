@@ -199,6 +199,9 @@ button:hover {
     opacity: 0;
 }
 
+.section-border {
+    opacity: 0;
+}
 
 @keyframes fadeIn {
     from {
@@ -215,4 +218,12 @@ button:hover {
 
 .section {
     animation: fadeIn 1s forwards 0.4s;
+}
+
+.section-border {
+    animation: fadeIn 1s forwards 0.6s;
+}
+
+.section-border-compact {
+    animation: fadeIn 1s forwards 0.6s;
 }

@@ -1,14 +1,19 @@
+<!-- 0x4248's website -->
+<!-- This website is fully open source, yeah really -->
+<!-- And most of the code is "readable" I think -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>0x4248 github page</title>
+        <meta name="description" content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
+        <meta name="og:description" content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
+
+        <!-- META DATA -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>0x4248 github page</title>
-        <meta name="description" content="Projects page for 0x4248's github page">
         <meta name="author" content="0x4248">
         <meta name="keywords" content="0x4248, github, page, projects, code, software, development, experiments">
-        <meta name="og:title" content="0x4248 github page - Projects">
-        <meta name="og:description" content="Projects page for 0x4248's github page">
+        <meta name="og:title" content="0x4248 github page">
         <meta name="og:image" content="icon_transparent.png">
         <meta name="og:url" content="https://0x4248.tech">
         <meta name="og:site_name" content="0x4248 github page">
@@ -20,91 +25,70 @@
         <meta name="og:locale:alternate" content="en_NZ">
         <meta name="og:locale:alternate" content="en_ZA">
         <meta name="og:locale:alternate" content="en_IN">
+
+        <!-- OTHER META DATA -->
         <meta name="twitter:image" content="icon_transparent.png">
         <meta name="twitter:card" content="summary">
         <meta name="theme-color" content="#000000">
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/base.css">
-        <link rel="stylesheet" href="/css/colours.css">
-        <link rel="stylesheet" href="/css/footer.css">
         <link rel="icon" href="favicon.ico">
+
+        <!-- FONTS AND ICONS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="/css/colours.css">
+        <link rel="stylesheet" href="/css/footer.css">
     </head>
     <body>
+        <!-- TOP BAR -->
         <div class="top-bar">
             <div class="top-bar-left">
                 <strong><a href="/">0x4248</a></strong>
                 <a href="https://0x4248.tech/Blog">Blog</a>
-                <a href="/Projects"><strong>Projects</strong></a>
+                <a href="/pages/projects">Projects</a>
                 <a href="/AboutMe">About Me</a>
             </div>
             <div class="top-bar-right">
                 <a href="https://www.github.com/0x4248" style="margin-right: 30px;"><i class="bi bi-github"></i></a>
             </div>
-        </div>    
+        </div>   
+
+        <!-- MAIN CONTENT -->
         <div class="main">
             <div style="text-align:center;">
-                <h1 style="font-size: 5rem;color: var(--text-colour);margin-top:80px">Projects</h1>
+                <h1 class="title">Arch Linux</h1>
+                <p class="subtitle">A linux distribution for advanced users</p>
             </div>
             <br style="margin-top:20px">
             <div class="section">
-                <h2>Primary projects on GitHub</h2>
-                <p>These are the main projects I am working on or have worked on in the past. They are hosted on GitHub and are open source.</p>
-                <!-- Main: lab_space, Shell, linux, light_builtins, OpenSky, JScan -->
-                <div class="halfsplit-gallery">
-                    <div class="section-border-compact">
-                        <h3><a href="https://github.com/0x4248/lab_space"><i class="bi bi-box-arrow-up-left"></i> Lab Space</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://github.com/0x4248/Shell"><i class="bi bi-box-arrow-up-left"></i> Shell</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://github.com/0x4248/linux"><i class="bi bi-box-arrow-up-left"></i> Linux</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://github.com/0x4248/light_builtins"><i class="bi bi-box-arrow-up-left"></i> Light Builtins</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://github.com/0x4248/OpenSky"><i class="bi bi-box-arrow-up-left"></i> OpenSky</a></h3>
-                    </div>
-                    <div class="section-border-compact">
-                        <h3><a href="https://github.com/0x4248/JScan"><i class="bi bi-box-arrow-up-left"></i> JScan</a></h3>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="section">
-                <h2>Things im currently learning and want to learn in the future</h2>
+                <h2 id="introduction">Introduction</h2>
+                <p>Arch linux is a lightweight and flexible linux distribution that
+                tries to Keep It Simple. It is a rolling release distribution, which
+                means that you install it once and it will keep updating itself. This is
+                in contrast to distributions like Ubuntu, which have a new release every
+                6 months.</p>
+                <h2 id="installation">Installation</h2>
+                <p>The installation process is a bit more involved than other
+                distributions, but it is well documented on the <a
+                href="https://wiki.archlinux.org/index.php/Installation_guide">Arch
+                Wiki</a>.</p>
+                <h2 id="hardware">Hardware</h2>
                 <ul>
-                    <li>Go</li>
-                    <li>x86 OS development</li>
-                    <li>Learning UART hacking</li>
-                </ul>
-                <p>I have many more projects over at my github page <a href="https://www.github.com/0x4248">here</a>.</p>
-                <h2>Current and future hacking projects</h2>
-                <p>Here are some of the projects I am currently working on or want to work on in the future. A hacking project for me is anything that involves understanding how something works and modifying it to do something it was not intended to do or to improve it.</p>
-                <p>These projects can range from modifying hardware, software, or even learning to build something from scratch and understanding how it works.</p>
-                <ul>
-                    <li>Plusnet Hub One</li>
-                    <ul>
-                        <li>Hardware analysis (Seeming difficult to take apart)</li>
-                        <li>Also have the hub two to compare</li>
-                    </ul>
-                    <li>OpenBIOS (Modifying and running in QEMU)</li>
-                    <li>Custom Linux for the Raspberry Pi 4</li>
-                    <li>Custom PI Pico OS</li>
-                    <li>SerneityOS (Building from source and modifying)</li>
-                    <li>TI Nspire CX II (Trying to put Linux on it, in progress but difficult)</li>
+                <li><a href="/pages/wiki/ArchLinux/RazerBlade15">Razer blade 15</a></li>
                 </ul>
             </div>
         </div>
+
+        <!-- FOOTER -->
         <br style="margin-top:20px">
         <div class="footer">
             <div class="flex-left">
