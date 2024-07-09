@@ -220,14 +220,6 @@ button:hover {
     animation: fadeIn 1s forwards 0.4s;
 }
 
-.section-border {
-    animation: fadeIn 1s forwards 0.6s;
-}
-
-.section-border-compact {
-    animation: fadeIn 1s forwards 0.6s;
-}
-
 .blix-peek {
     width : 200px;
     margin-top: -200px;
