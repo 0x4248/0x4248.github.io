@@ -1,6 +1,18 @@
 {
     "News": [
         {
+            "Title": "New pages section",
+            "Description": "A new section has been added to the site. Here you can find all the main sections of the site.",
+            "Date": "2024-07-10",
+            "Link": "/Pages"
+        },
+        {
+            "Title": "Added wiki section",
+            "Description": "A new wiki section has been added. Here will be posted various articles and guides.",
+            "Date": "2024-07-8",
+            "Link": "/Wiki"
+        },
+        {
             "Title": "About me updated",
             "Description": "The 'About me' section has been updated. Check it out!",
             "Date": "2024-07-04",
