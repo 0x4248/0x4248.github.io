@@ -1,6 +1,12 @@
 {
     "News": [
         {
+            "Title": "New design page",
+            "Description": "See how 0x4248 is designed with the reference sheet.",
+            "Date": "2024-07-10",
+            "Link": "/Pages/Design",
+        },
+        {
             "Title": "New pages section",
             "Description": "A new section has been added to the site. Here you can find all the main sections of the site.",
             "Date": "2024-07-9",
