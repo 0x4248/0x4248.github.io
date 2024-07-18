@@ -7,6 +7,10 @@
         {
             "id": "abt",
             "to": "https://0x4248.tech/AboutMe"
+        },
+        {
+            "id": "xe",
+            "to": "https://0x4248.tech/pages/fursonas/xeno"
         }
     ]
 }
