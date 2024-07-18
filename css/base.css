@@ -64,7 +64,7 @@ button {
     background-color: var(--background-colour-dark);
     color: var(--text-colour);
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
     transition: transform 0.3s;
 }
 
@@ -159,7 +159,7 @@ button:hover {
 .title {
     font-size: 5rem;
     color: var(--text-colour);
-    margin-top:80px
+    margin-top: 80px;
 }
 
 .subtitle {
