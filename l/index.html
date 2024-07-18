@@ -7,8 +7,28 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+            :root {
+                --background-colour-dark: #0a0a0a;
+                --background-colour-light: #1b1b1b;
+                --light-gray: #aaaaaa;
+                --text-colour: #f2f2f2;
+                --text-alt-colour: #4a95ec;
+                --text-alt-colour-darker: #3976bc;
+                --dot-bg: var(--background-colour-dark);
+                --dot-color: #272727;
+                --dot-size: 2px;
+                --dot-space: 22px;
+            }
+            html {
+                background:
+                    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+                    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+                    var(--dot-color);     
+            }
             body {
-                background-color: black;
+                font-family: Arial, sans-serif;
+                font-size: 10px;
+                color: rgb(77, 77, 77);
             }
         </style>
     </head>
