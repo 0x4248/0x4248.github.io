@@ -195,11 +195,7 @@ button:hover {
     opacity: 0;
 }
 
-.section {
-    opacity: 0;
-}
-
-.section-border {
+.section .section-border {
     opacity: 0;
 }
 
@@ -216,7 +212,7 @@ button:hover {
     animation: fadeIn 1s forwards 0.2s;
 }
 
-.section {
+.section .section-border {
     animation: fadeIn 1s forwards 0.4s;
 }
 

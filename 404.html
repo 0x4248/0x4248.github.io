@@ -71,8 +71,11 @@
             </div>
             <br style="margin-top:20px">
             <div class="section">
-                <h1>It seems this page does not exist</h1>
-                <p>Maybe you can find what you are looking for <a href="/">here</a></p>
+                <h2>Heres what I tried:</h2>
+                <p>I ran this</p>
+                <code id="code"></code> but only got <code>0</code>
+                <h2>What now?</h2>
+                <p>Well since not even UNIX commands can find the page you are looking for, I suggest you go back to the <a href="/">home page</a> or you can look at the <a href="/pages">pages</a> that are available.</p>
             </div>
             <br style="margin-top:360px">
         </div>
@@ -100,5 +103,8 @@
                 <p><a href="https://0x4248.tech/pages/blix"><i class="bi bi-file-earmark-image"></i> Blix ref sheet</a></p>
             </div>
         </div>  
+        <script>
+            document.getElementById("code").innerText = "find . -type f -name \"*.html\" | grep \"" + window.location.pathname + "\" | wc -l";
+        </script>
     </body>
 </html>
