@@ -19,6 +19,10 @@
         {
             "id": "ms-acc",
             "to": "https://support.microsoft.com/en-gb/account-billing/get-help-with-your-microsoft-account-ace6f3b3-e2d3-aeb1-6b96-d2e9e7e52133?WT.mc_id=365AdminCSH_Smc"
+        },
+        {
+            "id": "cs",
+            "to": "https://0x4248.tech/pages/pastes/croudstrike-outage"
         }
     ]
 }
