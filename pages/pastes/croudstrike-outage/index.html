@@ -75,10 +75,18 @@
                 <p>Many computers are showing a BSOD screen with <code>PAGE_FAULT_IN_NONPAGED_AREA</code> with the what failed being <code>csagent.sys</code>.</p>
                 <h2>What is the cause</h2>
                 <p>This is most likely a bug in the latest update of croudstrike.</p>
+                <h2>Workaround to fix BSOD</h2>
+                <ol>
+                    <li>Boot into safe mode</li>
+                    <li>Navigate to <code>C:\Windows\System32\drivers\CrowdStrike</code></li>
+                    <li>Delete <code>C-00000291*.sys</code></li>
+                    <li>Reboot</li>
+                </ol>
                 <h2>Links to learn more</h2>
                 <ul>
                     <li><a href="https://news.sky.com/story/mass-it-outage-hits-companies-around-the-world-as-planes-grounded-13180809">Sky news post</a></li>
                     <li><a href="https://www.bbc.co.uk/news/live/cnk4jdwp49et">BBC news</a></li>
+                    <li><a href="https://www.reddit.com/r/crowdstrike/comments/1e6vmkf/bsod_error_in_latest_crowdstrike_update/">Reddit</a></li>
                 </ul>
             </div>
         </div>
