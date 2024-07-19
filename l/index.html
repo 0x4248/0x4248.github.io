@@ -6,6 +6,24 @@
         <title>0x4248 static redirection service</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            fetch("/l/sites.json")
+                .then(response => response.json())
+                .then(data => {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const id = urlParams.get('i');
+                    const redirect = data.redirects.find(r => r.id === id);
+                    if (redirect == undefined) {
+                        window.location.href = "https://0x4248.tech";
+                    }
+                    if (redirect) {
+                        window.location.href = redirect.to;
+                    }
+                    else {
+                        window.location.href = "https://0x4248.tech";
+                    }
+                });
+        </script>
         <style>
             :root {
                 --background-colour-dark: #0a0a0a;
@@ -34,23 +52,5 @@
     </head>
     <body>
         <h1>Redirecting...</h1>
-        <script>
-            fetch("/l/sites.json")
-                .then(response => response.json())
-                .then(data => {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const id = urlParams.get('i');
-                    const redirect = data.redirects.find(r => r.id === id);
-                    if (redirect == undefined) {
-                        window.location.href = "https://0x4248.tech";
-                    }
-                    if (redirect) {
-                        window.location.href = redirect.to;
-                    }
-                    else {
-                        window.location.href = "https://0x4248.tech";
-                    }
-                });
-        </script>
     </body>
 </html>
