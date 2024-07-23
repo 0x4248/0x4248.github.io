@@ -47,12 +47,6 @@
     background: linear-gradient(#0a2 20%, #7d6 0 40%, white 0 60%, darkgray 0 80%, black 0)
 }
 
-
-.flag.demiboy {
-    background:
-     linear-gradient(#7f7f7f 0 14.28%, #c4c4c4 0 28.57%, #9dd7ea 0 42.85%, #ffffff 0 57.14%, #9dd7ea 0 71.42%, #c4c4c4 0 85.71%, #7f7f7f 0);
- }
-
 .aboutme-image {
     width: 400px; 
     height: 500px; 
