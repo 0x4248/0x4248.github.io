@@ -27,6 +27,10 @@
         {
             "id": "cs",
             "to": "https://0x4248.tech/pages/pastes/croudstrike-outage"
+        },
+        {
+            "id": "gpg",
+            "to": "https://0x4248.tech/pages/gpg"
         }
     ]
 }
