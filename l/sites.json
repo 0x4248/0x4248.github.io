@@ -31,6 +31,10 @@
         {
             "id": "gpg",
             "to": "https://0x4248.tech/pages/gpg"
+        },
+        {
+            "id": "w",
+            "to": "https://0x4248.tech/wiki"
         }
     ]
 }
