@@ -1,6 +1,9 @@
 # 0x4248.github.io
 
-This is the repository for my website. You can visit it at [0x4248.tech](https://0x4248.tech) or at [0x4248.pages.dev](https://0x4248.pages.dev).
+This is the repository for my website. You can visit it at [0x4248.tech](https://0x4248.tech)
+
+**Github pages down?**
+You can try this domain [0x4248.pages.dev](https://0x4248.pages.dev).
 
 ## Licence
 
