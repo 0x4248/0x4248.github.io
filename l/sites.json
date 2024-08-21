@@ -2,15 +2,15 @@
     "redirects": [
         {
             "id": "blx",
-            "to": "https://0x4248.tech/pages/blix"
+            "to": "https://0x4248.dev/pages/blix"
         },
         {
             "id": "abt",
-            "to": "https://0x4248.tech/AboutMe"
+            "to": "https://0x4248.dev/AboutMe"
         },
         {
             "id": "xe",
-            "to": "https://0x4248.tech/pages/fursonas/xeno"
+            "to": "https://0x4248.dev/pages/fursonas/xeno"
         },
         {
             "id": "g",
@@ -26,15 +26,15 @@
         },
         {
             "id": "cs",
-            "to": "https://0x4248.tech/pages/pastes/croudstrike-outage"
+            "to": "https://0x4248.dev/pages/pastes/croudstrike-outage"
         },
         {
             "id": "gpg",
-            "to": "https://0x4248.tech/pages/gpg"
+            "to": "https://0x4248.dev/pages/gpg"
         },
         {
             "id": "w",
-            "to": "https://0x4248.tech/wiki"
+            "to": "https://0x4248.dev/wiki"
         }
     ]
 }
