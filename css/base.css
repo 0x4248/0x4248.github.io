@@ -216,8 +216,11 @@ button:hover {
     animation: fadeIn 1s forwards 0.4s;
 }
 
-.blix-peek {
-    width : 200px;
-    margin-top: -200px;
-    transition: 0.1s;
+
+.background-object {
+    position: absolute;
+    left: 0;
+    z-index: -99;
+    width: 15%;
+    filter: brightness(0.4);
 }
