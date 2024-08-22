@@ -1,6 +1,11 @@
 {
     "News": [
         {
+            "Title": "New domain",
+            "Description": "The domain has been changed to 0x4248.dev",
+            "Date": "2024-08-21"
+        },
+        {
             "Title": "New design page",
             "Description": "See how 0x4248 is designed with the reference sheet.",
             "Date": "2024-07-10",
