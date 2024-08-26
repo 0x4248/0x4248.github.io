@@ -3,7 +3,7 @@
 This is the repository for my website. You can visit it at [0x4248.dev](https://0x4248.dev)
 
 **Github pages down?**
-You can try this domain [0x4248.pages.dev](https://0x4248.pages.dev).
+You can also try this domain [0x4248.pages.dev](https://0x4248.pages.dev).
 
 ## Licence
 
