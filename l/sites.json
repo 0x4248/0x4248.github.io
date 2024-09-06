@@ -35,6 +35,18 @@
         {
             "id": "w",
             "to": "https://0x4248.dev/wiki"
+        },
+        {
+            "id": "wikigentoo",
+            "to": "https://wiki.installgentoo.com"
+        },
+        {
+            "id": "wikiarch",
+            "to": "https://wiki.archlinux.org"
+        },
+        {
+            "od": "archiso",
+            "to": "https://geo.mirror.pkgbuild.com/iso/latest/archlinux-x86_64.iso"
         }
     ]
 }
