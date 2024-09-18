@@ -1,6 +1,12 @@
 {
     "News": [
         {
+            "Title": "Blix redesign",
+            "Description": "Blix redesign is now on 0x4248.dev",
+            "Date": "2024-09-18",
+            "Link": "/pages/Blix"
+        },
+        {
             "Title": "New domain",
             "Description": "The domain has been changed to 0x4248.dev",
             "Date": "2024-08-21"
