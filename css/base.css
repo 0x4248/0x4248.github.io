@@ -254,8 +254,12 @@ button:hover {
     filter: brightness(0.4);
 }
 
-a:hover {
+.top-bar a:hover {
     font-weight: 1000;
     font-size: 1.7rem;
     transition: all 0.2s;
+}
+
+a:hover {
+    filter: brightness(0.6);
 }
