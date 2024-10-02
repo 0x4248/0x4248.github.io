@@ -35,26 +35,18 @@
 
 .flag {
     display: inline-block;
-    width: 20px;
+    width: 25px;
     height: 20px;
-    border: 1px solid black;
+    border: none;
+    border-radius: 2px;
 }
 
-.flag.demisexual {
-    background: 
-      conic-gradient(at 35.5% 50%, #0000 228deg, black 0 312deg, #0000 0),
-      linear-gradient(white 42%, purple 0 58%, lightgray 0);
- }
- 
- .flag.demiromantic {
-    background: 
-      conic-gradient(at 35.5% 50%, #0000 228deg, black 0 312deg, #0000 0),
-      linear-gradient(white 42%, #092 0 58%, lightgray 0);
- }
+.flag.asexual {
+    background: linear-gradient(black 25%, darkgray 0 50%, white 0 75%, #a50089 0);
+}
 
-.flag.gay {
-    background:
-      linear-gradient(#00916e 0 14.28%, #00d2a9 0 28.57%, #7debbe 0 42.85%, white 0 57.14%, #6eaee7 0 71.42%, #5443d3 0 85.71%, #43117d 0);
+.flag.aromantic {
+    background: linear-gradient(#0a2 20%, #7d6 0 40%, white 0 60%, darkgray 0 80%, black 0)
 }
 
 .aboutme-image {

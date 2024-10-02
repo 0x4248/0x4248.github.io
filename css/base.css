@@ -33,10 +33,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--text-alt-colour-darker);
-}
-
 code {
     font-family: 'JetBrains Mono', monospace;
     color: var(--text-colour);
@@ -96,6 +92,7 @@ button:hover {
     color: var(--text-colour);
     font-size: 1.5rem;
     margin-right:10px;
+    transition: all 0.2s;
 }
 
 .top-bar-left {
@@ -148,6 +145,7 @@ button:hover {
     max-width: 900px;
     padding-left: 20px;
     padding-right: 20px;
+    transition: all 0.6s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
 
 .halfsplit-gallery {
@@ -191,31 +189,62 @@ button:hover {
     }
 }
 
-.main {
-    opacity: 0;
-}
 
-.section .section-border {
-    opacity: 0;
-}
-
-@keyframes fadeIn {
+@keyframes  animation-in {
     from {
         opacity: 0;
+        scale: 0.9;
     }
     to {
         opacity: 1;
+        scale: 1;
     }
+    
 }
 
 .main {
-    animation: fadeIn 1s forwards 0.2s;
+    opacity: 0;
+    animation: animation-in 1s forwards 0.2s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
 
-.section .section-border {
-    animation: fadeIn 1s forwards 0.4s;
+.main h1 {
+    opacity: 0;
+    animation: animation-in 1s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
 
+.main h2, h3, h4, h5, h6 {  
+    opacity: 0;
+    animation: animation-in 1s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
+}
+
+.main ul, ol {
+    opacity: 0;
+    animation: animation-in 1s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
+}
+
+.flag {
+    opacity: 0;
+    transition: transform 0.2s;
+    transform: scale(1);
+    animation: animation-in 1s forwards 0.5s cubic-bezier( 0.86, 0, 0.07, 1 );
+}
+
+.flag:hover {
+    transition: transform 0.2s;
+
+    z-index: 1;
+    transform: scale(2);
+}
+
+.main p{
+    animation: animation-in 0.8s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
+}
+
+.section img {
+    max-width: 100%;
+    opacity: 0;
+    animation: animation-in 1s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
+}
 
 .background-object {
     position: absolute;
@@ -223,4 +252,10 @@ button:hover {
     z-index: -99;
     width: 15%;
     filter: brightness(0.4);
+}
+
+a:hover {
+    font-weight: 1000;
+    font-size: 1.7rem;
+    transition: all 0.2s;
 }

@@ -19,31 +19,7 @@
     animation: fade 1s ease forwards;
 }
 
-.main {
-    opacity: 0;
-    animation: fade 1s ease forwards 0.2s;
-}
 
-.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
-    opacity: 0;
-    animation: fade 1s ease forwards 0.5s;
-}
-
-.main p, .main a, .main code {
-    opacity: 0;
-    animation: fade 1s ease forwards 0.8s;
-}
-
-.main img {
-    opacity: 0;
-    animation: fade 1s ease forwards 1s;
-}
-
-@keyframes fade {
-    to {
-        opacity: 1;
-    }
-}
 
 .pixelate {
     image-rendering: pixelated;
@@ -59,25 +35,7 @@
     color: white !important;
 }
 
-.img-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
-    margin-top: 10px;
-}
 
-.img-gallery img {
-    max-width: 200px;
-    height: auto;
-    width: 100%;
-    border-radius: 20px;
-    transition: transform 0.2s ease;
-}
-
-.img-gallery img:hover {
-    transform: scale(1.1);
-
-}
 
 .colour-circle {
     width: 60px;
