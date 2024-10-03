@@ -14,13 +14,6 @@
     margin-right: auto;
 }
 
-.title {
-    opacity: 0;
-    animation: fade 1s ease forwards;
-}
-
-
-
 .pixelate {
     image-rendering: pixelated;
 }
@@ -34,7 +27,6 @@
     background-color: black !important;
     color: white !important;
 }
-
 
 
 .colour-circle {
