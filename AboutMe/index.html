@@ -37,6 +37,36 @@
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <style>
+            .music-button {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                padding: 10px 20px;
+                z-index: 1000;
+                opacity: 0;
+                animation: animation-in 1s forwards 0.8s cubic-bezier( 0.86, 0, 0.07, 1 );
+            }
+
+            .music-button img {
+                width: 100px;
+                border-radius: 10px;
+                margin-right: 10px;
+                transition: all cubic-bezier( 0.86, 0, 0.07, 1 ) 0.3s;
+            }
+
+            .music-button img:hover {
+                width: 200px;
+            }
+            .music-flex {
+                display: flex;
+                align-items: center;
+            }
+            
+            .music-button p {
+                margin: 0;
+            }
+        </style>
     </head>
     <body>
         <div class="top-bar">
@@ -50,7 +80,20 @@
                 <a href="https://www.github.com/0x4248" style="margin-right: 30px;"><i class="bi bi-github"></i></a>
             </div>
         </div>    
+
+        <div id="player"></div>
+        <button id="playPauseButton" class="music-button">
+            <div class="music-flex">
+            <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
+                <div>
+                <p><strong>Drivin' to the moonlight</strong></p>
+                <p><small>Verplex</small></p>
+                <p>Click to play song</p>
+                </div>  
+            </div>
+        </button>
         <div class="main">
+            
             <div style="text-align:center;">
                 <h1 style="font-size: 5rem;color: var(--text-colour);margin-top:80px">About Me</h1>
             </div>
@@ -70,6 +113,7 @@
                 </div>
             </div>
             <br>
+
             <div class="section">
                 <h2>A bit about me</h2>
                 <p>My name is 0x4248 (Also known as Blix) and I am a software developer and cyber security enthusiast. I am currently studying Computer Science as a student.</p>
@@ -241,5 +285,49 @@
                 <p><a href="https://0x4248.dev/blix"><i class="bi bi-file-earmark-image"></i> Blix ref sheet</a></p>
             </div>
         </div>  
+        <script>
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: 'RSxlFN95PcA', 
+                events: {
+                  'onReady': onPlayerReady
+                },
+              });
+            }
+          
+            function onPlayerReady(event) {
+              var playPauseButton = document.getElementById("playPauseButton");
+          
+              playPauseButton.addEventListener("click", function() {
+                if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+                  player.pauseVideo();
+                  playPauseButton.innerHTML = `
+                    <div class="music-flex">
+                    <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
+                    <div>
+                    <p><strong>Drivin' to the moonlight</strong></p>
+                    <p><small>Verplex</small></p>
+                    <p>Click to play song</p>`;
+                } else {
+                  player.playVideo();
+                  playPauseButton.innerHTML = `
+                    <div class="music-flex">
+                    <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
+                    <div>
+                    <p><strong>Drivin' to the moonlight</strong></p>
+                    <p><small>Verplex</small></p>
+                    <p>Pause</p>`;
+                }
+              });
+            }
+          </script>
     </body>
 </html>
