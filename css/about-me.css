@@ -57,6 +57,35 @@
     transition: 0.3s ease;
 }
 
+.music-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    z-index: 1000;
+    opacity: 0;
+    animation: animation-in 1s forwards 0.8s cubic-bezier( 0.86, 0, 0.07, 1 );
+}
+
+.music-button img {
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all cubic-bezier( 0.86, 0, 0.07, 1 ) 0.3s;
+}
+
+.music-button img:hover {
+    width: 200px;
+}
+.music-flex {
+    display: flex;
+    align-items: center;
+}
+
+.music-button p {
+    margin: 0;
+}
+
 @media screen and (max-width: 800px) {
     .aboutme-image {
         width: 200px;
