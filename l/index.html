@@ -14,13 +14,13 @@
                     const id = urlParams.get('i');
                     const redirect = data.redirects.find(r => r.id === id);
                     if (redirect == undefined) {
-                        window.location.href = "https://0x4248.dev";
+                        window.location.href = "https://0x4248.dev?redirect_err=true";
                     }
                     if (redirect) {
                         window.location.href = redirect.to;
                     }
                     else {
-                        window.location.href = "https://0x4248.dev";
+                        window.location.href = "https://0x4248.dev?redirect_err=true";
                     }
                 });
         </script>
