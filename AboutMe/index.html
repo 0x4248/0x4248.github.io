@@ -62,6 +62,22 @@
                 </div>  
             </div>
         </button>
+        <button id="debug" class="debug-button">
+            <i class="bi bi-bug"></i>
+            <div class="debug-text">
+                <p>Debug mode enabled</p>
+                <ul>
+                    <li><a onclick="document.getElementById('player').style.display = 'block'; document.getElementById('player').style.width = '500px'; document.getElementById('player').style.height = '500px';">Show player</a></li>
+                    <li><a onclick="document.getElementById('player').style.display = 'none';">Hide player</a></li>
+                    <li><a onclick="caches.keys().then(function(names) { for (let name of names) { caches.delete(name); } }); location.reload();">Empty cache and reload</a></li>
+                    <li><a onclick="player.loadVideoById(window.prompt('Enter youtube video id:'));">Set youtube video</a></li>
+                    <li><a onclick="alert(navigator.userAgent);">Get user agent</a></li>
+                    <li><a onclick="alert(navigator.platform);">Get platform</a></li>
+                    <li><a onclick="alert(navigator.language);">Get language</a></li>
+                    <li><a onclick="alert(navigator.appVersion);">Get app version</a></li>
+                    <li><a onclick="document.getElementById('debug').style.opacity = 0;">Hide debug</a></li>
+                </ul>
+        </button>
         <div class="main">
             
             <div style="text-align:center;">
@@ -299,6 +315,14 @@
               });
             }
           </script>
+            <script>
+                document.addEventListener('keydown', function(event) {
+                    if (event.key === 'd') {
+                        var debugButton = document.getElementById("debug");
+                        debugButton.style.opacity = 1;
+                    }
+                });
+            </script>
           <script src="https://giscus.app/client.js"
                 data-repo="0x4248/0x4248.github.io"
                 data-repo-id="MDEwOlJlcG9zaXRvcnkzODA5NDcwNzU="

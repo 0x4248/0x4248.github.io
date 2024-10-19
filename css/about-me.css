@@ -67,6 +67,16 @@
     animation: animation-in 1s forwards 0.8s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
 
+
+.debug-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    z-index: 1000;
+    opacity: 0;
+}
+
 .music-button img {
     width: 100px;
     border-radius: 10px;

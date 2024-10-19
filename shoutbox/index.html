@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>0x4248 github page</title>
-        <meta name="description" content="About me page for 0x4248's github page.">
+        <meta name="description" content="0x4248 shoutbox page.">
         <meta name="author" content="0x4248">
         <meta name="keywords" content="0x4248, github, page, projects, code, software, development, experiments, blog, about, me">
-        <meta name="og:title" content="0x4248 github page - About Me">
+        <meta name="og:title" content="0x4248 github page - Shoutbox">
         <meta name="og:description" content="About me page for 0x4248's github page.">
         <meta name="og:image" content="icon_transparent.png">
         <meta name="og:url" content="https://0x4248.dev">
@@ -44,7 +44,7 @@
                 <strong><a href="/">0x4248</a></strong>
                 <a href="/wiki">Wiki</a>
                 <a href="/pages/projects">Projects</a>
-                <a href="/AboutMe"><strong>About Me</strong></a>
+                <a href="/AboutMe">About Me</a>
             </div>
             <div class="top-bar-right">
                 <a href="https://www.github.com/0x4248" style="margin-right: 30px;"><i class="bi bi-github"></i></a>
@@ -59,7 +59,7 @@
             <br style="margin-top:20px">
             <div class="section-border" style="border: 2px solid var(--text-alt-colour-darker);"> 
                 <h2>Leave a comment</h2>
-                
+
                 <div class="giscus">
 
                 </div>
@@ -89,50 +89,7 @@
                 <p><a href="https://0x4248.dev/blix"><i class="bi bi-file-earmark-image"></i> Blix ref sheet</a></p>
             </div>
         </div>  
-        <script>
-            var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-          
-            var player;
-            function onYouTubeIframeAPIReady() {
-              player = new YT.Player('player', {
-                height: '0',
-                width: '0',
-                videoId: 'RSxlFN95PcA', 
-                events: {
-                  'onReady': onPlayerReady
-                },
-              });
-            }
-          
-            function onPlayerReady(event) {
-              var playPauseButton = document.getElementById("playPauseButton");
-          
-              playPauseButton.addEventListener("click", function() {
-                if (player.getPlayerState() === YT.PlayerState.PLAYING) {
-                  player.pauseVideo();
-                  playPauseButton.innerHTML = `
-                    <div class="music-flex">
-                    <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
-                    <div>
-                    <p><strong>Drivin' to the moonlight</strong></p>
-                    <p><small>Verplex</small></p>
-                    <p>Click to play song</p>`;
-                } else {
-                  player.playVideo();
-                  playPauseButton.innerHTML = `
-                    <div class="music-flex">
-                    <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
-                    <div>
-                    <p><strong>Drivin' to the moonlight</strong></p>
-                    <p><small>Verplex</small></p>
-                    <p>Pause</p>`;
-                }
-              });
-            }
-          </script>
+
           <script src="https://giscus.app/client.js"
                 data-repo="0x4248/0x4248.github.io"
                 data-repo-id="MDEwOlJlcG9zaXRvcnkzODA5NDcwNzU="
