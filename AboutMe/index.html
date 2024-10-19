@@ -316,10 +316,19 @@
             }
           </script>
             <script>
+                let shown = false;
                 document.addEventListener('keydown', function(event) {
                     if (event.key === 'd') {
-                        var debugButton = document.getElementById("debug");
-                        debugButton.style.opacity = 1;
+                        if (!shown){
+                            var debugButton = document.getElementById("debug");
+                            debugButton.style.opacity = 1;
+                            debugButton.style.display = "block";
+                            shown = true;
+                        } else {
+                            var debugButton = document.getElementById("debug");
+                            debugButton.style.opacity = 0;
+                            shown = false;
+                        }
                     }
                 });
             </script>
