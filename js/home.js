@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const observerOptions = {
-        root: null,         
+        root: null,
         rootMargin: "0px",
-        threshold: 0.1      
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-				console.log("Animating in", entry.target);
-				
-				entry.target.style.opacity = 1;
+                console.log("Animating in", entry.target);
+
+                entry.target.style.opacity = 1;
                 observer.unobserve(entry.target);
             }
         });
@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-	const topBar = document.querySelector('.top-bar');
-	window.addEventListener('scroll', () => {
-		if (window.scrollY > window.innerHeight / 10) {
-			topBar.style.transform = 'translateY(0)';
-		} else {
-			topBar.style.transform = 'translateY(-100px)';
-		}
-	});
+    const topBar = document.querySelector('.top-bar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight / 10) {
+            topBar.style.transform = 'translateY(0)';
+        } else {
+            topBar.style.transform = 'translateY(-100px)';
+        }
+    });
 });
