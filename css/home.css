@@ -256,10 +256,9 @@ button:hover {
     animation: animation-in 0.8s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
 
-.section img {
-    max-width: 100%;
+.section, .section-border, .section-border-compact {
     opacity: 0;
-    animation: animation-in 1s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
+    transition: opacity 0.6s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
 
 .background-object {
@@ -270,12 +269,10 @@ button:hover {
     filter: brightness(0.4);
 }
 
-.top-bar a:hover {
-    font-weight: 1000;
-    font-size: 1.7rem;
-    transition: all 0.2s;
-}
-
+.top-bar {
+    transform: translateY(-100px);
+    transition: transform 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
+} 
 a:hover {
     filter: brightness(0.6);
 }

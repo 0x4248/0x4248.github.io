@@ -62,3 +62,4 @@ function typeOther() {
 }
 
 setTimeout(typeWriter, 2000);
+
