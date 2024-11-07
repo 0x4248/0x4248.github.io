@@ -256,7 +256,7 @@ button:hover {
     animation: animation-in 0.8s forwards 0.4s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
 
-.section, .section-border, .section-border-compact {
+.section, .section-border {
     opacity: 0;
     transition: opacity 0.6s cubic-bezier( 0.86, 0, 0.07, 1 );
 }
@@ -277,3 +277,11 @@ a:hover {
     filter: brightness(0.6);
 }
 
+
+.scroll-prompt {
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+    text-align: center;
+    animation: scroll-prompt 1s ease-in-out infinite;
+}

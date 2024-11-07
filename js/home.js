@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                console.log("Animating in", entry.target);
-
                 entry.target.style.opacity = 1;
                 observer.unobserve(entry.target);
             }
@@ -21,6 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+// if tab pressed show top bar
+document.addEventListener("keydown", (event) => {
+    if (event.key === 'Tab') {
+        document.querySelector('.top-bar').style.transform = 'translateY(0)';
+    }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const topBar = document.querySelector('.top-bar');
