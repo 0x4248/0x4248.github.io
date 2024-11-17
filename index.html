@@ -48,8 +48,18 @@
         <link rel="stylesheet" href="/css/colours.css">
         <link rel="stylesheet" href="/css/footer.css">
         <style>
-        
+            .svg-animation * {
+                /* show a outline of the logo first then fill and then remove outline */
+                stroke: var(--text-colour) !important;
+                stroke-width: 2px !important;
+                animation: fill 1s forwards, outline 1s forwards 1s;
+            }
 
+            @keyframes fill {
+                to {
+                    fill: var(--text-colour);
+                }
+            }
 
         </style>
     </head>
@@ -67,7 +77,7 @@
         </div>   
         <div class="main">
             <div style="text-align:center; height: 100vh; display: flex; flex-direction: column; justify-content: center;">
-                <h1 style="font-size: 5rem;color: var(--text-colour);margin-top:-20vh">0x4248</h1>
+                <object data="/logo.svg" class="svg-animation" alt="0x4248" style="width: 60%;margin: 0 auto;"></object>
                 <h1 id="hello-im"><span class="blinking-cursor">_</span></h1>
                 <div class="scroll-prompt">
                     <p>
@@ -162,7 +172,7 @@
         <br style="margin-top:20px">
         <div class="footer">
             <div class="flex-left">
-                <img src="/icon_transparent.png" alt="0x4248" class="pixelate">
+                <img src="/logo_no_text.svg" alt="0x4248" class="pixelate" style="width: 100px;">
                 <br style="margin-bottom: 220px;">
             </div>
             <div class="flex-right">
