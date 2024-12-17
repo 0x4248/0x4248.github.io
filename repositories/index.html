@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0x4248's Repositories</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f6f8fa;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 4px;
+            font-size: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e5e5e5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+            cursor: pointer;
+        }
+
+        .minute {
+            color: rgb(0, 205, 0);
+        }
+
+        .hour {
+            color: rgb(0, 160, 0);
+        }
+
+        .day {
+            color: rgb(0, 107, 0);
+        }
+
+        .month-new {
+            color: rgb(0, 84, 0);
+        }
+
+        .month {
+            color: rgb(13, 13, 13);
+        }
+
+        .month-old {
+            color: rgb(124, 124, 124);
+        }
+
+        .year {
+            color: rgb(176, 176, 176);
+        }
+
+
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #131313;
+                color: #c9d1d9;
+            }
+
+            table {
+                border-color: #383838;
+            }
+
+            th {
+                background-color: #141414;
+                border: 1px solid #303030;
+            }
+
+            td {
+                border-color: #303030;
+            }
+
+            tr:nth-child(even) {
+                background-color: #181818;
+            }
+
+            a {
+                color: #58a6ff;
+            }
+
+            .minute {
+                color: rgb(0, 223, 0);
+            }
+
+            .hour {
+                color: rgb(74, 255, 74);
+            }
+
+            .day {
+                color: rgb(105, 251, 105);
+            }
+
+            .month-new {
+                color: rgb(177, 255, 177);
+            }
+            .month {
+                color: rgb(255, 255, 255);
+            }   
+
+            .month-old {
+                color: rgb(138, 138, 138);
+            }   
+            
+            .year {
+                color: rgb(89, 89, 89);
+            }
+
+        }
+    </style>
+</head>
+
+<body onload="getRepos('0x4248')">
+    <div style="display: flex; align-items: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+            alt="Git logo" width="50px" height="50px" style="margin-right: 10px;">
+        <div style="width: 100%;">
+            <h1>0x4248 repository's</h1>
+            <hr>
+            <p style="font-size: 12px;">A full list of repositories I have on GitHub ordered by last updated. Click on the repository name to view the repository on GitHub, forks and archived repositories are also listed further down the page.</p> 
+            <p style="font-size: 12px;">Note: If this page does not load or does not show all of the repository then you could have hit your rate limit.</p>
+        </div>
+    </div>
+    <p id="status">Loading</p>
+    <p>Sources</p>
+    <table id="sourcesTable">
+        <tr>
+            <th>Repository</th>
+            <th>Description</th>
+            <th>Language</th>
+            <th>Last Updated</th>
+        </tr>
+    </table>
+    <p>Archived</p>
+    <table id="archivedTable">
+        <tr>
+            <th>Repository</th>
+            <th>Description</th>
+            <th>Language</th>
+            <th>Last Updated</th>
+        </tr>
+    </table>
+    <p>Forks</p>
+    <table id="forksTable">
+        <tr>
+            <th>Repository</th>
+            <th>Description</th>
+            <th>Language</th>
+            <th>Last Updated</th>
+        </tr>
+    </table>
+    <p>This page is open source, you can view the source code <a href="https://www.github.com/0x4248/0x4248.github.io/tree/master/repositories" target="_blank">here</a>.</p>
+
+    <script defer>
+        const sourcesTable = document.getElementById("sourcesTable");
+        const archivedTable = document.getElementById("archivedTable");
+        const forksTable = document.getElementById("forksTable");
+        var repos = [];
+
+        async function getRepos(username) {
+            var url = `https://api.github.com/users/${username}/repos?page=`
+            var page = 1;
+            var request = new XMLHttpRequest();
+
+            while (true) {
+                document.getElementById("status").textContent = "Fetching repositories page: " + page;
+                request.open('GET', url + page, false);
+                request.send(null);
+                if (request.status === 200) {
+                    if (JSON.parse(request.responseText).length == 0) {
+                        break;
+                    } else {
+                        repos = repos.concat(JSON.parse(request.responseText));
+                        page++;
+                    }
+                } else if (request.status === 403) {
+                    document.getElementById("status").textContent = "Rate limit hit detected, please wait and try again later.";
+                    return;
+                } else {
+                    break;
+                }
+            }
+            document.getElementById("status").textContent = "";
+            document.getElementById("status").style.display = "none";
+            categorizeAndDisplayRepos(repos);
+        }
+
+
+        async function categorizeAndDisplayRepos(repos) {
+
+            repos.sort((a, b) => {
+                return new Date(b.pushed_at) - new Date(a.pushed_at);
+            });
+            const sourcesBody = sourcesTable.appendChild(document.createElement('tbody'));
+            const archivedBody = archivedTable.appendChild(document.createElement('tbody'));
+            const forksBody = forksTable.appendChild(document.createElement('tbody'));
+
+            repos.forEach(repo => {
+                const row = document.createElement('tr');
+                const repoNameCell = document.createElement('td');
+                repoNameCell.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+                const descriptionCell = document.createElement('td');
+                descriptionCell.textContent = repo.description || "No description available";
+                const languageCell = document.createElement('td');
+                languageCell.textContent = repo.language || "Unknown";
+                const updatedCell = document.createElement('td');
+                if (timeSince(new Date(repo.pushed_at)).includes("minute") || timeSince(new Date(repo.pushed_at)).includes("second")) {
+                    updatedCell.classList.add("minute");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("hour")) {
+                    updatedCell.classList.add("hour");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("day")) {
+                    updatedCell.classList.add("day");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("last month")) {
+                    updatedCell.classList.add("month-new");
+                } else if (timeSince(new Date(repo.pushed_at)).includes("2 months")) {
+                    updatedCell.classList.add("month");            
+                } else if (timeSince(new Date(repo.pushed_at)).includes("3 months")) {
+                    updatedCell.classList.add("month");        
+                } else if (timeSince(new Date(repo.pushed_at)).includes("4 months")) {
+                    updatedCell.classList.add("month");      
+                } else if (timeSince(new Date(repo.pushed_at)).includes("months")) {
+                    updatedCell.classList.add("month-old");      
+                } else if (timeSince(new Date(repo.pushed_at)).includes("year")) {
+                    updatedCell.classList.add("year");
+                }
+                updatedCell.textContent = timeSince(new Date(repo.pushed_at));
+
+                row.appendChild(repoNameCell);
+                row.appendChild(descriptionCell);
+                row.appendChild(languageCell);
+                row.appendChild(updatedCell);
+
+
+                if (repo.archived) {
+                    archivedBody.appendChild(row);
+                } else if (repo.fork) {
+                    forksBody.appendChild(row);
+                } else {
+                    sourcesBody.appendChild(row);
+                }
+            });
+        }
+
+        function timeSince(date) {
+                    const rtf1 = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+                    const msPerMinute = 60 * 1000;
+                    const msPerHour = msPerMinute * 60;
+                    const msPerDay = msPerHour * 24;
+                    const msPerMonth = msPerDay * 30;
+                    const msPerYear = msPerDay * 365;
+                    const elapsed = Date.now() - date;
+
+                    if (elapsed < msPerMinute) {
+                        return rtf1.format(-Math.floor(elapsed / 1000), 'second').replace("ago", "");
+                    } else if (elapsed < msPerHour) {
+                        return rtf1.format(-Math.floor(elapsed / msPerMinute), 'minute').replace("ago", "");
+                    } else if (elapsed < msPerDay) {
+                        return rtf1.format(-Math.floor(elapsed / msPerHour), 'hour').replace("ago", "");
+                    } else if (elapsed < msPerMonth) {
+                        return rtf1.format(-Math.floor(elapsed / msPerDay), 'day').replace("ago", "");
+                    } else if (elapsed < msPerYear) {
+                        return rtf1.format(-Math.floor(elapsed / msPerMonth), 'month').replace("ago", "");
+                    } else {
+                        return rtf1.format(-Math.floor(elapsed / msPerYear), 'year').replace("ago", "");
+                    }
+
+                    if (rtf1.format(-Math.floor(elapsed / msPerDay), 'day') == "yesterday") {
+                        return "1 day   ";
+                    }
+                }
+            
+    </script>
+
+</body>
+
+</html>
