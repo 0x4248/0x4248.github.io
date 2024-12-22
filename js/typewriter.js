@@ -10,7 +10,7 @@ let i = 0;
 let speed = 100;
 let cursor = document.querySelector('.blinking-cursor');
 let helloIm = document.getElementById('hello-im');
-let other = ["C, C++, Python, Javascript and Java Programmer", "Cybersecurity enthusiast", "Linux lover", "Slightly obsessed with 90's and 00's tech", "Uses python too much", "Loves anything open source", "Tech enthusiast", "C++ Enjoyer", "SpaceX fan", "Arch linux user", "Train nerd", "Amateur radio DXer (RTL-SDR V3, ATS25X1)", "RRRAAAAAAAAAAAAAWWWWRRRRRRRRRR", "Loves breakcore, house, hip-hop music", "Airbus geek"];
+let other = ["C, C++, Python, Javascript and Java Programmer", "Cybersecurity enthusiast", "Linux lover", "Slightly obsessed with 90's and 00's tech", "Uses python too much", "Loves anything open source", "PS2 and Wii lover" ,  "Tech enthusiast", "C++ Enjoyer", "SpaceX fan", "Arch linux user", "Train nerd", "Amateur radio DXer (RTL-SDR V3, ATS25X1)", "RRRAAAAAAAAAAAAAWWWWRRRRRRRRRR", "Loves breakcore, house, hip-hop music", "Airbus geek"];
 let otherIndex = 0;
 
 function typeWriter() {
