@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = 1;
+                entry.target.style.scale = 1;
                 observer.unobserve(entry.target);
             }
         });
@@ -20,20 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// if tab pressed show top bar
-document.addEventListener("keydown", (event) => {
-    if (event.key === 'Tab') {
-        document.querySelector('.top-bar').style.transform = 'translateY(0)';
-    }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+document.querySelector('.top-bar').style.transform = 'translateY(0)';
+let lastScrollTop = 0;
+window.addEventListener("scroll", () => {
     const topBar = document.querySelector('.top-bar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > window.innerHeight / 10) {
-            topBar.style.transform = 'translateY(0)';
-        } else {
-            topBar.style.transform = 'translateY(-100px)';
-        }
-    });
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        topBar.style.transform = 'translateY(-100px)';
+    } else {
+        topBar.style.transform = 'translateY(0)';
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
