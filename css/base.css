@@ -125,6 +125,7 @@ button:hover {
     background-color: var(--background-colour-light);
     color: var(--text-colour);
     border-radius: 10px;
+    border: 2px solid var(--dark-gray);
 }
 
 .section-border {

@@ -6,14 +6,15 @@
  */
 
 :root {
-    --background-colour-dark: #0a0a0a;
-    --background-colour-light: #1b1b1b;
-    --light-gray: #aaaaaa;
-    --text-colour: #f2f2f2;
+    --background-colour-dark: #000000;
+    --background-colour-light: #0e0e0e;
+    --light-gray: #b1b1b1;
+    --dark-gray: #444444;
+    --text-colour: #e8e8e8;
     --text-alt-colour: #4a95ec;
     --text-alt-colour-darker: #3976bc;
     --dot-bg: var(--background-colour-dark);
-    --dot-color: #272727;
-    --dot-size: 2px;
+    --dot-color: #101010;
+    --dot-size: 4px;
     --dot-space: 22px;
 }
