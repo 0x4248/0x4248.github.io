@@ -113,6 +113,9 @@ button:hover {
 
 .top-bar-left {
     flex: 1;
+    display: flex;
+    align-items: center;
+    width: 80%;
 }
 
 .top-bar-right {
