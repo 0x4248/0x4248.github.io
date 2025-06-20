@@ -1,6 +1,12 @@
 {
     "News": [
         {
+            "Title": "Site update",
+            "Description": "Redone colours and design of the site.",
+            "Date": "2025-06-20",
+            "Link": "/notebook"
+        },
+        {
             "Title": "Blix redesign",
             "Description": "Blix redesign is now on 0x4248.dev",
             "Date": "2024-09-18",
