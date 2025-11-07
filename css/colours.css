@@ -5,7 +5,7 @@
  * By: 0x4248
  */
 
-:root {
+/* :root {
     --background-colour-dark: #000000;
     --background-colour-light: #0e0e0e;
     --light-gray: #b1b1b1;
@@ -15,6 +15,27 @@
     --text-alt-colour-darker: #3976bc;
     --dot-bg: var(--background-colour-dark);
     --dot-color: #101010;
+    --dot-size: 4px;
+    --dot-space: 22px;
+} */
+
+
+:root {
+    --bg-dark: #1e2030;
+    --bg-light: #24273a;
+    --grey-light: #939ab7;
+    --grey: #5b6078;
+    --grey-dark: #5b6078;
+    --text: #cad3f5;
+    --blue: #8aadf4;
+    --purple: #c6a0f6;
+    --sapphire: #7dc4e4;
+    --lavender: #b7bdf8;
+    --red: #ed8796;
+    --text-alt-colour: var(--blue);
+    --text-alt-colour-darker: var(--purple);
+    --dot-bg: var(--bg-dark);
+    --dot-color: var(--bg-light);
     --dot-size: 4px;
     --dot-space: 22px;
 }

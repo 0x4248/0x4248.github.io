@@ -1,249 +1,161 @@
 <!-- 0x4248.dev -->
-<!-- ALL CODE IS LICENCED UNDER GNU GPL V3.0, TEXT CONTENT IS LICENCED UNDER CC BY-SA 4.0 -->
-<!-- COPYRIGHT 2024 0x4248 -->
+<!-- CODE: GNU GPL v3.0 | TEXT: CC BY-SA 4.0 -->
+<!-- COPYRIGHT © 2022–2025 0x4248 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>0x4248 github page</title>
-    <meta name="description"
-        content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
-    <meta name="og:description"
-        content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to 0x4248's site — projects, research, and experiments." />
+    <meta name="author" content="0x4248" />
+    <title>0x4248 | Home</title>
 
-    <!-- META DATA -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="0x4248">
-    <meta name="keywords" content="0x4248, github, page, projects, code, software, development, experiments">
-    <meta name="og:title" content="0x4248 github page">
-    <meta name="og:image" content="icon_transparent.png">
-    <meta name="og:url" content="https://0x4248.dev">
-    <meta name="og:site_name" content="0x4248 github page">
-    <meta name="og:type" content="website">
-    <meta name="og:locale" content="en_GB">
-    <meta name="og:locale:alternate" content="en_US">
-    <meta name="og:locale:alternate" content="en_CA">
-    <meta name="og:locale:alternate" content="en_AU">
-    <meta name="og:locale:alternate" content="en_NZ">
-    <meta name="og:locale:alternate" content="en_ZA">
-    <meta name="og:locale:alternate" content="en_IN">
-
-    <!-- OTHER META DATA -->
-    <meta name="twitter:image" content="icon_transparent.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-
-    <!-- FONTS AND ICONS -->
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Orbitron:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/colours.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <style>
-        .profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-        }
-
-        .profile img{
-    border-radius: 10px;
-        }
-        
-        .profile-left {
-    width: 80%;
-}
-
-.profile-right {
-    width: 20%;
-    text-align: right;
-}
-</style>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/home.js" defer></script>
+    <script src="/js/news.js" defer></script>
 </head>
 
 <body>
-    <div class="top-bar">
+    <header class="top-bar">
         <div class="top-bar-left">
-            <strong><a href="/" style="font-family: orbitron;"><i>x</i>4248</a></strong>
+            <a href="/" class="logo"><span class="accent">x</span>4248</a>
             <a href="/notebook">Notebook</a>
             <a href="/AboutMe">About</a>
+
         </div>
         <div class="top-bar-right">
-            <a href="https://www.github.com/0x4248" style="margin-right: 30px;"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/0x4248" aria-label="GitHub"><i class="bi bi-github"></i></a>
         </div>
-    </div>
-    <div class="main">
-        <div style="text-align:center; margin-top: 100px;">
-            <object data="/logo.svg" alt="0x4248" style="width: 50%;margin: 0 auto;"></object>
-            <h1>Welcome to my website!</h1>
-        </div>
-        <br style="margin-top:20px">
-        <div class="section">
-            <div class="profile">
-                <div class="profile-left">
-          <h1>Hello there, this is 0x4248's website!</h1>
-            <p>Here you will find all my projects and content I created. You can find out more
-                about me on the <a href="https://0x4248.dev/AboutMe">about me</a> page. If you want to see my notes and research you can find it on my <a
-                    href="https://0x4248.dev/notebook">notebook</a>. If you want to see my github projects you can
-                find them on my <a href="https://www.github.com/0x4248">github</a> page.
-                </div>
-                <div class="profile-right">
-                    <img src="https://avatars.githubusercontent.com/u/60709927?v=4" alt="0x4248" width="150px">
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="section-border" style="border: 2px solid var(--text-alt-colour-darker);">
-            <h2><i class="bi bi-exclamation-triangle-fill"></i> Disruptions in the UK</h2>
-            <p>Due to the recent Online Safety Act, Three (the mobile network) recently 
-                blocked my site to all Three customers. This has been resolved after 
-                sending an email to Three but could change.
-            </p>
-        </div>
-        <br>
+    </header>
 
-        <div class="section">
-            <h2>Quick links</h2>
-            <p>Here are some quick links to navigate easier around my site.</p>
-            <h3>Site links</h3>
-            <div class="halfsplit-gallery">
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/notebook"><i class="bi bi-box-arrow-up-left"></i> My notebook</a>
-                    </h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.devhttps://0x4248.dev/notebook/03-Projects/Main-Projects"><i
-                                class="bi bi-box-arrow-up-left"></i> Projects</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/AboutMe"><i class="bi bi-box-arrow-up-left"></i> About Me</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/shoutbox"><i class="bi bi-box-arrow-up-left"></i> Shoutbox</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/pages"><i class="bi bi-box-arrow-up-left"></i> Site pages</a>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/blix"><i class="bi bi-box-arrow-up-left"></i> Blix ref sheet</a>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/Legal"><i class="bi bi-box-arrow-up-left"></i> Terms, privacy and
-                            licence</a>
-                </div>
-            </div>
-            <br>
-            <h3>External links</h3>
-            <div class="halfsplit-gallery">
-                <div class="section-border-compact">
-                    <h3><a href="https://www.github.com/0x4248"><i class="bi bi-box-arrow-up-left"></i> Github</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-box-arrow-up-left"></i>
-                            OpenStreetMap</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://gist.github.com/0x4248"><i class="bi bi-box-arrow-up-left"></i> Gist</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a rel="me" href="https://furry.engineer/@0x4248"><i class="bi bi-box-arrow-up-left"></i>
-                            Mastodon</a></h3>
-                </div>
-            </div>
-            <br>
-            <h3>Archived links</h3>
-            <p>Old parts of my site that are no longer maintained but still available.</p>
-            <div class="halfsplit-gallery">
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/wiki"><i class="bi bi-box-arrow-up-left"></i> Wiki</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/Blog"><i class="bi bi-box-arrow-up-left"></i> Blog</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/pages/projects"><i class="bi bi-box-arrow-up-left"></i> Projects</a>
-                    </h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/pages"><i class="bi bi-box-arrow-up-left"></i> Site pages</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="section">
-            <h2>Contact</h2>
-            <p>If you want to contact me you can do so by sending me an email at <a
-                    href="mailto:0xf424+webcontact@protonmail.com">this email</a>. You can also contact me on <a
-                    href="https://furry.engineer/@0x4248">Mastodon</a></p>
-            <p><strong>Privacy notice:</strong> What is the <code>+webcontact</code> part of the email? It is a way for
-                me to identify where the email came from. Please don't remove it since it wont make the email stand out
-                from the rest of the emails I get.</p>
-        </div>
-        <br>
-        <br>
-        <div class="section">
-            <h2>Recent news</h2>
-            <div id="news">
-            </div>
-        </div>
-    </div>
+    <style>
+        .fade-in{
+            opacity: 0;
+        }
+    </style>
 
-    <br style="margin-top:20px">
-    <div class="footer">
-        <div class="flex-left">
-            <img src="/logo_no_text.svg" alt="0x4248" class="pixelate" style="width: 100px;">
-            <br style="margin-bottom: 220px;">
-        </div>
-        <div class="flex-right">
-            <p>Copyright © 2024 - 2025 0x4248</p>
-            <a href="https://0x4248.dev/Legal"><i class="bi bi-arrow-left-circle-fill"></i> See privacy, terms and
-                licence</a>
-            <br>
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="bi bi-arrow-left-circle-fill"></i>
-                Content licence: 🅭 🅯 🄎 (CC BY-SA 4.0)</a>
-            <hr>
-            <div class="footer-flex">
-                <div>
-                    <p><a href="https://www.github.com/0x4248"><i class="bi bi-github"></i> GitHub</a></p>
-                    <p><a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a></p>
-                    <p><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i>
-                            OpenStreetMap</a></p>
-                    <br>
-                </div>
-                <div>
-                    <p>Site links:</p>
-                    <p><a href="https://0x4248.dev/Blog/pages"><i class="bi bi-journal-text"></i> Blog</a></p>
-                    <p><a href="https://0x4248.dev/projects"><i class="bi bi-code-slash"></i> Projects</a></p>
-                    <p><a href="https://0x4248.dev/AboutMe"><i class="bi bi-person"></i> About Me</a></p>
-                   </p>
-                    <br>
-                </div>
-            </div>
-            <p>This site was made with ❤️ from 🇬🇧.<br>Слава Украния! Остановите <span style="color: lightcoral">войну</span></p>
-            <p style="font-size: x-large;text-align: left;"><a href="https://war.ukraine.ua/support-ukraine/">🇺🇦</a>
-                <a href="https://www.thetrevorproject.org/">🏳️‍🌈</a></p>
-        </div>
-    </div>
+    <main class="main-grid">
+        <!-- Left column -->
+        <div class="left-column">
+            <section class="hero fade-in">
+                <object data="/logo_no_text.svg" alt="0x4248" class="logo-main" width="1000px"></object>
+                <h1>Welcome to my website!</h1>
+            </section>
 
-    <script src="/js/news.js" defer></script>
-    <script src="/js/typewriter.js" defer></script>
-    <script src="/js/home.js" defer></script>
+            <section class="section fade-in">
+                <div class="profile">
+                    <div class="profile-left">
+                        <h2>Hello there, this is 0x4248's website!</h2>
+                        <p>Here you'll find my projects, experiments, and research notes. Learn more
+                            <a href="/AboutMe">about me</a>, read my <a href="/notebook">notebook</a>,
+                            or check out my <a href="https://github.com/0x4248">GitHub</a>.
+                        </p>
+                    </div>
+                    <div class="profile-right">
+                        <img src="https://avatars.githubusercontent.com/u/60709927?v=4" alt="0x4248 avatar" width="120"
+                            height="120">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-border fade-in">
+                <h2><i class="bi bi-exclamation-triangle-fill" ></i> Disruptions in the UK</h2>
+                <p>Due to the Online Safety Act, Three (the mobile network) recently blocked this site for all
+                    customers. The issue was resolved after contacting Three, but it could change.</p>
+            </section>
+
+            <section class="section fade-in">
+                <h2>Recent News</h2>
+                <div id="news"></div>
+            </section>
+
+            <section class="section fade-in">
+                <h2>Leave a comment</h2>
+                <div class="giscus">
+
+                </div>
+                <script src="https://giscus.app/client.js" data-repo="0x4248/0x4248.github.io"
+                data-repo-id="MDEwOlJlcG9zaXRvcnkzODA5NDcwNzU=" data-mapping="number" data-term="3" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top" data-theme="transparent_dark" data-lang="en"
+                data-loading="lazy" crossorigin="anonymous" async>
+                </script>
+            </section>
+
+        </div>
+
+        <!-- Right column -->
+        <aside class="right-column">
+            <section class="section fade-in">
+                <h2>Quick Links</h2>
+                <div class="link-grid">
+                    <a href="/notebook"><i class="bi bi-box-arrow-up-right"></i> Notebook</a>
+                    <a href="/AboutMe"><i class="bi bi-box-arrow-up-right"></i> About Me</a>
+                    <a href="https://0x4248.dev/notebook/01-Areas/Computers/Linux/Linux"><i class="bi bi-box-arrow-up-right"></i> man.0x4248.dev</a>
+                    <a href="https://0x4248.dev/notebook/03-Projects/Main-Projects"><i class="bi bi-box-arrow-up-right"></i> Projects</a>
+                    <a href="https://0x4248.dev/notebook/99-Meta/Legal-information"><i class="bi bi-box-arrow-up-right"></i> Legal / Privacy</a>
+                </div>
+            </section>
+
+            <section class="section fade-in">
+                <h2>Songs I like</h2>
+                    <iframe id="music" style="display: block; margin: 0 auto;" width="300" height="300" src=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+                <button style="display: block; margin: 0 auto; width: 50%;" onclick="changeMusic()">Reroll song</button>
+            </section>
+
+            <section class="section fade-in">
+                <h2>External</h2>
+                <div class="link-grid">
+                    <a href="https://github.com/0x4248"><i class="bi bi-github"></i> GitHub</a>
+                    <a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a>
+                    <a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a>
+                    <a href="http://intranet"><i class="bi bi-lock-fill"></i> Intranet (Not public)</a>
+                    <a href="http://intranet:4248/NCP"><i class="bi bi-lock-fill"></i> Nexus Panel (Not public)</a>
+                </div>
+            </section>
+            <section class="section fade-in">
+<pre style="color:var(--blue);">
+      |\      _,,,---,,_
+ZZZzz /,`.-'`'    -.  ;-;;,_
+     |,4-  ) )-,_. ,\ (  `'-'
+    '---''(_/--'  `-'\_)
+
+</pre>
+            </section>
+            <section class="section fade-in">
+                <h2>GitHub Repositories</h2>
+                <div class="link-grid">
+                    <a href="https://github.com/0x4248/Scrapbook"><i class="bi bi-github"></i> Scrapbook</a>
+                    <a href="https://github.com/0x4248/JunkDrawer"><i class="bi bi-github"></i> JunkDrawer</a>
+                    <a href="https://github.com/0x4248/Linux"><i class="bi bi-github"></i> Linux Kernel</a>
+                    <a href="https://github.com/0x4248/0x4248.dev"><i class="bi bi-github"></i> This websites code</a>
+                </div>
+            </section>
+
+        </aside>
+    </main>
+
+    <footer class="footer fade-in">
+        <img src="/logo_no_text.svg" alt="0x4248 logo" class="footer-logo">
+        <div>
+            <p><strong>Copyright</strong> © 2022-2025 0x4248</p>
+            <p><strong>Copyright</strong> © 2022-2025 4248 Media and 4248 Music, a part of 0x4248</p>
+            <p>Some YouTube embeds are copyrighted, see original video description</p>
+            <p>Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+            <p class="support">Made with ❤️ from 🇬🇧.</p>
+            <br>
+            <p style="opacity:0.4;"><i>RIP Blix 2024-2025</i></p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,133 +1,69 @@
 <!-- 0x4248.dev -->
-<!-- ALL CODE IS LICENCED UNDER GNU GPL V3.0, TEXT CONTENT IS LICENCED UNDER CC BY-SA 4.0 -->
-<!-- COPYRIGHT 2024 0x4248 -->
+<!-- CODE: GNU GPL v3.0 | TEXT: CC BY-SA 4.0 -->
+<!-- COPYRIGHT © 2022–2025 0x4248 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>0x4248 github page</title>
-    <meta name="description" content="About me page for 0x4248's github page.">
-    <meta name="author" content="0x4248">
-    <meta name="keywords"
-        content="0x4248, github, page, projects, code, software, development, experiments, blog, about, me">
-    <meta name="og:title" content="0x4248 github page - About Me">
-    <meta name="og:description" content="About me page for 0x4248's github page.">
-    <meta name="og:image" content="icon_transparent.png">
-    <meta name="og:url" content="https://0x4248.dev">
-    <meta name="og:site_name" content="0x4248 github page">
-    <meta name="og:type" content="website">
-    <meta name="og:locale" content="en_GB">
-    <meta name="og:locale:alternate" content="en_US">
-    <meta name="og:locale:alternate" content="en_CA">
-    <meta name="og:locale:alternate" content="en_AU">
-    <meta name="og:locale:alternate" content="en_NZ">
-    <meta name="og:locale:alternate" content="en_ZA">
-    <meta name="og:locale:alternate" content="en_IN">
-    <meta name="twitter:image" content="icon_transparent.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/colours.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/about-me.css">
-    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to 0x4248's site — projects, research, and experiments." />
+    <meta name="author" content="0x4248" />
+    <title>0x4248 | Home</title>
+
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Orbitron:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/colours.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/home.js" defer></script>
 </head>
 
 <body>
-    <div class="top-bar">
+    <header class="top-bar">
         <div class="top-bar-left">
-            <strong><a href="/" style="font-family: orbitron;"><i>x</i>4248</a></strong>
+            <a href="/" class="logo"><span class="accent">x</span>4248</a>
             <a href="/notebook">Notebook</a>
             <a href="/AboutMe">About</a>
+
         </div>
         <div class="top-bar-right">
-            <a href="https://www.github.com/0x4248" style="margin-right: 30px;"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/0x4248" aria-label="GitHub"><i class="bi bi-github"></i></a>
         </div>
-    </div>
+    </header>
 
-    <div id="player"></div>
-    <!-- <button id="playPauseButton" class="music-button">
-            <div class="music-flex">
-            <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
-                <div>
-                <p><strong>Drivin' to the moonlight</strong></p>
-                <p><small>Verplex - My favourite song</small></p>
-                <p>Click to play song</p>
-                </div>  
-            </div>
-        </button> -->
-    <button id="debug" class="debug-button">
-        <i class="bi bi-bug"></i>
-        <div class="debug-text">
-            <p>Debug mode enabled</p>
-            <ul>
-                <li><a
-                        onclick="document.getElementById('player').style.display = 'block'; document.getElementById('player').style.width = '500px'; document.getElementById('player').style.height = '500px';">Show
-                        player</a></li>
-                <li><a onclick="document.getElementById('player').style.display = 'none';">Hide player</a></li>
-                <li><a
-                        onclick="caches.keys().then(function(names) { for (let name of names) { caches.delete(name); } }); location.reload();">Empty
-                        cache and reload</a></li>
-                <li><a onclick="player.loadVideoById(window.prompt('Enter youtube video id:'));">Set youtube video</a>
-                </li>
-                <li><a onclick="alert(navigator.userAgent);">Get user agent</a></li>
-                <li><a onclick="alert(navigator.platform);">Get platform</a></li>
-                <li><a onclick="alert(navigator.language);">Get language</a></li>
-                <li><a onclick="alert(navigator.appVersion);">Get app version</a></li>
-                <li><a onclick="document.getElementById('debug').style.opacity = 0;">Hide debug</a></li>
-            </ul>
-    </button>
-    <div class="main">
+    <style>
+        .fade-in{
+            opacity: 0;
+        }
+    </style>
 
-        <div style="text-align:center;">
-            <h1 style="font-size: 5rem;color: var(--text-colour);margin-top:80px">About Me</h1>
-        </div>
-        <br style="margin-top:20px">
-        <div class="section">
-            <div class="profile">
-                <div class="profile-left">
-                    <h1>0x4248</h1>
-                    <p>Lewis</p>
-                    <p>He/They</p>
-                    <p>17</p>
+    <main class="main-grid">
+        <!-- Left column -->
+        <div class="left-column">
+            <section class="section fade-in">
+                <div class="profile">
+                    <div class="profile-left">
+                        <h2>About Me</h2>
+                        <p>Lewis</p>
+                        <p>He/They</p>
+                        <p>18</p>
+                        
+                    </div>
+                    <div class="profile-right">
+                        <img src="https://avatars.githubusercontent.com/u/60709927?v=4" alt="0x4248 avatar" width="120"
+                            height="120">
+                    </div>
                 </div>
-                <div class="profile-right">
-                    <img src="https://avatars.githubusercontent.com/u/60709927?v=4" alt="0x4248" width="150px">
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="section">
-            <div style="display: flex; align-items: center; justify-content: space-evenly;">
-                <a href="https://translate.google.com/translate?sl=en&tl=es&u=https://0x4248.dev/AboutMe">ES</a>
-                <a href="https://translate.google.com/translate?sl=en&tl=fr&u=https://0x4248.dev/AboutMe">FR</a>
-                <a href="https://translate.google.com/translate?sl=en&tl=de&u=https://0x4248.dev/AboutMe">DE</a>
-                <a href="https://translate.google.com/translate?sl=en&tl=ru&u=https://0x4248.dev/AboutMe">RU</a>
-                <a href="https://translate.google.com/translate?sl=en&tl=uk&u=https://0x4248.dev/AboutMe">UK</a>
-                <a href="https://translate.google.com/translate?sl=en&tl=zh-CN&u=https://0x4248.dev/AboutMe">CN</a>
-                <a href="https://translate.google.com/translate?sl=en&tl=ja&u=https://0x4248.dev/AboutMe">JP</a>
-            </div>
-            <p style="text-align: center;color:grey;margin-bottom: 0px;font-size: small;">Tranlations by <strong>Google</strong>. Some translatons may not be accurate.</p>
+            </section>
 
-        </div>
-        <br>
-        <div class="section">
-            <h2>A bit about me</h2>
+
+
+            <section class="section fade-in">
+<h2>A bit about me</h2>
             <p>My name is Lewis (Also known as 0x4248) and I am a software developer and cyber security enthusiast. I am currently studying
                 Computer Science as a student.</p>
             <p>I currently live in southern England. I have many other hobbies including radio DXing, photography. In my
@@ -235,170 +171,75 @@
                 <li>Switzerland</li>
                 <li>Canada (It even was a good signal)</li>
             </ul>
-            <p>I have also picked up some interesting signals such as:</p>
-            <ul>
-                <li>Russian buzzer</li>
-                <li>Time stations</li>
-                <li>Odd satellite signals passing over</li>
-            </ul>
             <p>I use a 2 meter dipole antenna which picks up signals very well. I mainly use the RTL-SDR V3. I also
                 decode some signals (RTTY, Morse and FT-8). For my RTL-SDR I use SDR++ and for my decoding I use FLDIGI.
             </p>
-            <h2>Photography</h2>
-            <p>Photography has always been a hobby of mine. Nothing professional but I do enjoy taking photos of things.
-            </p>
-            <p><s>Urr, so just a quick update... I lost all my pictures so I have nothing to show you. (Yeah I know, I
-                    should have backed them up. I don't expect SD cards to brick their partition table)</s></p>
-            <p><strong>Update</strong>: Expect some photos soon.</p>
-            <h2>Other sites</h2>
-            <div class="halfsplit-gallery">
-                <div class="section-border-compact">
-                    <h3><a href="https://www.github.com/0x4248">Github</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://www.github.com/0x4248?tab=repositories">Github Repositories</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://www.openstreetmap.org/user/0x4248">OpenStreetMap</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://gist.github.com/0x4248">Gist</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a rel="me" href="https://furry.engineer/@0x4248">Mastodon</a></h3>
-                </div>
-                <div class="section-border-compact">
-                    <h3><a href="https://0x4248.dev/blix">Blix ref sheet</a></h3>
-                </div>
-            </div>
+            </section>
         </div>
-        <br>
-        <div class="section">
-            <h2>Contact</h2>
-            <p>If you want to contact me you can do so by sending me an email at <a
-                    href="mailto:0xf424+webcontact@protonmail.com">this email</a>. You can also contact me on <a
-                    href="https://furry.engineer/@0x4248">Mastodon</a></p>
-            <p><strong>Privacy notice:</strong> What is the <code>+webcontact</code> part of the email? It is a way for
-                me to identify where the email came from. Please don't remove it since it wont make the email stand out
-                from the rest of the emails I get.</p>
-        </div>
-        <br>
-        <div class="section">
-            <h2>GPG key</h2>
-            <p>If you want to verify any signed messages you can verify them with my GPG key. You can do so <a
-                    href="/pages/gpg">here</a>.</p>
-        </div>
-        <br>
-        <div class="section-border" style="border: 2px solid var(--text-alt-colour-darker);">
-            <h2>Leave a comment</h2>
-            <div class="giscus">
 
-            </div>
-        </div>
-    </div>
-    <br style="margin-top:20px">
-    <div class="footer">
-        <div class="flex-left">
-            <img src="https://0x4248.dev/icon_transparent.png" alt="0x4248" class="pixelate">
-            <br style="margin-bottom: 220px;">
-        </div>
-        <div class="flex-right">
-            <p>Copyright © 2024 - 2025 0x4248</p>
-            <a href="https://0x4248.dev/Legal"><i class="bi bi-arrow-left-circle-fill"></i> See privacy, terms and
-                licence</a>
-            <br>
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="bi bi-arrow-left-circle-fill"></i>
-                Content licence: 🅭 🅯 🄎 (CC BY-SA 4.0)</a>
-            <hr>
-            <div class="footer-flex">
-                <div>
-                    <p><a href="https://www.github.com/0x4248"><i class="bi bi-github"></i> GitHub</a></p>
-                    <p><a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a></p>
-                    <p><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i>
-                            OpenStreetMap</a></p>
-                    <br>
+        <!-- Right column -->
+        <aside class="right-column">
+            <section class="section fade-in">
+                <h2>Quick Links</h2>
+                <div class="link-grid">
+                    <a href="/notebook"><i class="bi bi-box-arrow-up-right"></i> Notebook</a>
+                    <a href="/AboutMe"><i class="bi bi-box-arrow-up-right"></i> About Me</a>
+                    <a href="https://0x4248.dev/notebook/01-Areas/Computers/Linux/Linux"><i class="bi bi-box-arrow-up-right"></i> man.0x4248.dev</a>
+                    <a href="https://0x4248.dev/notebook/03-Projects/Main-Projects"><i class="bi bi-box-arrow-up-right"></i> Projects</a>
+                    <a href="https://0x4248.dev/notebook/99-Meta/Legal-information"><i class="bi bi-box-arrow-up-right"></i> Legal / Privacy</a>
                 </div>
-                <div>
-                    <p>Site links:</p>
-                    <p><a href="https://0x4248.dev/Blog/pages"><i class="bi bi-journal-text"></i> Blog</a></p>
-                    <p><a href="https://0x4248.dev/projects"><i class="bi bi-code-slash"></i> Projects</a></p>
-                    <p><a href="https://0x4248.dev/AboutMe"><i class="bi bi-person"></i> About Me</a></p>
-                    <br>
+            </section>
+
+            <section class="section fade-in">
+                <h2>Songs I like</h2>
+                    <iframe id="music" style="display: block; margin: 0 auto;" width="300" height="300" src=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-            </div>
-            <p>This site was made with ❤️ from 🇬🇧</p>
-            <p style="font-size: x-large;text-align: left;">🇺🇦 🏳️‍🌈</p>
+                <br>
+                <button style="display: block; margin: 0 auto; width: 50%;" onclick="changeMusic()">Reroll song</button>
+            </section>
+
+            <section class="section fade-in">
+                <h2>External</h2>
+                <div class="link-grid">
+                    <a href="https://github.com/0x4248"><i class="bi bi-github"></i> GitHub</a>
+                    <a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a>
+                    <a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a>
+                    <a href="http://intranet"><i class="bi bi-lock-fill"></i> Intranet (Not public)</a>
+                    <a href="http://intranet:4248/NCP"><i class="bi bi-lock-fill"></i> Nexus Panel (Not public)</a>
+                </div>
+            </section>
+            <section class="section fade-in">
+<pre style="color:var(--blue);">
+      |\      _,,,---,,_
+ZZZzz /,`.-'`'    -.  ;-;;,_
+     |,4-  ) )-,_. ,\ (  `'-'
+    '---''(_/--'  `-'\_)
+
+</pre>
+            </section>
+            <section class="section fade-in">
+                <h2>GitHub Repositories</h2>
+                <div class="link-grid">
+                    <a href="https://github.com/0x4248/Scrapbook"><i class="bi bi-github"></i> Scrapbook</a>
+                    <a href="https://github.com/0x4248/JunkDrawer"><i class="bi bi-github"></i> JunkDrawer</a>
+                    <a href="https://github.com/0x4248/Linux"><i class="bi bi-github"></i> Linux Kernel</a>
+                    <a href="https://github.com/0x4248/0x4248.dev"><i class="bi bi-github"></i> This websites code</a>
+                </div>
+            </section>
+
+        </aside>
+    </main>
+
+    <footer class="footer fade-in">
+        <img src="/logo_no_text.svg" alt="0x4248 logo" class="footer-logo">
+        <div>
+            <p><strong>Copyright</strong> © 2022-2025 0x4248</p>
+            <p><strong>Copyright</strong> © 2022-2025 4248 Media and 4248 Music, a part of 0x4248</p>
+            <p>Some YouTube embeds are copyrighted, see original video description</p>
+            <p>Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+            <p class="support">Made with ❤️ from 🇬🇧.</p>
         </div>
-    </div>
-    <script>
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '0',
-                width: '0',
-                videoId: 'RSxlFN95PcA',
-                events: {
-                    'onReady': onPlayerReady
-                },
-            });
-        }
-
-        function onPlayerReady(event) {
-            var playPauseButton = document.getElementById("playPauseButton");
-
-            playPauseButton.addEventListener("click", function () {
-                if (player.getPlayerState() === YT.PlayerState.PLAYING) {
-                    player.pauseVideo();
-                    playPauseButton.innerHTML = `
-                    <div class="music-flex">
-                    <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
-                    <div>
-                    <p><strong>Drivin' to the moonlight</strong></p>
-                    <p><small>Verplex</small></p>
-                    <p>Click to play song</p>`;
-                } else {
-                    player.playVideo();
-                    playPauseButton.innerHTML = `
-                    <div class="music-flex">
-                    <img src="https://img.youtube.com/vi/RSxlFN95PcA/0.jpg">
-                    <div>
-                    <p><strong>Drivin' to the moonlight</strong></p>
-                    <p><small>Verplex</small></p>
-                    <p>Pause</p>`;
-                }
-            });
-        }
-    </script>
-    <script>
-        if (window.location.href.includes("translate")) {
-            document.getElementById("gt-nvframe").style.display = "none"
-        }
-        let shown = false;
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'd') {
-                if (!shown) {
-                    var debugButton = document.getElementById("debug");
-                    debugButton.style.opacity = 1;
-                    debugButton.style.display = "block";
-                    shown = true;
-                } else {
-                    var debugButton = document.getElementById("debug");
-                    debugButton.style.opacity = 0;
-                    shown = false;
-                }
-            }
-        });
-    </script>
-    <script src="https://giscus.app/client.js" data-repo="0x4248/0x4248.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkzODA5NDcwNzU=" data-mapping="number" data-term="3" data-reactions-enabled="1"
-        data-emit-metadata="0" data-input-position="top" data-theme="transparent_dark" data-lang="en"
-        data-loading="lazy" crossorigin="anonymous" async>
-        </script>
+    </footer>
 </body>
 
 </html>

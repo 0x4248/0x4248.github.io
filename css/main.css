@@ -1,0 +1,265 @@
+/* === main.css === */
+/* CODE: GNU GPL v3.0 | TEXT: CC BY-SA 4.0 */
+/* COPYRIGHT © 2022–2025 0x4248 */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html, body, p {
+  margin:0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text);
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
+  background-image: radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size));
+  background-size: var(--dot-space) var(--dot-space);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--text-alt-colour);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p, a, li {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--text-alt-colour);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-alt-colour-darker);
+}
+
+hr{
+  color: var(--blue)
+}
+
+/* === Header === */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--grey-dark);
+  z-index: 100;
+}
+
+.top-bar a {
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: var(--text);
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.top-bar a:hover {
+  color: var(--text-alt-colour);
+}
+
+.top-bar .logo {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.top-bar .accent {
+  color: var(--text-alt-colour);
+}
+
+/* === Layout === */
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 1500px;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+button {
+  color: var(--text-alt-colour);
+  font-size: 1.2rem;
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 0.5rem;
+  border: 2px var(--blue) solid;
+}
+
+
+/* Sections */
+.section, .section-border {
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 1rem;
+  border: 2px var(--purple) solid;
+}
+
+.section-inner {
+  border-radius: 12px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px var(--purple) solid;
+}
+
+
+.section-border-red {
+  border-color: var(--red);
+  border-left: 6px solid var(--red);
+}
+
+.section-border-red h2 {
+  color: var(--red);
+}
+
+
+/* === Hero === */
+.hero {
+  text-align: center;
+}
+
+.hero .logo-main {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 50%;
+  
+}
+
+/* === Profile === */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.profile-left {
+  flex: 1 1 60%;
+}
+
+.profile-right img {
+  border-radius: 10%;
+  border: 2px solid var(--blue);
+}
+
+/* === Link Grids === */
+.link-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.link-grid a {
+  background: var(--bg-dark);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.link-grid a:hover {
+  background: var(--grey-dark);
+  transform: translateX(4px);
+}
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--grey-dark);
+  background: var(--bg-light);
+  margin-top: 3rem;
+}
+
+.footer-logo {
+  width: 300px;
+  opacity: 0.2;
+  margin-bottom: 0.5rem;
+}
+
+.footer p, .footer a {
+  font-size: 0.9rem;
+  color: var(--grey-light);
+}
+
+.footer a:hover {
+  color: var(--text-alt-colour);
+}
+
+.footer .warn {
+  color: var(--red);
+}
+
+/* === Animations === */
+.fade-in {
+  transform: translateY(100px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add slight delay for progressive appearance */
+.fade-in:nth-of-type(2) { animation-delay: 0.1s; }
+.fade-in:nth-of-type(3) { animation-delay: 0.2s; }
+.fade-in:nth-of-type(4) { animation-delay: 0.3s; }
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-bar a {
+    margin: 0.25rem 0;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -38,10 +38,6 @@
     color: var(--text-colour);
 }
 
-.pixelate {
-    image-rendering: pixelated;
-}
-
 .footer-flex {
     display: flex;
     justify-content: space-between;

@@ -1,50 +1,20 @@
 {
     "News": [
         {
-            "Title": "Site update",
-            "Description": "Redone colours and design of the site.",
-            "Date": "2025-06-20",
-            "Link": "/notebook"
+            "Title": "Site revamp",
+            "Description": "Decided to redo the entire site with a brand new design that is modern and makes better use of the screen space",
+            "Date": "2025-11-07"
         },
         {
-            "Title": "Blix redesign",
-            "Description": "Blix redesign is now on 0x4248.dev",
-            "Date": "2024-09-18",
-            "Link": "/blix"
+            "Title": "Site update",
+            "Description": "Redone colors and design of the site.",
+            "Date": "2025-06-20",
+            "Link": "/notebook"
         },
         {
             "Title": "New domain",
             "Description": "The domain has been changed to 0x4248.dev",
             "Date": "2024-08-21"
-        },
-        {
-            "Title": "New design page",
-            "Description": "See how 0x4248 is designed with the reference sheet.",
-            "Date": "2024-07-10",
-            "Link": "/Pages/Design"
-        },
-        {
-            "Title": "New pages section",
-            "Description": "A new section has been added to the site. Here you can find all the main sections of the site.",
-            "Date": "2024-07-9",
-            "Link": "/Pages"
-        },
-        {
-            "Title": "Added wiki section",
-            "Description": "A new wiki section has been added. Here will be posted various articles and guides.",
-            "Date": "2024-07-8",
-            "Link": "/Wiki"
-        },
-        {
-            "Title": "About me updated",
-            "Description": "The 'About me' section has been updated. Check it out!",
-            "Date": "2024-07-04",
-            "Link": "/AboutMe"
-        },
-        {
-            "Title": "Site revamp",
-            "Description": "The site has undergone a major revamp. Check it out!",
-            "Date": "2024-07-01"
         }
     ]
 }
