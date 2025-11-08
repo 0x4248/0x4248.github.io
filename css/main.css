@@ -64,6 +64,7 @@ hr{
   padding: 0.75rem 1.5rem;
   border-bottom: 1px solid var(--grey-dark);
   z-index: 100;
+  transition: all 0.5s;
 }
 
 .top-bar a {
@@ -263,3 +264,19 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+
+.top-bar a:hover {
+    font-weight: 1000;
+    font-size: 1.4rem;
+    
+}
+
+.top-bar a {
+  transition: all 0.2s;
+}
+
+a:hover {
+    filter: brightness(1.1);
+}
+
