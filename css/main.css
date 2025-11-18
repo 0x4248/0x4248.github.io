@@ -205,7 +205,7 @@ button {
 
 .footer-logo {
   width: 300px;
-  opacity: 0.2;
+  opacity: 0.5;
   margin-bottom: 0.5rem;
 }
 
@@ -280,3 +280,18 @@ a:hover {
     filter: brightness(1.1);
 }
 
+.footer .fineprint {
+  margin: auto;
+  max-width: 600px;
+}
+
+.footer .fineprint p, .footer .fineprint a{
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+
+.footer .fineprint sup {
+  color: var(--blue);
+  padding-right: 4px;
+  font-weight: 900;
+}
