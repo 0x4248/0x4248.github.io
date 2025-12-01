@@ -1,119 +1,126 @@
-<!-- 0x4248's website -->
-<!-- This website is fully open source, yeah really -->
-<!-- And most of the code is "readable" I think -->
+<!-- 0x4248.dev -->
+<!-- CODE: GNU GPL v3.0 | TEXT: CC BY-SA 4.0 -->
+<!-- COPYRIGHT © 2022–2025 0x4248 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>0x4248 github page</title>
-        <meta name="description" content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
-        <meta name="og:description" content="Welcome to 0x4248's github page. Here you can find my projects, code, software, development and experiments.">
 
-        <!-- META DATA -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="author" content="0x4248">
-        <meta name="keywords" content="0x4248, github, page, projects, code, software, development, experiments">
-        <meta name="og:title" content="0x4248 github page">
-        <meta name="og:image" content="icon_transparent.png">
-        <meta name="og:url" content="https://0x4248.dev">
-        <meta name="og:site_name" content="0x4248 github page">
-        <meta name="og:type" content="website">
-        <meta name="og:locale" content="en_GB">
-        <meta name="og:locale:alternate" content="en_US">
-        <meta name="og:locale:alternate" content="en_CA">
-        <meta name="og:locale:alternate" content="en_AU">
-        <meta name="og:locale:alternate" content="en_NZ">
-        <meta name="og:locale:alternate" content="en_ZA">
-        <meta name="og:locale:alternate" content="en_IN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to 0x4248's site — projects, research, and experiments." />
+    <meta name="author" content="0x4248" />
+    <title>0x4248 | Home</title>
 
-        <!-- OTHER META DATA -->
-        <meta name="twitter:image" content="icon_transparent.png">
-        <meta name="twitter:card" content="summary">
-        <meta name="theme-color" content="#000000">
-        <meta name="msapplication-TileColor" content="#000000">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Orbitron:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 
-        <!-- FONTS AND ICONS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        
-        <!-- STYLES -->
-        <link rel="stylesheet" href="/css/base.css">
-        <link rel="stylesheet" href="/css/colours.css">
-        <link rel="stylesheet" href="/css/footer.css">
-    </head>
-    <body>
-        <!-- TOP BAR -->
-        <div class="top-bar">
+    <link rel="stylesheet" href="/css/colours.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/home.js" defer></script>
+    <script src="/js/news.js" defer></script>
+</head>
+
+<body>
+    <header class="top-bar">
         <div class="top-bar-left">
-            <strong><a href="/">0x4248</a></strong>
+            <a href="/" class="logo"><span class="accent">x</span>4248</a>
             <a href="/notebook">Notebook</a>
-            <a href="https://0x4248.dev/notebook/03-Projects/Main-Projects">Projects</a>
-            <a href="/AboutMe">About Me</a>
-        </div>
-            <div class="top-bar-right">
-                <a href="https://www.github.com/0x4248" style="margin-right: 30px;"><i class="bi bi-github"></i></a>
-            </div>
-        </div>   
+            <a href="/AboutMe">About</a>
 
-        <!-- MAIN CONTENT -->
-        <div class="main">
-            <div style="text-align:center;">
-                <br style="margin-top:100px">
-                <h1 class="title">404</h1>
-                <p class="subtitle">Page not found</p>
-            </div>
-            <br style="margin-top:20px">
-            <div class="section">
-                <h2>Here is what I tried:</h2>
-                <p>I ran this</p>
-                <code id="code"></code> but only got <code>0</code>
-                <h2>What now?</h2>
-                <p>Well since not even UNIX commands can find the page you are looking for, I suggest you go back to the <a href="/">home page</a> or you can look at the <a href="/pages">pages</a> that are available.</p>
-            </div>
-            <br style="margin-top:360px">
+        </div>
+        <div class="top-bar-right">
+            <a href="https://github.com/0x4248" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+    </header>
+
+    <style>
+        .fade-in{
+            opacity: 0;
+        }
+    </style>
+
+    <main class="main-grid">
+        <!-- Left column -->
+        <div class="left-column">
+            <section class="hero fade-in">
+                <h1 style="font-size: 100px; color: var(--red);">404</h1>
+                <h1>Looks like you are a little lost</h1>
+            </section>
+
+
+            <section class="section-border fade-in">
+                <h2><i class="bi bi-exclamation-triangle-fill" ></i> This page does not exist</h2>
+                <p>But its ok, right next to this or below is a list of links to get you back on the right track. The page may have been moved or deleted.</p>
+            </section>
+
         </div>
 
-        <!-- FOOTER -->
-        <br style="margin-top:20px">
-        <div class="footer">
-            <div class="flex-left">
-                <img src="https://0x4248.dev/icon_transparent.png" alt="0x4248" class="pixelate">
-                <br style="margin-bottom: 220px;">
-            </div>
-            <div class="flex-right">
-                <p>Copyright © 2024 - 2025 0x4248</p>
-                <a href="https://0x4248.dev/Legal"><i class="bi bi-arrow-left-circle-fill"></i> See privacy, terms and licence</a>
-                <br>
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="bi bi-arrow-left-circle-fill"></i> Content licence: 🅭 🅯 🄎 (CC BY-SA 4.0)</a>
-                <hr>
-                <div class="footer-flex">
-                    <div>
-                        <p><a href="https://www.github.com/0x4248"><i class="bi bi-github"></i> GitHub</a></p>
-                        <p><a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a></p>
-                        <p><a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a></p>
-                        <br>
-                    </div>
-                    <div>  
-                        <p>Site links:</p>
-                        <p><a href="https://0x4248.dev/Blog/pages"><i class="bi bi-journal-text"></i> Blog</a></p>
-                        <p><a href="https://0x4248.dev/projects"><i class="bi bi-code-slash"></i> Projects</a></p>
-                        <p><a href="https://0x4248.dev/AboutMe"><i class="bi bi-person"></i> About Me</a></p>
-                        <br>
-                    </div>
+        <!-- Right column -->
+        <aside class="right-column">
+            <section class="section fade-in">
+                <h2>Quick Links</h2>
+                <div class="link-grid">
+                    <a href="/AboutMe"><i class="bi bi-box-arrow-up-right"></i> About Me</a>
+                    <a href="/notebook"><i class="bi bi-box-arrow-up-right"></i> Notebook</a>
+                    <a href="https://0x4248.dev/Scrapbook"><i class="bi bi-box-arrow-up-right"></i> ScrapExplorer</a>
+                    <a href="https://github.com/0x4248/Scrapbook"><i class="bi bi-box-arrow-up-right"></i> Scrapbook GitHub</a>
+                    <a href="https://0x4248.dev/notebook/01-Areas/Computers/Linux/Linux"><i class="bi bi-box-arrow-up-right"></i> Manual Pages</a>
+                    <a href="https://0x4248.dev/notebook/99-Meta/Legal-information"><i class="bi bi-box-arrow-up-right"></i> Legal / Privacy</a>
                 </div>
-                <p>This site was made with ❤️ from 🇬🇧</p>
-                <p style="font-size: x-large;text-align: left;">🇺🇦 🏳️‍🌈</p>
-            </div>  
+            </section>
+
+            <section class="section fade-in">
+                <h2>External</h2>
+                <div class="link-grid">
+                    <a href="https://github.com/0x4248"><i class="bi bi-github"></i> GitHub</a>
+                    <a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a>
+                    <a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a>
+                    <a href="http://intranet"><i class="bi bi-lock-fill"></i> Intranet (Not public)</a>
+                    <a href="http://intranet:4248/NCP"><i class="bi bi-lock-fill"></i> Nexus Panel (Not public)</a>
+                </div>
+            </section>
+
+
+            <section class="section fade-in">
+<pre style="color:var(--blue);">
+      |\      _,,,---,,_
+ZZZzz /,`.-'`'    -.  ;-;;,_
+     |,4-  ) )-,_. ,\ (  `'-'
+    '---''(_/--'  `-'\_)
+<sub style="opacity: 0.5;">Sleepy little fella</sub>
+</pre>
+            </section>
+            <section class="section fade-in">
+                <h2>GitHub Repositories</h2>
+                <div class="link-grid">
+                    <a href="https://github.com/0x4248/Scrapbook"><i class="bi bi-github"></i> Scrapbook</a>
+                    <a href="https://github.com/0x4248/JunkDrawer"><i class="bi bi-github"></i> JunkDrawer</a>
+                    <a href="https://github.com/0x4248/Linux"><i class="bi bi-github"></i> Linux Kernel</a>
+                    <a href="https://github.com/0x4248/0x4248.dev"><i class="bi bi-github"></i> This websites code</a>
+                </div>
+            </section>
+
+        </aside>
+    </main>
+
+    <footer class="footer fade-in">
+        <img src="/logo_no_text.svg" alt="0x4248 logo" class="footer-logo">
+        <div>
+            <p><strong>Copyright</strong> © 2021-2025 0x4248</p>
+            <p><strong>Copyright</strong> © 2021-2025 4248 Media and 4248 Music, All part of 0x4248</p>
+            <p class="support">Made with ❤️ from 🇬🇧.</p>
+            <br>
+            <div class="fineprint">
+                <p><sup>1</sup>Content on this page is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share Alike 4.0</a>. Javascript, CSS and any other website code is under the GNU General Public License 3.0 (Or later). When using software, media and music by 0x4248, please read all licensing and terms.</p>
+                <p><sup>2</sup>Software provided by 0x4248 is offered without any warranty or liability. <strong>No responsibility is accepted for any damages resulting from its use.</strong> Please read all provided documentation before using the software.</p>
+                <p><sup>3</sup>0x4248 is not a company, non-profit organisation, or charity. 0x4248, 4248 Media, and 4248 Music are not registered trademarks. The domain 0x4248.dev is a registered domain in the United Kingdom.</p>
+                <p><sup>4</sup>Some embedded YouTube videos are copyrighted by their respective owners. A link to the original video is always provided. Videos are embedded using YouTube's nocookie feature to improve user privacy. Advertisements shown by YouTube are not affiliated with 0x4248.</p>
+            </div>
+           
         </div>
-        <script>
-            document.getElementById("code").innerText = "find . -type f -name \"*.html\" | grep \"" + window.location.pathname + "\" | wc -l";
-        </script>
-    </body>
+    </footer>
+</body>
 </html>
