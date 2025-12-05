@@ -12,6 +12,12 @@ html, body, p {
   margin:0;
 }
 
+@font-face {
+    font-family: 'A4SPEED-Bold';
+    src: url('/ttf/A4SPEED-Bold.ttf');
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -78,11 +84,16 @@ hr{
 .top-bar a:hover {
   color: var(--text-alt-colour);
 }
+.logo {
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: "A4SPEED-Bold", sans-serif;
+}
 
 .top-bar .logo {
-  font-weight: 700;
+  font-weight: 200;
   letter-spacing: 1px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "A4SPEED-Bold", sans-serif;
 }
 
 .top-bar .accent {
