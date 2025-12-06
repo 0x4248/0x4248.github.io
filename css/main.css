@@ -17,6 +17,11 @@ html, body, p {
     src: url('/ttf/A4SPEED-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'FullPack2025';
+    src: url('/ttf/FP.ttf');
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -88,6 +93,17 @@ hr{
   font-weight: 200;
   letter-spacing: 1px;
   font-family: "A4SPEED-Bold", sans-serif;
+}
+
+.sub-logo {
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: "FullPack2025", sans-serif;
+}
+
+.logo-large {
+
+  font-size: 100px;
 }
 
 .top-bar .logo {
@@ -273,6 +289,9 @@ button {
 
   .link-grid {
     grid-template-columns: 1fr;
+  }
+  .logo-large{
+    font-size: 65px;
   }
 }
 
