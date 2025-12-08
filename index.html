@@ -83,7 +83,7 @@
                     justify-items: center;
                 ">
 
-                    <a href="/Notebook">
+                    <a href="/notebook">
                         <div style="text-align: center; display: inline-block;">
                             <p class="logo" style="font-size: 30px; margin: 0;">0x4248</p>
                             <p class="sub-logo" style="font-size: 15px; margin: 0; margin-top: -20px; text-align: left;">NOTEBOOK</p>
@@ -201,9 +201,22 @@ ZZZzz /,`.-'`'    -.  ;-;;,_
         <div>
             <p><strong>Copyright</strong> © 2021-2025 0x4248</p>
             <p><strong>Copyright</strong> © 2021-2025 4248 Media and 4248 Music, All part of 0x4248</p>
-            <p class="support">Made with ❤️ from 🇬🇧.</p>
             <br>
-            <div class="fineprint">
+            <div class="badges">
+                <img src="svg/CC.svg" alt="Open Source" class="badge">
+                <img src="svg/UK MADE.svg" alt="Made in UK" class="badge">
+                <img src="svg/FFOS.svg" alt="FFOS" class="badge">
+                <img src="svg/GPL.svg" alt="GPL" class="badge">
+            </div>
+
+            <br>
+            <a onclick="document.getElementById('fineprint').classList.toggle('fineprint-toggle')" style="opacity: 0.5;font-size: small;">Show/Hide legal text</a>
+            <style>
+                .fineprint-toggle {
+                    display: none;
+                }
+            </style>
+            <div class="fineprint fineprint-toggle" id="fineprint">
                 <p><sup>1</sup>Content on this page is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share Alike 4.0</a>. Javascript, CSS and any other website code is under the GNU General Public License 3.0 (Or later). When using software, media and music by 0x4248, please read all licensing and terms.</p>
                 <p><sup>2</sup>Software provided by 0x4248 is offered without any warranty or liability. <strong>No responsibility is accepted for any damages resulting from its use.</strong> Please read all provided documentation before using the software.</p>
                 <p><sup>3</sup>0x4248 is not a company, non-profit organisation, or charity. 0x4248, 4248 Media, and 4248 Music are not registered trademarks. The domain 0x4248.dev is a registered domain in the United Kingdom.</p>
