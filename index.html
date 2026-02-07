@@ -1,242 +1,204 @@
-<!-- 0x4248.dev -->
-<!-- CODE: GNU GPL v3.0 | TEXT: CC BY-SA 4.0 -->
-<!-- COPYRIGHT © 2022–2026 0x4248 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to 0x4248's site — projects, research, and experiments." />
-    <meta name="author" content="0x4248" />
-    <title>0x4248 | Home</title>
-
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Orbitron:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/colours.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/home.js" defer></script>
-    <script src="/js/news.js" defer></script>
+    <meta charset="UTF-8">
+    <title>0x4248</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="top-bar">
-        <div class="top-bar-left">
-            <a href="/" class="logo">0x4248</a>
-            <a href="/notebook">Notebook</a>
-            <a href="/AboutMe">About</a>
 
-        </div>
-        <div class="top-bar-right">
-            <a href="https://github.com/0x4248" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        </div>
-    </header>
+    <pre class="topbar">
+<span class="logo">0x4248</span> [<a href="/">home</a>] [<a href="https://n.0x4248.dev">Notebook</a>] [<a href="https://m.0x4248.dev">Man pages</a>] [<a href="/nexus">Nexus</a>] [<a href="https://github.com/0x4248">GitHub</a>]
+</pre>
 
-    <style>
-        .fade-in{
-            opacity: 0;
-        }
-    </style>
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <pre class="nav">
+<h1><img src="icons/computer_search-0.png" class="icon" style="width: 30px; height: 30px;">/ - ROOT</h1>
+* <a href="/">landing</a>
+    * <a href="/AboutMe">about</a>
+    * <a href="https://n.0x4248.dev">Notebook</a>
+    * <a href="https://m.0x4248.dev">Man pages</a>
+    * <a href="/nexus">nexus</a>
+    * <a href="https://github.com/0x4248">git</a>
+    <hr>
+<h2>External</h2>
 
-    <main class="main-grid">
-        <!-- Left column -->
-        <div class="left-column">
-            <section class="hero fade-in">
-                <span class="logo logo-large">0x4248</span>
-                <h1>Welcome to my website!</h1>
-            </section>
+* <a href="https://github.com/0x4248">GitHub</a>
+* <a href="https://gist.github.com/0x4248">Gist</a>
+* <a href="https://www.openstreetmap.org/user/0x4248">OpenStreetMap</a>
 
-            <section class="section fade-in">
-                <div class="profile">
-                    <div class="profile-left">
-                        <h2>Hello there, this is 0x4248's website!</h2>
-                        <p>Here you'll find my projects, experiments, and research notes. Learn more
-                            <a href="/AboutMe">about me</a>, read my <a href="/notebook">notebook</a>,
-                            or check out my <a href="https://github.com/0x4248">GitHub</a>.
-                        </p>
-                    </div>
-                    <div class="profile-right">
-                        <img src="https://avatars.githubusercontent.com/u/60709927?v=4" alt="0x4248 avatar" width="120"
-                            height="120">
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-border fade-in">
-                <h2><i class="bi bi-exclamation-triangle-fill" ></i> Disruptions in the UK</h2>
-                <p>Due to the Online Safety Act, Three (the mobile network) recently blocked this site for all
-                    customers. The issue was resolved after contacting Three, but it could change.</p>
-
-            </section>
-
-
-            <section class="section fade-in">
-                <h2>How do I navigate your site?</h2>
-                <p>You can use these logos here to navigate around the site.</p>
-                <hr>
-                            <div style="
-                    display: grid; 
-                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-                    gap: 40px; 
-                    justify-items: center;
-                ">
-
-                    <a href="/notebook">
-                        <div style="text-align: center; display: inline-block;">
-                            <p class="logo" style="font-size: 30px; margin: 0;">0x4248</p>
-                            <p class="sub-logo" style="font-size: 15px; margin: 0; margin-top: -20px; text-align: left;">NOTEBOOK</p>
-                        </div>
-                    </a>
-                    <a href="/nexus">
-                        <div style="text-align: center; display: inline-block;">
-                            <p class="logo" style="font-size: 30px; margin: 0;">0x4248</p>
-                            <p class="sub-logo" style="font-size: 15px; margin: 0; margin-top: -20px; text-align: left;">NEXUS</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/0x4248">
-                        <div style="text-align: center; display: inline-block;">
-                            <p class="logo" style="font-size: 30px; margin: 0;">0x4248</p>
-                            <p class="sub-logo" style="font-size: 15px; margin: 0; margin-top: -20px; text-align: left;">GITHUB</p>
-                        </div>
-                    </a>
-                    <a href="https://0x4248.dev/notebook/01-Areas/Computers/Linux/Linux">
-                        <div style="text-align: center; display: inline-block;">
-                            <p class="logo" style="font-size: 30px; margin: 0;">0x4248</p>
-                            <p class="sub-logo" style="font-size: 15px; margin: 0; margin-top: -20px; text-align: left;">MANUAL</p>
-                        </div>
-                    </a>
-
-            </div>
-            <hr>
-
-            Here is also a rundown on what each section is for:
-                <ul>
-                    <li><strong>Notebook</strong>: My personal knowledge base and documentation hub.</li>
-                    <li><strong>Nexus</strong>: My custom web portal and dashboard system.</li>
-                    <li><strong>GitHub</strong>: My code repositories and open-source projects.</li>
-                    <li><strong>Manual</strong>: A collection of Linux manual pages and guides.</li>
-                </ul>
-                <p>Feel free to explore these sections to learn more about my work and interests!</p>
-
-            </section>
-
-            <section class="section fade-in">
-                <h2>Recent News</h2>
-                <div id="news"></div>
-            </section>
-
-            <section class="section fade-in">
-                <h2>Leave a comment</h2>
-                <div class="giscus">
-
-                </div>
-                <script src="https://giscus.app/client.js" data-repo="0x4248/0x4248.github.io"
-                data-repo-id="MDEwOlJlcG9zaXRvcnkzODA5NDcwNzU=" data-mapping="number" data-term="3" data-reactions-enabled="1"
-                data-emit-metadata="0" data-input-position="top" data-theme="transparent_dark" data-lang="en"
-                data-loading="lazy" crossorigin="anonymous" async>
-                </script>
-            </section>
-
-        </div>
-
-        <!-- Right column -->
-        <aside class="right-column">
-            <section class="section fade-in">
-                <h2>Quick Links</h2>
-                <div class="link-grid">
-                    <a href="/AboutMe"><i class="bi bi-box-arrow-up-right"></i> About Me</a>
-                    <a href="/notebook"><i class="bi bi-box-arrow-up-right"></i> Notebook</a>
-                    <a href="https://0x4248.dev/nexus"><i class="bi bi-box-arrow-up-right"></i> Nexus (Atlas)</a>
-                    <a href="https://github.com/0x4248/nexus"><i class="bi bi-box-arrow-up-right"></i> Nexus GitHub</a>
-                    <a href="https://0x4248.dev/notebook/01-Areas/Computers/Linux/Linux"><i class="bi bi-box-arrow-up-right"></i> Manual Pages</a>
-                    <a href="https://0x4248.dev/notebook/99-Meta/Legal-information"><i class="bi bi-box-arrow-up-right"></i> Legal / Privacy</a>
-                </div>
-            </section>
-
-            <section class="section fade-in">
-                <h2>External</h2>
-                <div class="link-grid">
-                    <a href="https://github.com/0x4248"><i class="bi bi-github"></i> GitHub</a>
-                    <a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a>
-                    <a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a>
-                    <a href="http://intranet"><i class="bi bi-lock-fill"></i> Intranet (Not public)</a>
-                    <a href="http://intranet:4248/NCP"><i class="bi bi-lock-fill"></i> Nexus Panel (Not public)</a>
-                </div>
-            </section>
-
-            <section class="section fade-in">
-                <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=0x4248&langs_count=50&exclude_repo=linux,busybox,0x4248.github.io,notebook&layout=compact&theme=catppuccin_mocha">
-                <i style="font-size: small;opacity:0.5;">Excluding this website code and forks</i>
-            </section>
-
-
-            <section class="section fade-in">
-                <h2>Songs I like</h2>
-                    <iframe id="music" style="display: block; margin: 0 auto;" width="300" height="300" src=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <br>
-                <button style="display: block; margin: 0 auto; width: 50%;" onclick="changeMusic()">Reroll song</button>
-            </section>
-
-
-            <section class="section fade-in">
-<pre style="color:var(--blue);">
+<h2>Accessibility</h2>
+<b>JS Required</b>
+* <a onclick="document.getElementById('main').style.fontFamily='Georgia,serif'">Set to serif font</a>
+* <a onclick="document.getElementById('main').style.filter='contrast(200%)'">High contrast</a>
+* <a onclick="document.getElementById('main').style.filter='invert(100%)'">Invert colours</a>
+* <a onclick="document.getElementById('main').style.fontSize='18px'">Increase font size</a>
+* <a onclick="document.getElementById('main').style.fontSize='14px'">Reset font size</a>
+            </pre>
+            </pre>
+            <pre>
       |\      _,,,---,,_
 ZZZzz /,`.-'`'    -.  ;-;;,_
      |,4-  ) )-,_. ,\ (  `'-'
     '---''(_/--'  `-'\_)
-<sub style="opacity: 0.5;">Sleepy little fella</sub>
-</pre>
-            </section>
-            <section class="section fade-in">
-                <h2>GitHub Repositories</h2>
-                <div class="link-grid">
-                    <a href="https://github.com/0x4248/nexus"><i class="bi bi-github"></i> Nexus</a>
-                    <a href="https://github.com/0x4248/JunkDrawer"><i class="bi bi-github"></i> JunkDrawer</a>
-                    <a href="https://github.com/0x4248/Linux"><i class="bi bi-github"></i> Linux Kernel</a>
-                    <a href="https://github.com/0x4248/0x4248.dev"><i class="bi bi-github"></i> This websites code</a>
+Sleepy little fella
+            </pre>
+
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content" id="main">
+
+            <p class="logo">0x4248</p>
+
+            <h1>Welcome</h1>
+
+            <div class="mobile-warning">
+                <div class="p-icon-flex">
+                    <img src="/icons/msg_warning-0.png" class="icon">
+                    <p>This site is designed primarily for desktop and laptop systems. Some content may not display
+                        optimally on mobile devices.</p>
                 </div>
-            </section>
+            </div>
+            <div class="p-icon-flex">
+                <img src="/icons/world-4.png" class="icon-large">
+                <p>
+                    This is the personal website of 0x4248. It serves as a central location for my projects, research
+                    notes, experiments, and long-term technical work.
+                    Due to the recent downfall of the internet and the rise of heavy javascript frameworks, I wanted to
+                    create a site that lets me share my work in a fast, simple, and accessible way. Therefore this site
+                    is simple by design; low bandwith and low resource usage was a major goal.
+                    <br>
+                    Sadly this site isnt <code>lynx</code>, <code>elinks</code>, or any other text-based browser
+                    compatible, but any browser newer than 2010 should have no problem rendering it.
+            </div>
+            <p>
+                This website is heavily inspired by the old-school 2000-2010s web design which always gives me the
+                nostalgic vibes of browsing the web in my early childhood. I always strive for simplicity and clear
+                organization in my design, and I hope that this site reflects that. I also wanted to make something that
+            </p>
+            <p>
+                Take a scroll down to look at some of the things I have been working on recently, and feel free to
+                explore the site using the navigation links on the left or top of the page. If you have any questions,
+                suggestions, or just want to say hi, you can contact me at <code>0x4248@tuta.io</code>.
+            </p>
 
-        </aside>
-    </main>
+            <hr>
+            <div class="callout-error">
+                <h2>Geo-blocking Notice</h2>
+                <div class="p-icon-flex">
+                    <img src="/icons/msg_error-0.png" class="icon">
+                    <div>
+                        <p>
+                            Due to ongoing political internet censorship and geo-blocking in certain regions, some users
+                            may experience difficulty accessing this site.
+                            This is common in countries with strict internet regulations <i>(Including recently the
+                                UK)</i> and may result in the site being completely inaccessible.
+                            If this is the case:
+                        <ul>
+                            <li>Use a VPN or proxy</li>
+                            <li>Contact me <code>0x4248@tuta.com</code> to report it with your country, ISP <i>(Dont
+                                    disclose more info than you are comfortable with)</i> and any error messages you
+                                receive.</li>
+                        </ul>
+                            Many blocked websites are only small websites, forums, and even personal websites like this.
+                    </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h2>How do I navigate your site?</h2>
 
-    <footer class="footer fade-in">
-        <div style="margin: auto; text-align: center; display: inline-block;">
-            <p class="logo" style="font-size: 60px; margin: 0;">0x4248</p>
-            <p class="sub-logo" style="font-size: 30px; margin: 0;margin-top:-40px; text-align: left;">.DEV</p>
+            <p>
+                Navigation is intentionally simple. This site is in 3 main sections: <a href="/notebook">notebook</a>,
+                <a href="/nexus">nexus</a>, and this page your on. I call this page the root pages.
+            <p>Each section serves a distinct purpose:</p>
+
+            <ul>
+                <li><strong><a href="/notebook">Notebook</a></strong> - This is where I write notes, documentation, and
+                    anything i produce in Obsidian. <b>Yes this page has way more JavaScript</b> thats because its
+                    done using Quartz which is an amazing project.</li>
+                <li><strong><a href="/nexus">Nexus</a></strong> - This is where almost all of my code lives. Its a
+                    simple,
+                    low-bandwidth git repository browser that I wrote myself.</li>
+                <li><strong>Root</strong> - This page. It serves as a landing
+                    page and general introduction to the site. I also post news updates and general information about
+                    myself here.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Recent News</h2>
+
+            <h3>Site revamp</h3>
+            <p><em>2025-11-07</em></p>
+            <p>
+                Full redesign of the site with a focus on improved layout, readability, and more effective use of screen
+                space.
+            </p>
+
+            <h3>Site update</h3>
+            <p><em>2025-06-20</em></p>
+            <p>
+                Updated colour scheme and general visual refinements.
+            </p>
+
+            <h3>New domain</h3>
+            <p><em>2024-08-21</em></p>
+            <p>
+                Site migrated to the 0x4248.dev domain.
+            </p>
+
+            <hr>
+
+            <h2>ABOUT ME</h2>
+
+            <h3>About Me</h3>
+            <p><strong>Name:</strong> Lewis (known online as 0x4248)</p>
+            <p><strong>Pronouns:</strong> He/They</p>
+            <p><strong>Age:</strong> 18</p>
+
+            <h3>Background</h3>
+            <p>
+                I am a software developer with a strong interest in operating systems, low-level programming, and cyber
+                security.
+                I am currently studying Computer Science and spend much of my time working on personal systems-oriented
+                projects.
+            </p>
+            <p>
+                I live in southern England. Outside of software, I have an interest in radio communications and
+                photography.
+                I frequently experiment with Linux internals, firmware, and kernel-level components, often targeting
+                unconventional or constrained hardware.
+            </p>
+            <p>
+                I also work extensively with Blender for 3D, rendering, and general media production. I use it as my
+                primary tool for visual work.
+            </p>
+
+            <hr>
+            <h2>Legal</h2>
+            <p><b>Copyright © 2021-2026 0x4248</b></p>
+            <p><i>0x4248, 4248 Systems, 4248 Media and 4248 Music is not a registered company, charity, or legal entity.
+                    It is a online personal
+                    identity and personal brand for my work and projects. 0x4248 does not gain financial profit from any
+                    of the projects, software,
+                    or media associated with the name; however donations to help support the hosting, development, and
+                    maintenance costs of the projects
+                    are accepted and appreciated. Most software released under the 0x4248 name is licensed under the
+                    GPLv3 or later and does NOT PROVIDE
+                    ANY WARRANTY OR LIABILITY. All content on this site is licensed under the Creative Commons
+                    Attribution-ShareAlike 4.0 International
+                    License (CC BY-SA 4.0) unless otherwise noted.</i></p>
+
         </div>
 
-        <div>
-            <p><strong>Copyright</strong> © 2021-2026 0x4248</p>
-            <p><strong>Copyright</strong> © 2021-2026 4248 Media and 4248 Music, All part of 0x4248</p>
-            <br>
-            <div class="badges">
-                <img src="svg/CC.svg" alt="Open Source" class="badge">
-                <img src="svg/UK MADE.svg" alt="Made in UK" class="badge">
-                <img src="svg/FFOS.svg" alt="FFOS" class="badge">
-                <img src="svg/GPL.svg" alt="GPL" class="badge">
-            </div>
-
-            <br>
-            <a onclick="document.getElementById('fineprint').classList.toggle('fineprint-toggle')" style="opacity: 0.5;font-size: small;">Show/Hide legal text</a>
-            <style>
-                .fineprint-toggle {
-                    display: none;
-                }
-            </style>
-            <div class="fineprint fineprint-toggle" id="fineprint">
-                <p><sup>1</sup>Content on this page is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share Alike 4.0</a>. Javascript, CSS and any other website code is under the GNU General Public License 3.0 (Or later). When using software, media and music by 0x4248, please read all licensing and terms.</p>
-                <p><sup>2</sup>Software provided by 0x4248 is offered without any warranty or liability. <strong>No responsibility is accepted for any damages resulting from its use.</strong> Please read all provided documentation before using the software.</p>
-                <p><sup>3</sup>0x4248 is not a company, non-profit organisation, or charity. 0x4248, 4248 Media, and 4248 Music are not registered trademarks. The domain 0x4248.dev is a registered domain in the United Kingdom.</p>
-                <p><sup>4</sup>Some embedded YouTube videos are copyrighted by their respective owners. A link to the original video is always provided. Videos are embedded using YouTube's nocookie feature to improve user privacy. Advertisements shown by YouTube are not affiliated with 0x4248.</p>
-                <p><sup>5</sup>Logo font is called A4 SPEED FONT and is completely free for personal use only.</p>
-            </div>
-        </div>
-    </footer>
 </body>
+
 </html>

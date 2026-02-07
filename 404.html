@@ -1,143 +1,80 @@
-<!-- 0x4248.dev -->
-<!-- CODE: GNU GPL v3.0 | TEXT: CC BY-SA 4.0 -->
-<!-- COPYRIGHT © 2022–2026 0x4248 -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to 0x4248's site — projects, research, and experiments." />
-    <meta name="author" content="0x4248" />
-    <title>0x4248 | Home</title>
+  <meta charset="UTF-8">
+  <title>0x4248.dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Orbitron:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/colours.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/home.js" defer></script>
-    <script src="/js/news.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="top-bar">
-        <div class="top-bar-left">
-            <a href="/" class="logo">0x4248</a>
-            <a href="/notebook">Notebook</a>
-            <a href="/AboutMe">About</a>
 
-        </div>
-        <div class="top-bar-right">
-            <a href="https://github.com/0x4248" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        </div>
-    </header>
+<header class="topbar">
+  <span class="host">0x4248.dev</span>
+  <nav>
+    <a href="/">home</a>
+    <a href="/notebook">notebook</a>
+    <a href="/nexus">nexus</a>
+    <a href="/github">git</a>
+  </nav>
+  <span class="status">uptime: 12y</span>
+</header>
 
-    <style>
-        .fade-in{
-            opacity: 0;
-        }
-    </style>
+<div class="layout">
 
-    <main class="main-grid">
-        <!-- Left column -->
-        <div class="left-column">
-            <section class="hero fade-in">
-                <h1 class="logo" style="font-size: 100px; color: var(--red);">404 ERROR</h1>
-                <h1>Looks like you are a little lost</h1>
-            </section>
+  <aside class="sidebar">
+    <h2>navigation</h2>
+    <ul>
+      <li><a href="/notebook">notebook</a></li>
+      <li><a href="/projects">projects</a></li>
+      <li><a href="/systems">systems</a></li>
+      <li><a href="/manual">manual</a></li>
+      <li><a href="/about">about</a></li>
+    </ul>
 
+    <hr>
 
-            <section class="section-border fade-in">
-                <h2><i class="bi bi-exclamation-triangle-fill" ></i> This page does not exist</h2>
-                <p>But its ok, right next to this or below is a list of links to get you back on the right track. The page may have been moved or deleted.</p>
-            </section>
+    <p class="tiny">
+      systems · linux · networking<br>
+      c · c++ · kernel · infra
+    </p>
+  </aside>
 
-        </div>
+  <main class="content">
+    <h1>Welcome</h1>
 
-        <!-- Right column -->
-        <aside class="right-column">
-            <section class="section fade-in">
-                <h2>Quick Links</h2>
-                <div class="link-grid">
-                    <a href="/AboutMe"><i class="bi bi-box-arrow-up-right"></i> About Me</a>
-                    <a href="/notebook"><i class="bi bi-box-arrow-up-right"></i> Notebook</a>
-                    <a href="https://0x4248.dev/nexus"><i class="bi bi-box-arrow-up-right"></i> Nexus (Atlas)</a>
-                    <a href="https://github.com/0x4248/nexus"><i class="bi bi-box-arrow-up-right"></i> Nexus GitHub</a>
-                    <a href="https://0x4248.dev/notebook/01-Areas/Computers/Linux/Linux"><i class="bi bi-box-arrow-up-right"></i> Manual Pages</a>
-                    <a href="https://0x4248.dev/notebook/99-Meta/Legal-information"><i class="bi bi-box-arrow-up-right"></i> Legal / Privacy</a>
-                </div>
-            </section>
+    <p>
+      This is my personal site.  
+      It contains notes, experiments, and system documentation.
+    </p>
 
-            <section class="section fade-in">
-                <h2>External</h2>
-                <div class="link-grid">
-                    <a href="https://github.com/0x4248"><i class="bi bi-github"></i> GitHub</a>
-                    <a href="https://gist.github.com/0x4248"><i class="bi bi-file-earmark-code"></i> Gist</a>
-                    <a href="https://www.openstreetmap.org/user/0x4248"><i class="bi bi-map-fill"></i> OpenStreetMap</a>
-                    <a href="http://intranet"><i class="bi bi-lock-fill"></i> Intranet (Not public)</a>
-                    <a href="http://intranet:4248/NCP"><i class="bi bi-lock-fill"></i> Nexus Panel (Not public)</a>
-                </div>
-            </section>
+    <h2>Status</h2>
+    <pre>
+host: 0x4248.dev
+os:   linux
+role: systems / infrastructure
+    </pre>
 
+    <h2>Recent</h2>
+    <ul>
+      <li>[2026-02-01] notebook restructure</li>
+      <li>[2026-01-18] nexus backend cleanup</li>
+      <li>[2025-12-29] kernel notes update</li>
+    </ul>
 
-            <section class="section fade-in">
-<pre style="color:var(--blue);">
-      |\      _,,,---,,_
-ZZZzz /,`.-'`'    -.  ;-;;,_
-     |,4-  ) )-,_. ,\ (  `'-'
-    '---''(_/--'  `-'\_)
-<sub style="opacity: 0.5;">Sleepy little fella</sub>
-</pre>
-            </section>
-            <section class="section fade-in">
-                <h2>GitHub Repositories</h2>
-                <div class="link-grid">
-                    <a href="https://github.com/0x4248/nexus"><i class="bi bi-github"></i> Nexus</a>
-                    <a href="https://github.com/0x4248/JunkDrawer"><i class="bi bi-github"></i> JunkDrawer</a>
-                    <a href="https://github.com/0x4248/Linux"><i class="bi bi-github"></i> Linux Kernel</a>
-                    <a href="https://github.com/0x4248/0x4248.dev"><i class="bi bi-github"></i> This websites code</a>
-                </div>
-            </section>
+    <hr>
 
-        </aside>
-    </main>
+    <p class="footer-note">
+      © 2021–2026 0x4248 · CC BY-SA / GPLv3
+    </p>
+  </main>
 
-    <footer class="footer fade-in">
-        <div style="margin: auto; text-align: center; display: inline-block;">
-            <p class="logo" style="font-size: 60px; margin: 0;">0x4248</p>
-            <p class="sub-logo" style="font-size: 30px; margin: 0;margin-top:-40px; text-align: left;">.DEV</p>
-        </div>
+</div>
 
-        <div>
-            <p><strong>Copyright</strong> © 2021-2026 0x4248</p>
-            <p><strong>Copyright</strong> © 2021-2026 4248 Media and 4248 Music, All part of 0x4248</p>
-            <br>
-            <div class="badges">
-                <img src="svg/CC.svg" alt="Open Source" class="badge">
-                <img src="svg/UK MADE.svg" alt="Made in UK" class="badge">
-                <img src="svg/FFOS.svg" alt="FFOS" class="badge">
-                <img src="svg/GPL.svg" alt="GPL" class="badge">
-            </div>
-
-            <br>
-            <a onclick="document.getElementById('fineprint').classList.toggle('fineprint-toggle')" style="opacity: 0.5;font-size: small;">Show/Hide legal text</a>
-            <style>
-                .fineprint-toggle {
-                    display: none;
-                }
-            </style>
-            <div class="fineprint fineprint-toggle" id="fineprint">
-                <p><sup>1</sup>Content on this page is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Share Alike 4.0</a>. Javascript, CSS and any other website code is under the GNU General Public License 3.0 (Or later). When using software, media and music by 0x4248, please read all licensing and terms.</p>
-                <p><sup>2</sup>Software provided by 0x4248 is offered without any warranty or liability. <strong>No responsibility is accepted for any damages resulting from its use.</strong> Please read all provided documentation before using the software.</p>
-                <p><sup>3</sup>0x4248 is not a company, non-profit organisation, or charity. 0x4248, 4248 Media, and 4248 Music are not registered trademarks. The domain 0x4248.dev is a registered domain in the United Kingdom.</p>
-                <p><sup>4</sup>Some embedded YouTube videos are copyrighted by their respective owners. A link to the original video is always provided. Videos are embedded using YouTube's nocookie feature to improve user privacy. Advertisements shown by YouTube are not affiliated with 0x4248.</p>
-                <p><sup>5</sup>Logo font is called A4 SPEED FONT and is completely free for personal use only.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
