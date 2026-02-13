@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <title>0x4248</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
-<body>
+<body class="basic">
 
     <pre class="topbar">
-<span class="logo">0x4248</span> [<a href="/">home</a>] [<a href="https://n.0x4248.dev">Notebook</a>] [<a href="https://m.0x4248.dev">Man pages</a>] [<a href="/nexus">Nexus</a>] [<a href="https://github.com/0x4248">GitHub</a>]
+<span class="logo">0x4248</span> [<a href="/">home</a>] [<a href="https://n.0x4248.dev">Notebook</a>] [<a href="https://m.0x4248.dev">Man pages</a>] [<a href="/nexus">Nexus</a>] [<a href="https://github.com/0x4248">GitHub</a>] <a id="basic-toggle" onclick="localStorage.setItem('force_compatibility_mode', 'false'); location.reload();">Turn off basic CSS</a>
 </pre>
 
     <div class="container">
         <!-- SIDEBAR -->
         <div class="sidebar">
             <pre class="nav">
-<h1><img src="icons/computer_search-0.png" class="icon" style="width: 30px; height: 30px;">/ - ROOT</h1>
+<h1><img src="/icons/computer_search-0.png" class="icon" style="width: 30px; height: 30px;">/ - ROOT</h1>
 * <a href="/">landing</a>
     * <a href="/AboutMe">about</a>
     * <a href="https://n.0x4248.dev">Notebook</a>
@@ -39,6 +39,7 @@
 * <a onclick="document.getElementById('main').style.filter='invert(100%)'">Invert colours</a>
 * <a onclick="document.getElementById('main').style.fontSize='18px'">Increase font size</a>
 * <a onclick="document.getElementById('main').style.fontSize='14px'">Reset font size</a>
+* <a onclick="localStorage.setItem('force_compatibility_mode', 'true'); location.reload();">Force compatibility mode</a>
             </pre>
             </pre>
             <pre>
@@ -66,6 +67,14 @@ Sleepy little fella
                         optimally on mobile devices.</p>
                 </div>
             </div>
+
+            <div class="compatibility-warning" id="compatibility-warning">
+                <div class="p-icon-flex">
+                    <img src="/icons/msg_warning-0.png" class="icon">
+                    <p>Website is now in compatibility mode. Some features may not work and the layout may be broken.</p>
+                </div>
+            </div>
+
             <div class="p-icon-flex">
                 <img src="/icons/world-4.png" class="icon-large">
                 <p>
@@ -161,7 +170,6 @@ Sleepy little fella
 
             <h3>About Me</h3>
             <p><strong>Name:</strong> Lewis (known online as 0x4248)</p>
-            <p><strong>Pronouns:</strong> He/They</p>
             <p><strong>Age:</strong> 18</p>
 
             <h3>Background</h3>
@@ -200,5 +208,17 @@ Sleepy little fella
         </div>
 
 </body>
+<script>
+    // if the local storage key "force_compatibility_mode" is set to "true", then we will assume the user has intentionally chosen to view the site in compatibility mode and we will not hide the compatibility warning or remove the "basic" class from the body
+    if (localStorage.getItem("force_compatibility_mode") === "true") {
+        document.getElementById("compatibility-warning").style.display = "block";
+
+    } else {
+        document.body.classList.remove("basic");
+        document.getElementById("compatibility-warning").style.display = "none";
+        document.getElementById("basic-toggle").style.display = "none";
+    }
+
+</script>
 
 </html>

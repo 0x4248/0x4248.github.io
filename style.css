@@ -291,6 +291,39 @@ main {
   display: none;
 }
 
+
+figure {
+    float: left;
+    width: 300px;
+    margin: 5px;
+    text-align: center;
+    height: 270px;       /* total height including image + caption */
+    overflow: hidden;    /* hide overflow if caption too long */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+figcaption {
+    font-size: 0.85em;
+    color: #555;
+    height: 40px;        /* fixed height for captions */
+    overflow: hidden;    /* hide overflow */
+    line-height: 1.2em;  /* consistent spacing */
+}
+
+.month-clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+
 @media screen and (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
@@ -315,4 +348,132 @@ main {
     margin: 12px 0;
   }
   
+}
+
+.basic {
+  background: #fff !important;
+  color: #000 !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+
+/* Reset backgrounds and colors for all descendants */
+.basic * {
+  background: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  image-rendering: auto !important;
+}
+
+/* Remove background images */
+.basic body, 
+.basic html {
+  background-image: none !important;
+  background-color: #fff !important;
+}
+
+/* Remove layout grid and sidebar */
+.basic .container {
+  display: block !important;
+  margin: 0 !important;
+  max-width: 640px !important;
+  width: auto !important;
+  padding: 10px !important;
+  border: none !important;
+}
+
+.basic .sidebar {
+  display: none !important;
+}
+
+/* Reset topbar */
+.basic .topbar {
+  background: none !important;
+  color: #000 !important;
+  font-family: serif !important;
+  font-size: 18px !important;
+  padding: 5px 10px !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+/* Links: simple underline and blue color */
+.basic a {
+  color: #00f !important;
+  text-decoration: underline !important;
+}
+
+.basic a:hover {
+  background: none !important;
+  color: #00a !important;
+}
+
+/* Headings: use serif fonts, black text */
+.basic h1, .basic h2, .basic h3 {
+  font-family: serif !important;
+  color: #000 !important;
+  font-weight: normal !important;
+  margin-top: 1.2em !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Figure and captions: no float, block layout */
+.basic figure {
+  float: none !important;
+  width: auto !important;
+  margin: 1em 0 !important;
+  text-align: left !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.basic figure img {
+  border: none !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 0 0.5em 0 !important;
+}
+
+.basic figcaption {
+  color: #444 !important;
+  font-style: italic !important;
+  font-size: 0.9em !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Remove shadows and borders globally */
+.basic * {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  image-rendering: pixelated !important;
+}
+
+/* Reset lists */
+.basic ul, .basic ol {
+  padding-left: 40px !important;
+  margin: 1em 0 !important;
+  list-style: disc !important;
+}
+
+.basic li {
+  margin: 0.3em 0 !important;
+}
+
+/* Remove code block backgrounds */
+.basic pre, .basic code {
+  background: transparent !important; 
+  border: none !important;
+  color: #000 !important;
+  font-family: monospace !important;
+}
+
+/* Hide mobile warning (if any) */
+.basic .mobile-warning {
+  display: none !important;
 }
