@@ -13,7 +13,11 @@ HEADERS = """
 <i>© 2026 4248 ASPL (4248 Arial Space Photography Laboratory), A part of 0x4248. Licensed under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).</i>
 <i>© 2026 0x4248.</i>
 
-  
+<div>
+<h2>My camera collection:</h2>
+<img src="/album/cam_imgs/SONY_Mavica.jpg" loading="lazy" width="200">
+<img src="/album/cam_imgs/Canon_4000D.jpg" loading="lazy" width="200">
+<img src="/album/cam_imgs/Canon_5D.jpg" loading="lazy"  width="200"> 
 """
 
 def month_name(year, month):
