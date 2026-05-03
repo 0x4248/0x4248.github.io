@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>0x4248</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="basic">
+
+    <pre class="topbar">
+<span class="logo">0x4248</span> [<a href="/">home</a>] [<a href="https://n.0x4248.dev">Notebook</a>] [<a href="https://0x4248.dev/album">Photo Album</a>] [<a href="/nexus">Nexus</a>] [<a href="https://github.com/0x4248">GitHub</a>] <a id="basic-toggle" onclick="localStorage.setItem('force_compatibility_mode', 'false'); location.reload();">Turn off basic CSS</a>
+</pre>
+
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <pre class="nav">
+<h1><img src="/icons/computer_search-0.png" class="icon" style="width: 30px; height: 30px;">/ - ROOT</h1>
+* <a href="/">landing</a>
+    * <a href="/AboutMe">about</a>
+    * <a href="https://n.0x4248.dev">Notebook</a>
+    * <a href="https://m.0x4248.dev">Man pages</a>
+    * <a href="/nexus">nexus</a>
+    * <a href="/album">Photo Album</a>
+    * <a href="https://github.com/0x4248">git</a>
+    <hr>
+<h2>External</h2>
+
+* <a href="https://github.com/0x4248">GitHub</a>
+* <a href="https://gist.github.com/0x4248">Gist</a>
+* <a href="https://www.openstreetmap.org/user/0x4248">OpenStreetMap</a>
+
+<h2>Accessibility</h2>
+<b>JS Required</b>
+* <a onclick="document.getElementById('main').style.fontFamily='Georgia,serif'">Set to serif font</a>
+* <a onclick="document.getElementById('main').style.filter='contrast(200%)'">High contrast</a>
+* <a onclick="document.getElementById('main').style.filter='invert(100%)'">Invert colours</a>
+* <a onclick="document.getElementById('main').style.fontSize='18px'">Increase font size</a>
+* <a onclick="document.getElementById('main').style.fontSize='14px'">Reset font size</a>
+* <a onclick="localStorage.setItem('force_compatibility_mode', 'true'); location.reload();">Force compatibility mode</a>
+            </pre>
+            </pre>
+            <pre>
+      |\      _,,,---,,_
+ZZZzz /,`.-'`'    -.  ;-;;,_
+     |,4-  ) )-,_. ,\ (  `'-'
+    '---''(_/--'  `-'\_)
+Sleepy little fella
+            </pre>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content" id="main">
+
+            <h1>Solar-Terrestrial Data Panels </h1>
+
+            <div class="mobile-warning">
+                <div class="p-icon-flex">
+                    <img src="/icons/msg_warning-0.png" class="icon">
+                    <p>This site is designed primarily for desktop and laptop systems. Some content may not display
+                        optimally on mobile devices.</p>
+                </div>
+            </div>
+
+            <div class="compatibility-warning" id="compatibility-warning">
+                <div class="p-icon-flex">
+                    <img src="/icons/msg_warning-0.png" class="icon">
+                    <p>Website is now in compatibility mode. Some features may not work and the layout may be broken.</p>
+                </div>
+            </div>
+
+            <div class="p-icon-flex">
+                <img src="/icons/channels-4.png" class="icon-large">
+                <p>
+                    This page displays a collection of solar and space weather data panels, as well as some other 
+                    image based forcasts for various perameters. The data is sourced from various public APIs.
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarn0nbh.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solar101vhfpic.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarsun.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solargraph.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/marston.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarmuf.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarmap.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarglobe.php"></a>
+                <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarsystem.php"></a>
+                <div id="rigref-solar-widget"><a href="https://rigreference.com/solar" target="_blank"><img src="https://rigreference.com/solar/img/tall" border="0"></a></div>
+            </div>
+</body>
+<script>
+    // if the local storage key "force_compatibility_mode" is set to "true", then we will assume the user has intentionally chosen to view the site in compatibility mode and we will not hide the compatibility warning or remove the "basic" class from the body
+    if (localStorage.getItem("force_compatibility_mode") === "true") {
+        document.getElementById("compatibility-warning").style.display = "block";
+
+    } else {
+        document.body.classList.remove("basic");
+        document.getElementById("compatibility-warning").style.display = "none";
+        document.getElementById("basic-toggle").style.display = "none";
+    }
+
+</script>
+
+</html>
