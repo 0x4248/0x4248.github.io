@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>0x4248</title>
+    <title>0x4248 - Data Panels</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
 </head>
@@ -42,7 +42,6 @@
 * <a onclick="document.getElementById('main').style.fontSize='14px'">Reset font size</a>
 * <a onclick="localStorage.setItem('force_compatibility_mode', 'true'); location.reload();">Force compatibility mode</a>
             </pre>
-            </pre>
             <pre>
       |\      _,,,---,,_
 ZZZzz /,`.-'`'    -.  ;-;;,_
@@ -52,10 +51,9 @@ Sleepy little fella
             </pre>
         </div>
 
-        <!-- CONTENT -->
         <div class="content" id="main">
 
-            <h1>Solar-Terrestrial Data Panels </h1>
+            <h1>Data Panels</h1>
 
             <div class="mobile-warning">
                 <div class="p-icon-flex">
@@ -75,9 +73,14 @@ Sleepy little fella
             <div class="p-icon-flex">
                 <img src="/icons/channels-4.png" class="icon-large">
                 <p>
-                    This page displays a collection of solar and space weather data panels, as well as some other 
-                    image based forcasts for various perameters. The data is sourced from various public APIs.
+                    A collection of live image-based data panels - weather forecasts, satellite imagery, solar &amp;
+                    space weather, and radio propagation maps. All panels are sourced from public APIs and update automatically.
+                </p>
             </div>
+
+            <h2>Solar &amp; Space Weather</h2>
+            <p>Solar-terrestrial data panels from <a href="https://www.hamqsl.com/solar.html">hamqsl.com</a> and <a href="https://rigreference.com/solar">rigreference.com</a>.</p>
+
             <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
                 <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarn0nbh.php"></a>
                 <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solar101vhfpic.php"></a>
@@ -90,18 +93,284 @@ Sleepy little fella
                 <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarsystem.php"></a>
                 <div id="rigref-solar-widget"><a href="https://rigreference.com/solar" target="_blank"><img src="https://rigreference.com/solar/img/tall" border="0"></a></div>
             </div>
+
+            <h2>Satellite Imagery</h2>
+            <p>Live satellite imagery from NOAA GOES and other sources. Images refresh every few minutes.</p>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+            
+                <div style="text-align: center;">
+                    <p><strong>GOES-East (GOES-19) - CONUS GeoColor</strong></p>
+                    <a href="https://www.star.nesdis.noaa.gov/goes/conus.php?sat=G19" target="_blank">
+                        <img src="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/CONUS/GEOCOLOR/1250x750.jpg"
+                             alt="GOES-East CONUS GeoColor"
+                             style="max-width: 600px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>GOES-East (GOES-19) - Full Disk GeoColor</strong></p>
+                    <a href="https://www.star.nesdis.noaa.gov/goes/fulldisk.php?sat=G19" target="_blank">
+                        <img src="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/FD/GEOCOLOR/678x678.jpg"
+                             alt="GOES-East Full Disk GeoColor"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>GOES-East (GOES-19) - Full Disk Infrared</strong></p>
+                    <a href="https://www.star.nesdis.noaa.gov/goes/fulldisk.php?sat=G19" target="_blank">
+                        <img src="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/FD/13/678x678.jpg"
+                             alt="GOES-East Full Disk IR"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>GOES-East (GOES-19) - Air Mass RGB</strong></p>
+                    <a href="https://www.star.nesdis.noaa.gov/goes/fulldisk.php?sat=G19" target="_blank">
+                        <img src="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/FD/AirMass/678x678.jpg"
+                             alt="GOES-East Air Mass RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>GOES-East (GOES-19) - Water Vapour (CONUS)</strong></p>
+                    <a href="https://www.star.nesdis.noaa.gov/goes/conus.php?sat=G19" target="_blank">
+                        <img src="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/CONUS/09/1250x750.jpg"
+                             alt="GOES-East CONUS Water Vapour"
+                             style="max-width: 600px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>GOES-East (GOES-19) - Fire Temperature (CONUS)</strong></p>
+                    <a href="https://www.star.nesdis.noaa.gov/goes/conus.php?sat=G19" target="_blank">
+                        <img src="https://cdn.star.nesdis.noaa.gov/GOES19/ABI/CONUS/FireTemperature/1250x750.jpg"
+                             alt="GOES-East CONUS Fire Temperature"
+                             style="max-width: 600px; width: 100%;">
+                    </a>
+                </div>
+            </div>
+
+            <h2>Europe &amp; UK - Meteosat</h2>
+            <p>Live imagery from <a href="https://www.eumetsat.int/" target="_blank">EUMETSAT</a>'s Meteosat satellites. Images update every 15 minutes. All images sourced from <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">eumetview.eumetsat.int</a>.</p>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+            
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - IR 3.9</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_IR039_WesternEurope.jpg"
+                             alt="Meteosat Western Europe IR 3.9"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - IR 10.8</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_IR108_WesternEurope.jpg"
+                             alt="Meteosat Western Europe IR 10.8"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Central Europe - IR 10.8</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_IR108_CentralEurope.jpg"
+                             alt="Meteosat Central Europe IR 10.8"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - VIS 0.6</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_VIS006_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Visible 0.6"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Water Vapour 6.2</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_WV062_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Water Vapour"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Full Disc - Water Vapour 6.2</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_WV062_LowResolution.jpg"
+                             alt="Meteosat Full Disc Water Vapour"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <!-- RGB COMPOSITES -->
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Natural Colour</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBNatColour_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Natural Colour"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Natural Colour Enhanced</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBNatColourEnhncd_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Natural Colour Enhanced"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Air Mass</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBAirmass_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Air Mass RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Convection</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBConvection_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Convection RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Day Microphysics</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBMicrophysics_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Day Microphysics RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Dust</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBDust_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Dust RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Fog</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBFog_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Fog RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Snow</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBSolarDay_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Snow RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Tropical Airmass</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBTropicalAirmass_WesternEurope.jpg"
+                             alt="Meteosat Western Europe Tropical Airmass RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <!-- VISUALISED PRODUCTS -->
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Precipitation (H03B)</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_H03B_WesternEurope.png"
+                             alt="Meteosat Western Europe Precipitation H03B"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Fire (FIR)</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_FIR_WesternEurope.png"
+                             alt="Meteosat Western Europe Fire FIR"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Western Europe - Atmos. Motion Vectors (AMV)</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_AMV_WesternEurope.png"
+                             alt="Meteosat Western Europe AMV"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <!-- ASH - Iceland sector is most relevant for UK/Europe -->
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Iceland - Volcanic Ash</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBAsh_Iceland.jpg"
+                             alt="Meteosat Iceland Volcanic Ash RGB"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <!-- FULL DISC -->
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Full Disc - IR 10.8</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_IR108_LowResolution.jpg"
+                             alt="Meteosat Full Disc IR 10.8"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+                <div style="text-align: center;">
+                    <p><strong>Meteosat - Full Disc - Natural Colour</strong></p>
+                    <a href="https://eumetview.eumetsat.int/static-images/latestImages.html" target="_blank">
+                        <img src="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBNatColour_LowResolution.jpg"
+                             alt="Meteosat Full Disc Natural Colour"
+                             style="max-width: 400px; width: 100%;">
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
 </body>
+
 <script>
-    // if the local storage key "force_compatibility_mode" is set to "true", then we will assume the user has intentionally chosen to view the site in compatibility mode and we will not hide the compatibility warning or remove the "basic" class from the body
     if (localStorage.getItem("force_compatibility_mode") === "true") {
         document.getElementById("compatibility-warning").style.display = "block";
-
     } else {
         document.body.classList.remove("basic");
         document.getElementById("compatibility-warning").style.display = "none";
         document.getElementById("basic-toggle").style.display = "none";
     }
-
 </script>
 
 </html>
